@@ -49,15 +49,15 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:5173.
+Then open http://localhost:5180.
 
 ## Scripts
 
 | Command | What it does |
 |---|---|
-| `npm run dev` | Start the dev server with hot reload at http://localhost:5173 |
+| `npm run dev` | Start the dev server with hot reload at http://localhost:5180 |
 | `npm run build` | Type-check with `tsc -b`, then build a static site into `dist/` |
-| `npm run preview` | Serve the built `dist/` folder locally to check the production build |
+| `npm run preview` | Serve the built `dist/` folder at http://localhost:5181 to check the production build |
 | `npm run lint` | Run ESLint over the project |
 
 The production build uses relative paths (`base: './'`) and a hash router, so `dist/` can be dropped onto any static host (GitHub Pages, Netlify, Cloudflare Pages) without extra config.

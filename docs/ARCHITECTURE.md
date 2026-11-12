@@ -175,7 +175,7 @@ All writes go through a reducer (`complete`, `uncomplete`, `recordQuiz`, `toggle
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
+npm run dev      # http://localhost:5180
 npm run build    # static files in dist/
 ```
 

@@ -1,0 +1,434 @@
+{
+  "id": "data-analyst",
+  "title": "Data Analyst",
+  "tagline": "Turn raw data into decisions",
+  "description": "Learn to collect, clean, analyse and visualise data with Excel, SQL, statistics, Power BI and Python, then prove it with projects.",
+  "color": "#1d5cf3",
+  "modules": [
+    {
+      "id": "da-01",
+      "title": "Introduction to Data Analytics",
+      "summary": "What analysts do, the types of analytics, and the end-to-end analysis process you will use in every project.",
+      "skill": "Foundations",
+      "prerequisites": [],
+      "lessons": [
+        {
+          "id": "da-01-01",
+          "title": "What is data analytics?",
+          "minutes": 25
+        },
+        {
+          "id": "da-01-02",
+          "title": "The four types of analytics",
+          "minutes": 25
+        },
+        {
+          "id": "da-01-03",
+          "title": "The data analysis process",
+          "minutes": 30
+        },
+        {
+          "id": "da-01-04",
+          "title": "Types of data and where it comes from",
+          "minutes": 30
+        },
+        {
+          "id": "da-01-05",
+          "title": "The data analyst role and toolkit",
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "id": "da-02",
+      "title": "Excel Fundamentals",
+      "summary": "Navigate workbooks, enter and format data, and write your first formulas and functions.",
+      "skill": "Excel",
+      "prerequisites": [
+        "da-01"
+      ],
+      "lessons": [
+        {
+          "id": "da-02-01",
+          "title": "Excel interface and data entry",
+          "minutes": 25
+        },
+        {
+          "id": "da-02-02",
+          "title": "Cell references and basic formulas",
+          "minutes": 30
+        },
+        {
+          "id": "da-02-03",
+          "title": "Essential functions: SUM, AVERAGE, COUNT, MIN, MAX",
+          "minutes": 30
+        },
+        {
+          "id": "da-02-04",
+          "title": "Sorting, filtering and tables",
+          "minutes": 30
+        },
+        {
+          "id": "da-02-05",
+          "title": "Formatting and conditional formatting",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "da-03",
+      "title": "Advanced Excel",
+      "summary": "Lookups, logic, PivotTables and charts that turn raw sheets into answers.",
+      "skill": "Excel",
+      "prerequisites": [
+        "da-02"
+      ],
+      "lessons": [
+        {
+          "id": "da-03-01",
+          "title": "Logical functions: IF, AND, OR, IFS",
+          "minutes": 30
+        },
+        {
+          "id": "da-03-02",
+          "title": "Lookups: VLOOKUP, XLOOKUP, INDEX/MATCH",
+          "minutes": 35
+        },
+        {
+          "id": "da-03-03",
+          "title": "Text and date functions",
+          "minutes": 30
+        },
+        {
+          "id": "da-03-04",
+          "title": "PivotTables and PivotCharts",
+          "minutes": 40
+        },
+        {
+          "id": "da-03-05",
+          "title": "Building charts that communicate",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "da-04",
+      "title": "SQL Fundamentals",
+      "summary": "Ask questions of a database: SELECT, filter, sort, aggregate and group.",
+      "skill": "SQL",
+      "prerequisites": [
+        "da-01"
+      ],
+      "lessons": [
+        {
+          "id": "da-04-01",
+          "title": "Databases, tables and SQL",
+          "minutes": 25
+        },
+        {
+          "id": "da-04-02",
+          "title": "SELECT and FROM",
+          "minutes": 25
+        },
+        {
+          "id": "da-04-03",
+          "title": "Filtering with WHERE",
+          "minutes": 30
+        },
+        {
+          "id": "da-04-04",
+          "title": "Sorting and limiting results",
+          "minutes": 20
+        },
+        {
+          "id": "da-04-05",
+          "title": "Aggregate functions",
+          "minutes": 30
+        },
+        {
+          "id": "da-04-06",
+          "title": "GROUP BY and HAVING",
+          "minutes": 35
+        }
+      ]
+    },
+    {
+      "id": "da-05",
+      "title": "Advanced SQL",
+      "summary": "Combine tables with JOINs, use subqueries, CTEs, CASE and window functions.",
+      "skill": "SQL",
+      "prerequisites": [
+        "da-04"
+      ],
+      "lessons": [
+        {
+          "id": "da-05-01",
+          "title": "INNER and LEFT JOINs",
+          "minutes": 35
+        },
+        {
+          "id": "da-05-02",
+          "title": "Subqueries",
+          "minutes": 30
+        },
+        {
+          "id": "da-05-03",
+          "title": "Common Table Expressions (CTEs)",
+          "minutes": 30
+        },
+        {
+          "id": "da-05-04",
+          "title": "CASE expressions",
+          "minutes": 25
+        },
+        {
+          "id": "da-05-05",
+          "title": "Window functions",
+          "minutes": 40
+        }
+      ]
+    },
+    {
+      "id": "da-06",
+      "title": "Data Cleaning",
+      "summary": "Find and fix missing values, duplicates, inconsistent formats and outliers.",
+      "skill": "Data Cleaning",
+      "prerequisites": [
+        "da-03",
+        "da-04"
+      ],
+      "lessons": [
+        {
+          "id": "da-06-01",
+          "title": "Why data cleaning matters",
+          "minutes": 20
+        },
+        {
+          "id": "da-06-02",
+          "title": "Handling missing values",
+          "minutes": 30
+        },
+        {
+          "id": "da-06-03",
+          "title": "Removing duplicates",
+          "minutes": 25
+        },
+        {
+          "id": "da-06-04",
+          "title": "Standardising text, dates and types",
+          "minutes": 30
+        },
+        {
+          "id": "da-06-05",
+          "title": "Detecting outliers",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "da-07",
+      "title": "Statistics",
+      "summary": "Describe data and draw careful conclusions: averages, spread, distributions, correlation and testing.",
+      "skill": "Statistics",
+      "prerequisites": [
+        "da-01"
+      ],
+      "lessons": [
+        {
+          "id": "da-07-01",
+          "title": "Descriptive statistics: mean, median, mode",
+          "minutes": 30
+        },
+        {
+          "id": "da-07-02",
+          "title": "Spread: range, variance, standard deviation",
+          "minutes": 30
+        },
+        {
+          "id": "da-07-03",
+          "title": "Distributions and the normal curve",
+          "minutes": 30
+        },
+        {
+          "id": "da-07-04",
+          "title": "Correlation is not causation",
+          "minutes": 25
+        },
+        {
+          "id": "da-07-05",
+          "title": "Sampling and hypothesis testing basics",
+          "minutes": 35
+        }
+      ]
+    },
+    {
+      "id": "da-08",
+      "title": "Power BI",
+      "summary": "Load, model and visualise data in interactive Power BI dashboards.",
+      "skill": "Power BI",
+      "prerequisites": [
+        "da-03",
+        "da-06"
+      ],
+      "lessons": [
+        {
+          "id": "da-08-01",
+          "title": "Power BI overview and interface",
+          "minutes": 25
+        },
+        {
+          "id": "da-08-02",
+          "title": "Power Query: getting and transforming data",
+          "minutes": 35
+        },
+        {
+          "id": "da-08-03",
+          "title": "Data modelling and relationships",
+          "minutes": 35
+        },
+        {
+          "id": "da-08-04",
+          "title": "DAX basics: measures and calculated columns",
+          "minutes": 40
+        },
+        {
+          "id": "da-08-05",
+          "title": "Designing an interactive dashboard",
+          "minutes": 35
+        }
+      ]
+    },
+    {
+      "id": "da-09",
+      "title": "Python Fundamentals",
+      "summary": "Variables, data types, control flow and functions in plain Python.",
+      "skill": "Python",
+      "prerequisites": [
+        "da-01"
+      ],
+      "lessons": [
+        {
+          "id": "da-09-01",
+          "title": "Why Python for analysts",
+          "minutes": 20
+        },
+        {
+          "id": "da-09-02",
+          "title": "Variables and data types",
+          "minutes": 30
+        },
+        {
+          "id": "da-09-03",
+          "title": "Lists and dictionaries",
+          "minutes": 30
+        },
+        {
+          "id": "da-09-04",
+          "title": "Conditions and loops",
+          "minutes": 30
+        },
+        {
+          "id": "da-09-05",
+          "title": "Functions",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "da-10",
+      "title": "Python for Data Analysis",
+      "summary": "Use pandas and matplotlib to load, clean, analyse and chart data.",
+      "skill": "Python",
+      "prerequisites": [
+        "da-09",
+        "da-06"
+      ],
+      "lessons": [
+        {
+          "id": "da-10-01",
+          "title": "Introduction to pandas DataFrames",
+          "minutes": 35
+        },
+        {
+          "id": "da-10-02",
+          "title": "Selecting and filtering data",
+          "minutes": 30
+        },
+        {
+          "id": "da-10-03",
+          "title": "Grouping and aggregating",
+          "minutes": 35
+        },
+        {
+          "id": "da-10-04",
+          "title": "Cleaning data with pandas",
+          "minutes": 35
+        },
+        {
+          "id": "da-10-05",
+          "title": "Visualising with matplotlib",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "da-11",
+      "title": "Real-world Projects",
+      "summary": "Apply everything end-to-end on realistic business datasets.",
+      "skill": "Projects",
+      "prerequisites": [
+        "da-05",
+        "da-08",
+        "da-10"
+      ],
+      "lessons": [
+        {
+          "id": "da-11-01",
+          "title": "How to approach an analytics project",
+          "minutes": 25
+        },
+        {
+          "id": "da-11-02",
+          "title": "Writing an analysis report",
+          "minutes": 30
+        },
+        {
+          "id": "da-11-03",
+          "title": "Building your portfolio",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "da-12",
+      "title": "Interview Preparation",
+      "summary": "Prepare for technical, scenario and behavioural Data Analyst interviews.",
+      "skill": "Interview",
+      "prerequisites": [
+        "da-11"
+      ],
+      "lessons": [
+        {
+          "id": "da-12-01",
+          "title": "The Data Analyst interview process",
+          "minutes": 20
+        },
+        {
+          "id": "da-12-02",
+          "title": "Answering technical questions",
+          "minutes": 30
+        },
+        {
+          "id": "da-12-03",
+          "title": "Answering case and scenario questions",
+          "minutes": 30
+        },
+        {
+          "id": "da-12-04",
+          "title": "Behavioural questions and the STAR method",
+          "minutes": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "da-01-01",
+  "objectives": [
+    "Explain in your own words what data and data analytics are",
+    "Describe the difference between data, information, knowledge and a decision (the DIKW ladder)",
+    "Give real examples of how analytics is used in different industries",
+    "Walk through a simple analysis from question to recommendation"
+  ],
+  "terminology": [
+    { "term": "Data", "definition": "Recorded facts about events, things or people, such as a sale, a click or a temperature reading." },
+    { "term": "Dataset", "definition": "A collection of related data, usually organised as a table with rows (records) and columns (fields)." },
+    { "term": "Record (row)", "definition": "One single item in a dataset, for example one sale or one customer." },
+    { "term": "Field (column)", "definition": "One attribute recorded for every record, for example price or date." },
+    { "term": "Data analytics", "definition": "The process of collecting, cleaning, exploring and interpreting data to support decisions." },
+    { "term": "Insight", "definition": "A finding that explains something and points to an action, not just a number." },
+    { "term": "Stakeholder", "definition": "A person who has an interest in the analysis, such as the manager who will make the decision." },
+    { "term": "KPI (Key Performance Indicator)", "definition": "A number a business tracks to judge how well it is doing, such as monthly revenue or customer churn rate." }
+  ],
+  "exercises": [
+    {
+      "question": "A manager says: \"Our website isn't doing well.\" Rewrite this as a precise analytics question.",
+      "hint": "Make it measurable: what metric, over what time period, compared with what?",
+      "answer": "A good version: **\"Did the number of online orders in the last 30 days fall compared with the previous 30 days, and which traffic sources (search, social, email) account for the change?\"** It names a metric (online orders), a time frame (last 30 days), a comparison (previous 30 days) and a way to break it down (traffic source)."
+    },
+    {
+      "question": "Classify each statement as Data, Information, Knowledge or Decision: (a) 'Order #1042, 3 items, £56'; (b) 'Average order value last month was £48'; (c) 'Customers who use a discount code spend 20% more per order'; (d) 'Send discount codes to customers who haven't ordered in 60 days'.",
+      "answer": "(a) **Data**: one raw record.\n(b) **Information**: data summarised.\n(c) **Knowledge**: a comparison that explains behaviour.\n(d) **Decision**: an action based on the knowledge."
+    },
+    {
+      "question": "In the bakery example, the owner wants to cut waste. Name two pieces of extra data that would make your recommendation stronger.",
+      "answer": "Any two of: several weeks of data (one week could be unusual); the cost of a loaf (to put waste in money terms); whether the bakery sold out early on Saturday and at what time; weather or local events; whether unsold bread can be discounted or donated instead of wasted."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the main goal of data analytics?",
+      "options": ["To build complex charts", "To support better decisions with evidence", "To store as much data as possible", "To write SQL queries"],
+      "answer": 1,
+      "explanation": "Charts and queries are tools. The purpose of analytics is to help people make better decisions using evidence."
+    },
+    {
+      "question": "\"Weekday latte sales are 30% higher than weekends because of morning commuters\" is an example of:",
+      "options": ["Raw data", "Information", "Knowledge", "A data type"],
+      "answer": 2,
+      "explanation": "It compares information (weekday vs weekend) and explains why. That is knowledge on the DIKW ladder."
+    },
+    {
+      "question": "In the bakery demonstration, what was the most important finding?",
+      "options": ["The bakery bakes 80 loaves a day", "More than half of the weekly waste happens on Sunday", "Friday is the best day", "The data had errors"],
+      "answer": 1,
+      "explanation": "Sunday produced 28 of 52 wasted loaves (54%). That finding turns a vague worry into a specific, fixable problem."
+    },
+    {
+      "question": "What should an analyst usually do FIRST?",
+      "options": ["Open Excel and explore", "Build a dashboard", "Define a clear, measurable question", "Collect every dataset available"],
+      "answer": 2,
+      "explanation": "A clear question tells you which data you need and when you are finished. Starting with the tool is a common mistake."
+    },
+    {
+      "question": "Which of these is an insight rather than just a number?",
+      "options": ["We had 5,000 website visits", "Revenue was £120,000", "Visitors from email convert at twice the rate of social media visitors", "There are 12 columns in the dataset"],
+      "answer": 2,
+      "explanation": "It compares two groups and suggests an action (invest more in email). The others are plain facts."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "In simple terms, what does a data analyst do?",
+      "answer": "A data analyst turns raw data into answers that help a business make decisions. In practice that means: clarifying the business question with stakeholders, finding and cleaning the data, analysing it with tools like Excel, SQL or Python, and presenting the findings clearly with a recommendation. **Tip:** give a short example, e.g. *\"For instance, finding which products drive most of the returns so the team can fix the product descriptions.\"*"
+    },
+    {
+      "level": "beginner",
+      "question": "What is the difference between data and information?",
+      "answer": "Data is raw, unorganised facts, such as individual sales transactions. Information is data that has been processed or summarised so it has meaning, such as total sales per month. Interviewers like it when you continue up the ladder: knowledge explains *why*, and the decision is the action taken."
+    },
+    {
+      "level": "intermediate",
+      "question": "A manager asks you to 'look into' falling sales. How do you start?",
+      "answer": "I would not start with the data. First I'd clarify the question: *Which sales metric (revenue, units, orders)? Compared with what period? Is it all products and regions or a specific one? What decision will this inform, and by when?* Then I'd check what data is available and its quality, do a quick high-level breakdown (by time, region, product, channel) to locate where the drop is, and share early findings before going deeper. This shows structured thinking and stakeholder focus."
+    }
+  ],
+  "assignment": {
+    "id": "asg-da-01-01",
+    "title": "Spot analytics in your daily life",
+    "brief": "Pick **three** organisations you use regularly (a supermarket, a bank app, a streaming service, your employer...). For each one, write:\n\n1. One question the organisation could answer with data.\n2. What data they probably collect to answer it.\n3. What decision the answer would support.",
+    "deliverables": ["Three examples, each with question, data and decision", "One sentence on which example you find most interesting and why"]
+  }
+}

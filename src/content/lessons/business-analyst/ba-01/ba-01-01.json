@@ -1,0 +1,89 @@
+{
+  "id": "ba-01-01",
+  "objectives": [
+    "Define business analysis using the IIBA definition and explain it in plain English",
+    "Describe what a business analyst does day to day",
+    "Distinguish a business need from a proposed solution",
+    "Explain how the BA role differs from project manager, product owner and data analyst"
+  ],
+  "terminology": [
+    { "term": "Business analysis", "definition": "The practice of enabling change in an organisation by defining needs and recommending solutions that deliver value to stakeholders (IIBA BABOK)." },
+    { "term": "Business Analyst (BA)", "definition": "A person who investigates business problems, defines requirements and helps choose and validate solutions." },
+    { "term": "Stakeholder", "definition": "Any person or group affected by, or with an interest in, a change." },
+    { "term": "Need", "definition": "The underlying problem or opportunity to be addressed, independent of any particular solution." },
+    { "term": "Solution", "definition": "A specific way of meeting a need, such as a system, process change, training or policy." },
+    { "term": "As-is / To-be", "definition": "The current state of a process (as-is) and the desired future state (to-be)." },
+    { "term": "Requirement", "definition": "A usable statement of a need: what a solution must do or how well it must do it." },
+    { "term": "BABOK", "definition": "The Business Analysis Body of Knowledge, the IIBA's standard guide to BA practice." }
+  ],
+  "exercises": [
+    {
+      "question": "Rewrite this solution-focused request as a need: \"We need a new CRM system.\"",
+      "hint": "Ask what problem the CRM would solve.",
+      "answer": "Example need statement: **\"Sales staff need a single, up-to-date view of each customer's contact history so that follow-ups are not missed and customers aren't contacted twice.\"** It describes the problem and the outcome without naming a specific system, leaving room for options (a CRM, a shared spreadsheet, better use of an existing tool)."
+    },
+    {
+      "question": "For the gym scenario, list four stakeholders and one concern each might have.",
+      "answer": "- **Members**: can I book easily at any time?\n- **Reception staff**: will this reduce phone calls or change my job?\n- **Instructors**: will classes be over-booked? Will I see who's coming?\n- **Owner**: cost, and will it reduce cancellations?\n- *(Also valid)* **Booking-tool vendor**: integration and support; **Finance**: subscription cost."
+    },
+    {
+      "question": "Name one key difference between a Business Analyst and a Project Manager.",
+      "answer": "A BA focuses on **what** is needed and **why** (the problem, requirements and the right solution). A PM focuses on **delivering** it: schedule, budget, resources and risks. They work closely together: the BA defines the scope, the PM plans and controls its delivery."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the IIBA, business analysis is about:",
+      "options": ["Writing code for business systems", "Enabling change by defining needs and recommending solutions that deliver value", "Managing project budgets", "Analysing financial statements"],
+      "answer": 1,
+      "explanation": "This is the BABOK definition. It focuses on change, needs, solutions and value for stakeholders."
+    },
+    {
+      "question": "\"We need a mobile app\" is best described as:",
+      "options": ["A business need", "A proposed solution", "A stakeholder", "A non-functional requirement"],
+      "answer": 1,
+      "explanation": "It names a specific solution. A BA would ask why, to uncover the underlying need (e.g. members can't book classes outside office hours)."
+    },
+    {
+      "question": "In the online retailer example, why was a new website NOT recommended?",
+      "options": ["It was too expensive", "The real problem was forced account creation at checkout, which a guest checkout fixes", "Developers were unavailable", "Customers preferred the old design"],
+      "answer": 1,
+      "explanation": "Analysis showed a specific cause of abandonment. Fixing that cause was cheaper and faster than a full rebuild."
+    },
+    {
+      "question": "Which role mainly answers \"WHEN will it be delivered and at what cost?\"",
+      "options": ["Business Analyst", "Product Owner", "Project Manager", "Data Analyst"],
+      "answer": 2,
+      "explanation": "The project manager owns schedule, cost and resources. The BA owns the understanding of needs and requirements."
+    },
+    {
+      "question": "Why should a BA document the as-is process?",
+      "options": ["It is a legal requirement", "You can't design a better process without understanding the current one", "Developers need it to write code", "It replaces the need for requirements"],
+      "answer": 1,
+      "explanation": "Understanding how work happens today reveals where the real problems and delays are, so the to-be design targets them."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is business analysis, and what does a business analyst do?",
+      "answer": "Business analysis is the practice of enabling change by understanding an organisation's needs and recommending solutions that deliver value. A BA investigates problems with stakeholders, documents the current process, defines clear requirements, helps evaluate solution options, and checks that the delivered solution meets the need. **Strong answers add an example**: *\"For example, finding that checkout abandonment was caused by forced sign-up, and recommending a guest checkout.\"*"
+    },
+    {
+      "level": "beginner",
+      "question": "What is the difference between a need and a solution?",
+      "answer": "A need is the underlying problem or opportunity (\"customers can't track their orders\"). A solution is one specific way to address it (\"build an order-tracking page\", \"send shipping emails\"). BAs separate the two so the team can compare several solutions instead of jumping to the first idea."
+    },
+    {
+      "level": "intermediate",
+      "question": "A senior manager insists on a specific software tool. How would you handle it?",
+      "answer": "Respectfully, without dismissing the idea. I'd ask questions to understand the problem the tool is meant to solve and how success will be measured. Then I'd capture the underlying need, look at a few options including their tool, and compare them on cost, time and how well each meets the need. If their tool is the best fit, great: we now have evidence. If not, the comparison makes the conversation objective rather than personal."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-01-01",
+    "title": "Find the need behind the request",
+    "brief": "Think of a request you have heard at work, school or in daily life that names a solution (\"we need a new app\", \"we need another meeting\", \"we need more staff\").\n\nWrite:\n1. The original request.\n2. Five questions you would ask to uncover the real need.\n3. A one-sentence need statement.\n4. Two alternative solutions besides the one requested.",
+    "deliverables": ["Original request", "Five discovery questions", "Need statement", "Two alternative solutions"]
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "id": "business-analyst",
+  "title": "Business Analyst",
+  "tagline": "Bridge business needs and solutions",
+  "description": "Learn to discover problems, gather and document requirements, model processes and work in Agile teams.",
+  "color": "#0e9f6e",
+  "modules": [
+    {
+      "id": "ba-01",
+      "title": "Business Analysis Fundamentals",
+      "summary": "What business analysis is, what a BA does every day, and the BA lifecycle.",
+      "skill": "Foundations",
+      "prerequisites": [],
+      "lessons": [
+        {
+          "id": "ba-01-01",
+          "title": "What is business analysis?",
+          "minutes": 25
+        },
+        {
+          "id": "ba-01-02",
+          "title": "The role of a Business Analyst",
+          "minutes": 25
+        },
+        {
+          "id": "ba-01-03",
+          "title": "The business analysis lifecycle",
+          "minutes": 30
+        },
+        {
+          "id": "ba-01-04",
+          "title": "Core BA competencies",
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "id": "ba-02",
+      "title": "Business Requirements",
+      "summary": "Types of requirements, what makes a good requirement, and how they are prioritised.",
+      "skill": "Requirements",
+      "prerequisites": [
+        "ba-01"
+      ],
+      "lessons": [
+        {
+          "id": "ba-02-01",
+          "title": "What is a requirement?",
+          "minutes": 25
+        },
+        {
+          "id": "ba-02-02",
+          "title": "Business, stakeholder, solution and transition requirements",
+          "minutes": 30
+        },
+        {
+          "id": "ba-02-03",
+          "title": "Functional vs non-functional requirements",
+          "minutes": 30
+        },
+        {
+          "id": "ba-02-04",
+          "title": "Writing good requirements",
+          "minutes": 30
+        },
+        {
+          "id": "ba-02-05",
+          "title": "Prioritisation with MoSCoW",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "ba-03",
+      "title": "Requirement Gathering",
+      "summary": "Elicitation techniques: interviews, workshops, observation, surveys and document analysis.",
+      "skill": "Elicitation",
+      "prerequisites": [
+        "ba-02"
+      ],
+      "lessons": [
+        {
+          "id": "ba-03-01",
+          "title": "Planning elicitation",
+          "minutes": 25
+        },
+        {
+          "id": "ba-03-02",
+          "title": "Conducting stakeholder interviews",
+          "minutes": 30
+        },
+        {
+          "id": "ba-03-03",
+          "title": "Workshops and brainstorming",
+          "minutes": 30
+        },
+        {
+          "id": "ba-03-04",
+          "title": "Observation, surveys and document analysis",
+          "minutes": 30
+        },
+        {
+          "id": "ba-03-05",
+          "title": "Confirming and validating requirements",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "ba-04",
+      "title": "BRD, FRD and SRS",
+      "summary": "The three classic requirements documents, what goes in each and how to write them.",
+      "skill": "Documentation",
+      "prerequisites": [
+        "ba-03"
+      ],
+      "lessons": [
+        {
+          "id": "ba-04-01",
+          "title": "Why requirements documents exist",
+          "minutes": 20
+        },
+        {
+          "id": "ba-04-02",
+          "title": "Business Requirements Document (BRD)",
+          "minutes": 35
+        },
+        {
+          "id": "ba-04-03",
+          "title": "Functional Requirements Document (FRD)",
+          "minutes": 35
+        },
+        {
+          "id": "ba-04-04",
+          "title": "Software Requirements Specification (SRS)",
+          "minutes": 30
+        },
+        {
+          "id": "ba-04-05",
+          "title": "Traceability matrix",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "ba-05",
+      "title": "UML and Process Flow Diagrams",
+      "summary": "Use case, activity and sequence diagrams plus simple process flowcharts.",
+      "skill": "Modelling",
+      "prerequisites": [
+        "ba-02"
+      ],
+      "lessons": [
+        {
+          "id": "ba-05-01",
+          "title": "Why we model",
+          "minutes": 20
+        },
+        {
+          "id": "ba-05-02",
+          "title": "Flowcharts and process flows",
+          "minutes": 30
+        },
+        {
+          "id": "ba-05-03",
+          "title": "Use case diagrams",
+          "minutes": 30
+        },
+        {
+          "id": "ba-05-04",
+          "title": "Activity diagrams",
+          "minutes": 30
+        },
+        {
+          "id": "ba-05-05",
+          "title": "Sequence diagrams",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "ba-06",
+      "title": "BPMN",
+      "summary": "Business Process Model and Notation: events, activities, gateways, pools and lanes.",
+      "skill": "Modelling",
+      "prerequisites": [
+        "ba-05"
+      ],
+      "lessons": [
+        {
+          "id": "ba-06-01",
+          "title": "Introduction to BPMN",
+          "minutes": 25
+        },
+        {
+          "id": "ba-06-02",
+          "title": "Events, activities and gateways",
+          "minutes": 35
+        },
+        {
+          "id": "ba-06-03",
+          "title": "Pools, lanes and message flows",
+          "minutes": 30
+        },
+        {
+          "id": "ba-06-04",
+          "title": "As-is vs to-be process models",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "ba-07",
+      "title": "User Stories and Acceptance Criteria",
+      "summary": "Write user stories, acceptance criteria and Gherkin scenarios; split and refine stories.",
+      "skill": "Agile Requirements",
+      "prerequisites": [
+        "ba-02"
+      ],
+      "lessons": [
+        {
+          "id": "ba-07-01",
+          "title": "What is a user story?",
+          "minutes": 25
+        },
+        {
+          "id": "ba-07-02",
+          "title": "INVEST: qualities of a good story",
+          "minutes": 25
+        },
+        {
+          "id": "ba-07-03",
+          "title": "Writing acceptance criteria",
+          "minutes": 30
+        },
+        {
+          "id": "ba-07-04",
+          "title": "Given-When-Then (Gherkin)",
+          "minutes": 30
+        },
+        {
+          "id": "ba-07-05",
+          "title": "Story splitting and backlog refinement",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "ba-08",
+      "title": "Agile and Scrum",
+      "summary": "Agile values, Scrum roles, events and artefacts, and where the BA fits in.",
+      "skill": "Agile",
+      "prerequisites": [
+        "ba-07"
+      ],
+      "lessons": [
+        {
+          "id": "ba-08-01",
+          "title": "Agile vs Waterfall",
+          "minutes": 25
+        },
+        {
+          "id": "ba-08-02",
+          "title": "Scrum roles",
+          "minutes": 25
+        },
+        {
+          "id": "ba-08-03",
+          "title": "Scrum events",
+          "minutes": 30
+        },
+        {
+          "id": "ba-08-04",
+          "title": "Scrum artefacts",
+          "minutes": 25
+        },
+        {
+          "id": "ba-08-05",
+          "title": "The BA in an Agile team",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "ba-09",
+      "title": "Jira and Confluence",
+      "summary": "Manage backlogs in Jira and document decisions in Confluence.",
+      "skill": "Tools",
+      "prerequisites": [
+        "ba-08"
+      ],
+      "lessons": [
+        {
+          "id": "ba-09-01",
+          "title": "Jira basics: projects, issues, workflows",
+          "minutes": 30
+        },
+        {
+          "id": "ba-09-02",
+          "title": "Managing a backlog and sprints in Jira",
+          "minutes": 30
+        },
+        {
+          "id": "ba-09-03",
+          "title": "Confluence for requirements documentation",
+          "minutes": 25
+        },
+        {
+          "id": "ba-09-04",
+          "title": "Linking Jira and Confluence",
+          "minutes": 20
+        }
+      ]
+    },
+    {
+      "id": "ba-10",
+      "title": "Stakeholder Management",
+      "summary": "Identify, analyse and communicate with stakeholders; handle conflict.",
+      "skill": "Stakeholders",
+      "prerequisites": [
+        "ba-01"
+      ],
+      "lessons": [
+        {
+          "id": "ba-10-01",
+          "title": "Identifying stakeholders",
+          "minutes": 25
+        },
+        {
+          "id": "ba-10-02",
+          "title": "Power-interest grid and RACI",
+          "minutes": 30
+        },
+        {
+          "id": "ba-10-03",
+          "title": "Communication planning",
+          "minutes": 25
+        },
+        {
+          "id": "ba-10-04",
+          "title": "Managing conflict and difficult stakeholders",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "id": "ba-11",
+      "title": "Real-world Case Studies",
+      "summary": "Work through realistic BA engagements from problem to signed-off requirements.",
+      "skill": "Projects",
+      "prerequisites": [
+        "ba-04",
+        "ba-06",
+        "ba-09"
+      ],
+      "lessons": [
+        {
+          "id": "ba-11-01",
+          "title": "How to approach a BA case study",
+          "minutes": 25
+        },
+        {
+          "id": "ba-11-02",
+          "title": "Case study walkthrough: online food ordering",
+          "minutes": 40
+        },
+        {
+          "id": "ba-11-03",
+          "title": "Presenting your recommendations",
+          "minutes": 25
+        }
+      ]
+    },
+    {
+      "id": "ba-12",
+      "title": "Interview Preparation",
+      "summary": "Prepare for BA interviews: concepts, documentation, scenarios and behavioural questions.",
+      "skill": "Interview",
+      "prerequisites": [
+        "ba-11"
+      ],
+      "lessons": [
+        {
+          "id": "ba-12-01",
+          "title": "The Business Analyst interview process",
+          "minutes": 20
+        },
+        {
+          "id": "ba-12-02",
+          "title": "Answering conceptual questions",
+          "minutes": 25
+        },
+        {
+          "id": "ba-12-03",
+          "title": "Answering scenario questions",
+          "minutes": 30
+        },
+        {
+          "id": "ba-12-04",
+          "title": "Behavioural questions and the STAR method",
+          "minutes": 25
+        }
+      ]
+    }
+  ]
+}

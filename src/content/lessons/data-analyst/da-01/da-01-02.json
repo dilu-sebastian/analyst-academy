@@ -1,0 +1,99 @@
+{
+  "id": "da-01-02",
+  "objectives": [
+    "Name and define the four types of analytics: descriptive, diagnostic, predictive and prescriptive",
+    "Match a business question to the type of analytics that answers it",
+    "Explain why the four types build on each other during a real project",
+    "Run simple SQL queries that describe and break down a business number"
+  ],
+  "terminology": [
+    { "term": "Descriptive analytics", "definition": "Summarising past data to show what happened, using totals, averages, counts and charts." },
+    { "term": "Diagnostic analytics", "definition": "Breaking down and comparing data to find where and when a change happened, and to form a hypothesis about why." },
+    { "term": "Predictive analytics", "definition": "Using historical patterns to estimate what is likely to happen next." },
+    { "term": "Prescriptive analytics", "definition": "Recommending what action to take by comparing options and their likely outcomes." },
+    { "term": "Segment", "definition": "A group of records that share a characteristic, such as customers in one region or orders from one channel." },
+    { "term": "Hypothesis", "definition": "A testable explanation for a finding, such as 'sales fell because the checkout broke on mobile'." },
+    { "term": "Forecast", "definition": "An estimate of a future value, usually given with a range of uncertainty." },
+    { "term": "Seasonality", "definition": "A pattern that repeats at regular times of the year, such as higher retail sales in November and December." }
+  ],
+  "exercises": [
+    {
+      "question": "Classify each question as descriptive, diagnostic, predictive or prescriptive: (a) 'How many support tickets did we receive last week?' (b) 'Why did ticket volume double on Tuesday?' (c) 'How many tickets will we get next month?' (d) 'How many agents should we schedule on Tuesdays?'",
+      "answer": "(a) **Descriptive**: counts what happened.\n(b) **Diagnostic**: looks for the cause of a change.\n(c) **Predictive**: estimates the future.\n(d) **Prescriptive**: recommends an action."
+    },
+    {
+      "question": "A shop's revenue fell 8% in March. List three ways you would break this number down to find where the fall is concentrated.",
+      "hint": "Think time, segment and comparison.",
+      "answer": "Any three of: **by week or day** (sudden or gradual?); **by product category**; **by region or store**; **by channel** (online, in-store, app); **by customer type** (new vs returning); **compared with March last year** (is it seasonal?); **by number of orders vs value per order** (fewer customers or smaller baskets?)."
+    },
+    {
+      "question": "A colleague says: 'The model predicts we will sell 5,000 units next month, so order exactly 5,000.' What is wrong with this advice?",
+      "answer": "A prediction is a **range of likely outcomes**, not a promise. Ordering exactly 5,000 ignores uncertainty. A better recommendation states a range (for example 4,500 to 5,500), considers the cost of running out versus the cost of excess stock, and checks whether anything has changed since the history the model learned from."
+    },
+    {
+      "question": "Run the queries in the demonstration, then change the second query to break the orders down by `status` instead of `channel`. What does this tell you about the orders in the last three months of the year?",
+      "hint": "Replace `channel` with `status` in both the SELECT and the GROUP BY.",
+      "answer": "Grouping by `status` shows how many orders were Completed, Returned or Cancelled in each month. Comparing months shows whether the peak in orders comes with a similar mix of statuses, or whether a larger share is returned or cancelled. The skill being practised is the diagnostic move: split the total by a different segment and compare."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which type of analytics answers the question 'Why did revenue fall?'",
+      "options": ["Descriptive", "Diagnostic", "Predictive", "Prescriptive"],
+      "answer": 1,
+      "explanation": "Diagnostic analytics looks for the cause or location of a change by breaking the data down and comparing parts."
+    },
+    {
+      "question": "'Customers who have not logged in for 60 days are 5 times more likely to cancel.' This is mainly:",
+      "options": ["Descriptive", "Diagnostic", "Predictive", "Prescriptive"],
+      "answer": 2,
+      "explanation": "It uses a past pattern to estimate a future outcome (cancellation), which is predictive."
+    },
+    {
+      "question": "Which statement is prescriptive?",
+      "options": ["Sales were £50,000 last week", "Sales dropped because three stores were closed", "Sales will probably be £44,000 next week", "Open the three stores on Saturdays to recover the lost sales"],
+      "answer": 3,
+      "explanation": "Prescriptive analytics recommends an action. The other statements describe, explain or predict."
+    },
+    {
+      "question": "Why should an analyst usually start with descriptive analytics?",
+      "options": ["It is the most advanced type", "Later steps depend on getting the past numbers right", "Managers only want descriptive reports", "It never needs data checking"],
+      "answer": 1,
+      "explanation": "Diagnosis, prediction and recommendation all build on the descriptive numbers. If those are wrong, everything after them is wrong too."
+    },
+    {
+      "question": "Which is the best way to report a forecast?",
+      "options": ["'Sales will be exactly £42,000'", "'Sales will be between £40,000 and £45,000 if the current trend continues'", "'Sales will definitely rise'", "'The model is always right'"],
+      "answer": 1,
+      "explanation": "A forecast should show a range and state its assumption. Exact figures and certainty claims give a false sense of precision."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are the four types of analytics?",
+      "answer": "**Descriptive** (what happened), **diagnostic** (why it happened), **predictive** (what is likely to happen) and **prescriptive** (what we should do). Strong answers add a one-line example for each, such as a monthly sales report, a breakdown showing which region fell, a forecast for next quarter, and a recommended stock order."
+    },
+    {
+      "level": "beginner",
+      "question": "Which type of analytics do data analysts use most?",
+      "answer": "Most day-to-day analyst work is **descriptive and diagnostic**: building reports and dashboards, then explaining the changes in them. Predictive and prescriptive work is growing, and analysts often contribute by preparing data and framing the decision even when a data scientist builds the model. Say that descriptive work still needs care because definitions and data quality decide whether numbers can be trusted."
+    },
+    {
+      "level": "intermediate",
+      "question": "Revenue dropped 15% last month. Walk me through how you would investigate.",
+      "answer": "First **confirm the number** (right period, same definition, no missing data). Then **break it down**: by week to see timing, then by product, region, channel and customer type to find where the drop is concentrated, and compare with the same month last year to rule out seasonality. Split revenue into **orders × average order value** to see whether it is fewer customers or smaller baskets. Form a hypothesis from the pattern, check it with the business (a promotion ended, a website issue, a stock-out) and then recommend an action. This shows you move from descriptive to diagnostic to prescriptive in a structured way."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you explain predictive analytics to a non-technical manager?",
+      "answer": "'We look at what happened in the past and the patterns in it, then use those patterns to estimate what is likely to happen next, such as next month's demand. It gives a likely range rather than a guarantee, and it only works while the future looks similar to the past.' Using a business example and stating the limits shows communication skill and honesty."
+    }
+  ],
+  "assignment": {
+    "id": "asg-da-01-02",
+    "title": "Four questions for one business",
+    "brief": "Pick a business you know well, such as a café, a gym, a streaming service or your employer.\n\nWrite **one question for each type of analytics** (descriptive, diagnostic, predictive, prescriptive) that the business could ask about the *same* topic, for example 'customer cancellations'. For each question say which data you would need.",
+    "deliverables": ["Four questions, one per type, about the same topic", "The data you would need for each question", "One sentence on which question would be hardest to answer and why"]
+  }
+}

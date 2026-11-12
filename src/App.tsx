@@ -1,3 +1,4 @@
+import { Suspense, lazy } from 'react'
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppLayout } from '@/components/layout/AppLayout'
 import { DashboardPage } from '@/features/dashboard/DashboardPage'
@@ -6,6 +7,8 @@ import { LessonPage } from '@/features/lesson/LessonPage'
 import { BookmarksPage, NotesPage, SearchPage, SettingsPage, UpcomingPage } from '@/features/personal/PersonalPages'
 import { ProgressProvider } from '@/store/ProgressContext'
 import { ThemeProvider } from '@/store/ThemeContext'
+
+const SqlPlaygroundPage = lazy(() => import('@/features/sql/SqlPlaygroundPage').then((m) => ({ default: m.SqlPlaygroundPage })))
 
 export default function App() {
   return (
@@ -25,9 +28,9 @@ export default function App() {
               <Route
                 path="sql"
                 element={
-                  <UpcomingPage title="SQL Practice" icon="database">
-                    An in-browser SQLite playground with sample retail, HR and inventory datasets arrives with the SQL modules in stage 2.
-                  </UpcomingPage>
+                  <Suspense fallback={<p className="text-sm text-slate-500">Loading SQL practice…</p>}>
+                    <SqlPlaygroundPage />
+                  </Suspense>
                 }
               />
               <Route

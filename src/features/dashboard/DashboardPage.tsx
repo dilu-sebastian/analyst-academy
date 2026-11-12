@@ -17,6 +17,7 @@ const activityIcon: Record<ActivityType, IconName> = {
   note: 'note',
   bookmark: 'bookmark',
   assignment: 'clipboard',
+  sql: 'database',
 }
 
 function greeting() {

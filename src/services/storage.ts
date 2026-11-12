@@ -10,6 +10,7 @@ export const emptyState = (): ProgressState => ({
   notes: {},
   assignments: {},
   activity: [],
+  sqlSolved: {},
 })
 
 function isState(x: unknown): x is ProgressState {

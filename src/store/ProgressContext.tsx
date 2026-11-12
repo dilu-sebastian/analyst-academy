@@ -11,6 +11,7 @@ type Action =
   | { type: 'toggleBookmark'; lessonId: string }
   | { type: 'saveNote'; lessonId: string; text: string }
   | { type: 'submitAssignment'; assignmentId: string; lessonId?: string; label: string; text: string }
+  | { type: 'solveSql'; challengeId: string; label: string }
   | { type: 'import'; state: ProgressState }
   | { type: 'reset' }
 
@@ -103,6 +104,13 @@ function reducer(state: ProgressState, action: Action): ProgressState {
         ...state,
         assignments: { ...state.assignments, [action.assignmentId]: { text: action.text, submittedAt: now } },
         activity: log(state, { type: 'assignment', lessonId: action.lessonId, label: `Submitted assignment “${action.label}”` }),
+      }
+    case 'solveSql':
+      if (state.sqlSolved[action.challengeId]) return state
+      return {
+        ...state,
+        sqlSolved: { ...state.sqlSolved, [action.challengeId]: now },
+        activity: log(state, { type: 'sql', label: `Solved SQL challenge “${action.label}”` }),
       }
     case 'import':
       return action.state

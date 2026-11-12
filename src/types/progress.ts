@@ -1,4 +1,4 @@
-export type ActivityType = 'visit' | 'complete' | 'quiz' | 'note' | 'bookmark' | 'assignment'
+export type ActivityType = 'visit' | 'complete' | 'quiz' | 'note' | 'bookmark' | 'assignment' | 'sql'
 
 export interface Activity {
   type: ActivityType
@@ -33,5 +33,7 @@ export interface ProgressState {
   notes: Record<string, Note>
   assignments: Record<string, Submission>
   activity: Activity[]
+  /** SQL practice challenges solved: challenge id → ISO date. */
+  sqlSolved: Record<string, string>
   lastVisited?: { lessonId: string; at: string }
 }

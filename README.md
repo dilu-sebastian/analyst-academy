@@ -4,7 +4,7 @@ A personal learning platform for becoming a job-ready **Data Analyst** or **Busi
 
 It runs entirely in the browser: no backend, no account, no login. Your progress, notes, bookmarks and quiz scores are saved in your browser's `localStorage` and can be exported and imported as JSON.
 
-> **Status: Stage 1 of 5.** The app shell, dashboard, progress tracking and lesson engine work. The full curriculum is outlined, but only **6 of 111 lessons** have content so far. See [Content status](#content-status).
+> **Status: Stage 1 of 5.** The app shell, dashboard, progress tracking and lesson engine work. The full curriculum is outlined, but only **11 of 111 lessons** have content so far. See [Content status](#content-status).
 
 ---
 
@@ -143,8 +143,8 @@ The curriculum outline is complete; the written content is not.
 | Path | Modules | Lessons planned | Lessons written |
 |---|---|---|---|
 | Data Analyst | 12 | 58 | 2 (`da-01-01`, `da-01-02`) |
-| Business Analyst | 12 | 53 | 4 (all of module 1, `ba-01-01` to `ba-01-04`) |
-| **Total** | **24** | **111** | **6** |
+| Business Analyst | 12 | 53 | 9 (modules 1 and 2 complete: `ba-01-01` to `ba-02-05`) |
+| **Total** | **24** | **111** | **11** |
 
 **Data Analyst modules:** Introduction to Data Analytics, Excel Fundamentals, Advanced Excel, SQL Fundamentals, Advanced SQL, Data Cleaning, Statistics, Power BI, Python Fundamentals, Python for Data Analysis, Real-world Projects, Interview Preparation.
 

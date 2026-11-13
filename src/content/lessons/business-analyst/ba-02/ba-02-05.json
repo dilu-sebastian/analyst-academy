@@ -1,0 +1,97 @@
+{
+  "id": "ba-02-05",
+  "objectives": [
+    "Explain why prioritisation is needed and who makes the decision",
+    "Classify requirements as Must, Should, Could or Won't using clear criteria",
+    "Check a plan against the recommended Must/Should/Could balance",
+    "Describe other prioritisation techniques and when to use them"
+  ],
+  "terminology": [
+    { "term": "MoSCoW", "definition": "A prioritisation method that groups requirements into Must have, Should have, Could have and Won't have (this time)." },
+    { "term": "Must have", "definition": "A requirement without which the solution fails, is illegal or unsafe, or delivers no value." },
+    { "term": "Should have", "definition": "An important requirement with a workaround or that can wait for a short time." },
+    { "term": "Could have", "definition": "A desirable requirement that is included only if time and budget allow." },
+    { "term": "Won't have (this time)", "definition": "A requirement agreed as out of scope for the current delivery but possibly included later." },
+    { "term": "Scope creep", "definition": "The gradual, uncontrolled growth of a project's scope without matching changes in time, cost or resources." },
+    { "term": "Workaround", "definition": "A temporary way of achieving an outcome without the proper feature." },
+    { "term": "Value vs effort matrix", "definition": "A chart that plots each item by business value and delivery effort to find quick wins." }
+  ],
+  "exercises": [
+    {
+      "question": "A hospital app must show allergy warnings. A stakeholder says 'It would be nice to have.' How would you classify it and why?",
+      "answer": "**Must have.** It is a **patient safety** requirement: missing allergy warnings could cause harm, and there is no acceptable workaround. Safety and legal requirements are Musts regardless of how a stakeholder describes them."
+    },
+    {
+      "question": "A project has 50 days of capacity. Requirements classified as Must total 45 days. What is the risk and what would you do?",
+      "answer": "Musts take **90%** of capacity, well above the guideline of about 60%, leaving almost no buffer: any delay will push a Must out of the release. Challenge each Must with 'would we cancel the launch without this?', look for items that can be simplified or have workarounds, move some to Should, and agree what will be dropped if the schedule slips."
+    },
+    {
+      "question": "Place each in a MoSCoW category for an online ticket shop and justify: (a) card payment, (b) seat map, (c) sharing events on social media, (d) a loyalty scheme.",
+      "answer": "Example: **(a) Must**: no payment, no sales. **(b) Should** (or Must if seats are allocated): customers can often be assigned seats automatically as a workaround. **(c) Could**: it helps marketing but does not affect the core service. **(d) Won't (this time)**: valuable later, but complex and not needed to launch. Different reasoning can lead to different valid answers, as long as it is explained with the criteria."
+    },
+    {
+      "question": "Name two prioritisation techniques other than MoSCoW and one situation where each is helpful.",
+      "answer": "**Value vs effort matrix**: quickly choosing quick wins from a long backlog. **Weighted scoring**: a formal decision with many requirements and stakeholders, scoring each on criteria such as value, risk and cost. Others: the **Kano model** (customer delight), the **100-point method** (forcing trade-offs between stakeholders) and simple **ranking**."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 'Won't have' mean in MoSCoW?",
+      "options": ["Never to be built", "Agreed as out of scope for this delivery, possibly later", "Rejected by IT", "A bug"],
+      "answer": 1,
+      "explanation": "It means 'not this time', and recording it manages expectations and protects the scope."
+    },
+    {
+      "question": "Which is the best test for a Must have?",
+      "options": ["The loudest stakeholder asked for it", "Can we still go live without it?", "It is easy to build", "It looks impressive"],
+      "answer": 1,
+      "explanation": "A Must is something without which the solution cannot go live or would fail its purpose. If you can launch without it, it is not a Must."
+    },
+    {
+      "question": "Roughly what share of effort should Must haves take to leave a healthy buffer?",
+      "options": ["Around 100%", "Around 90%", "Around 60%", "Around 10%"],
+      "answer": 2,
+      "explanation": "A common guideline is about 60% Must, 20% Should and 20% Could, so lower-priority items can be dropped if problems arise."
+    },
+    {
+      "question": "Who should make the final prioritisation decision?",
+      "options": ["The BA alone", "The developers alone", "Business stakeholders and the sponsor, supported by the BA's analysis", "The newest team member"],
+      "answer": 2,
+      "explanation": "Priorities are business decisions. The BA provides method, evidence and facilitation, and records the outcome."
+    },
+    {
+      "question": "A 'Should' requirement is needed before a 'Must' requirement can work. What should you do?",
+      "options": ["Leave it as Should", "Raise it to Must because of the dependency", "Remove both", "Ignore the dependency"],
+      "answer": 1,
+      "explanation": "If a Must cannot work without it, it is effectively a Must too. Dependencies should always be checked during prioritisation."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is MoSCoW prioritisation?",
+      "answer": "MoSCoW groups requirements into **Must have, Should have, Could have and Won't have (this time)**. Musts are essential for the solution to work or be legal, Shoulds are important but have workarounds, Coulds are nice to have, and Won'ts are agreed as out of scope for now. It gives stakeholders a shared language and a clear order for delivery."
+    },
+    {
+      "level": "beginner",
+      "question": "Why is prioritisation important?",
+      "answer": "Time, money and people are limited, so not everything can be delivered. Prioritisation focuses the team on the most valuable items first, protects the essential functions if there are delays, and helps manage scope creep and stakeholder expectations."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you handle a stakeholder who insists that everything is a Must?",
+      "answer": "I use **criteria and questions** instead of opinion: 'Is it legal or safety-related? Can we go live without it? Is there a workaround?' I show the **effort and the capacity**, so they can see that 100% Must leaves no room for problems, and ask them to choose what would be dropped if time ran short. I may bring the sponsor in to decide trade-offs. I record the decisions and the reasons."
+    },
+    {
+      "level": "intermediate",
+      "question": "When would you use a technique other than MoSCoW?",
+      "answer": "When the list is long, or stakeholders disagree, I would use **weighted scoring** to rank requirements against agreed criteria such as value, risk and effort, or a **value vs effort matrix** to find quick wins. For product features I may use the **Kano model** to understand customer delight. I would still often group the result into MoSCoW categories for planning because everyone understands them."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-02-05",
+    "title": "Prioritise a release plan",
+    "brief": "A local gym is building a member app and has **60 days** of development capacity. The candidate requirements (with effort in days) are:\n\nA. View class timetable (4)\nB. Book and cancel a class (8)\nC. Member login (5)\nD. Booking confirmation email (2)\nE. Waiting list for full classes (6)\nF. Payment of membership online (12)\nG. Workout tracking (15)\nH. Door entry using the phone (20)\nI. Class reminders by push notification (5)\nJ. Instructor ratings (4)\nK. Health and safety waiver form signed in the app (3)\n\nClassify every requirement using MoSCoW, justify each Must, calculate the total days in each category and the Must share of capacity, and say which items you would drop first if the work ran 15 days late.",
+    "deliverables": ["MoSCoW classification of all 11 requirements with reasons", "A table of days per category and the Must percentage", "The order in which items would be dropped if delayed", "One dependency you found"]
+  }
+}

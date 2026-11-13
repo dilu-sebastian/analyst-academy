@@ -1,0 +1,97 @@
+{
+  "id": "ba-02-01",
+  "objectives": [
+    "Define a requirement and explain why it is not the same as a solution",
+    "Identify where requirements come from",
+    "Describe the levels from business goal to detailed requirement",
+    "Recognise the characteristics of a good requirement and rewrite weak ones"
+  ],
+  "terminology": [
+    { "term": "Requirement", "definition": "A usable representation of a need: a statement of what a solution must do, a quality it must have, or a condition it must meet." },
+    { "term": "Business need", "definition": "A problem or opportunity in the organisation that justifies a change." },
+    { "term": "Solution", "definition": "A specific way of meeting a need, such as a system, a process change or a policy." },
+    { "term": "Testable", "definition": "Written so that you can objectively prove whether it has been met." },
+    { "term": "Atomic requirement", "definition": "A requirement that states only one thing, so it can be built, tested and tracked on its own." },
+    { "term": "Requirement ID", "definition": "A unique reference (for example REQ-014) used to track a requirement through analysis, build and test." },
+    { "term": "Requirement owner", "definition": "The person accountable for the content and priority of a requirement." },
+    { "term": "Change control", "definition": "The process for reviewing, approving or rejecting changes to agreed requirements." }
+  ],
+  "exercises": [
+    {
+      "question": "Which of these is a requirement and which is a solution? (a) 'Customers must be able to reset a forgotten password.' (b) 'Send a reset link using the SendGrid email service.'",
+      "answer": "(a) is a **requirement**: it states what the user needs. (b) is a **solution** (design decision): it chooses how to deliver it. A BA records (a); the technical team chooses (b), unless a real constraint, such as a company mail policy, requires a particular service."
+    },
+    {
+      "question": "Rewrite as testable requirements: (a) 'The website shall load quickly.' (b) 'The app shall be secure.'",
+      "answer": "(a) **'The home page shall load in under 2 seconds for 95% of visits on a 4G connection.'** (b) Make it specific, for example **'The app shall lock a user account for 15 minutes after five failed login attempts.'** or **'All personal data shall be encrypted when stored and when sent.'** Each version can be tested and has a clear pass or fail result."
+    },
+    {
+      "question": "Split this into atomic requirements: 'The system shall register new members, send a welcome email and let them update their address.'",
+      "answer": "Three requirements: **(1)** The system shall allow a visitor to register as a new member. **(2)** The system shall send a welcome email to a new member after registration. **(3)** The system shall allow a member to update their address. Splitting lets each one be prioritised, built and tested separately."
+    },
+    {
+      "question": "A developer asks: 'Why should the requirement say what, not how?' Give two reasons.",
+      "answer": "Any two of: it leaves the team **free to choose the best technical approach**; it avoids locking in a **poor or outdated solution** too early; it keeps the focus on the **business need**, so the result can be judged against the need; and different people (BA and developers) own different decisions."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A requirement is best described as:",
+      "options": ["A line of code", "A usable representation of a need", "A project deadline", "A budget estimate"],
+      "answer": 1,
+      "explanation": "The BABOK Guide defines a requirement as a usable representation of a need, meaning something clear enough to design, build and test."
+    },
+    {
+      "question": "Which is the best requirement?",
+      "options": ["The system shall be user-friendly.", "The system shall use a blue theme.", "A registered customer shall be able to view the status of any order placed in the last 12 months.", "The system shall be flexible."],
+      "answer": 2,
+      "explanation": "It is clear, testable and describes a need. The other options are vague or describe a design choice."
+    },
+    {
+      "question": "Why is 'The system shall respond quickly' a weak requirement?",
+      "options": ["It is too long", "It cannot be tested because 'quickly' is not measurable", "It mentions the system", "It is too specific"],
+      "answer": 1,
+      "explanation": "Without a measurable target such as '2 seconds for 95% of requests', nobody can decide whether the requirement has been met."
+    },
+    {
+      "question": "'The system shall allow login and send receipts' breaks which characteristic?",
+      "options": ["Feasible", "Atomic", "Necessary", "Consistent"],
+      "answer": 1,
+      "explanation": "It combines two requirements in one sentence. Atomic requirements state a single thing."
+    },
+    {
+      "question": "What is the best reason to link each requirement to a business goal?",
+      "options": ["To make documents longer", "To show why it is needed and to help decide what to cut", "To satisfy developers", "To avoid testing"],
+      "answer": 1,
+      "explanation": "Traceability to a goal proves the requirement is necessary and helps prioritise when time or budget is limited."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a requirement?",
+      "answer": "A requirement is a clear statement of what the business needs from a solution: something it must do, a quality it must have (such as speed or security), or a condition it must meet (such as a regulation). It should be written so that it can be designed, built and tested. I would add that it states **what** is needed, not **how** to build it."
+    },
+    {
+      "level": "beginner",
+      "question": "What makes a good requirement?",
+      "answer": "It is **clear** (one meaning), **testable** (you can prove it is met), **necessary** (linked to a real need), **feasible**, **consistent** with other requirements, **complete** and **atomic** (one thing per requirement). A short example, such as replacing 'fast' with 'loads in under 2 seconds for 95% of users', shows that you can apply this."
+    },
+    {
+      "level": "intermediate",
+      "question": "A stakeholder gives you a requirement that is really a solution. What do you do?",
+      "answer": "I ask **why** they want it and what problem it solves, to find the underlying need. I record the need as the requirement, and capture the suggested solution as an idea or a constraint if there is a genuine reason for it (for example, a mandatory existing system). Then I can compare it against other options, which may turn out cheaper or better."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make a vague requirement like 'the system should be easy to use' testable?",
+      "answer": "I find out what ease of use means to the stakeholders, then define measurable acceptance criteria: for example, **'a new user shall complete a purchase in under 3 minutes without assistance'**, tested with five representative users, or **'task success rate of at least 90% in usability testing'**. I agree the numbers with the business so that the test result is not a matter of opinion."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-02-01",
+    "title": "Fix the requirements",
+    "brief": "Below are five weak requirements for a school's online homework system:\n\n1. The system shall be intuitive.\n2. The system shall use Microsoft Teams.\n3. The system shall let teachers set homework, mark it and email parents.\n4. The system shall be fast.\n5. The system shall be secure.\n\nFor each, say **what is wrong** and **rewrite** it as one or more clear, testable, atomic requirements. Give each a unique ID.",
+    "deliverables": ["For each of the five: the problem and the rewrite", "Unique IDs for every new requirement", "One sentence on which stakeholders you would ask to confirm them"]
+  }
+}

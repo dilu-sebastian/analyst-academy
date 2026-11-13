@@ -1,0 +1,97 @@
+{
+  "id": "ba-02-03",
+  "objectives": [
+    "Distinguish functional from non-functional requirements",
+    "Name the main categories of non-functional requirements and write measurable examples",
+    "Draw out non-functional requirements by asking the right questions",
+    "Recognise conflicts between qualities and constraints on a solution"
+  ],
+  "terminology": [
+    { "term": "Functional requirement (FR)", "definition": "A requirement describing what a solution must do: its behaviour, features, rules and data." },
+    { "term": "Non-functional requirement (NFR)", "definition": "A requirement describing how well a solution must perform, or a quality it must have, such as speed, security or usability." },
+    { "term": "Constraint", "definition": "A limit on the solution or project that cannot be changed, such as a deadline, a budget or a mandatory technology." },
+    { "term": "Availability", "definition": "The percentage of time a system is working and accessible, for example 99.9% per month." },
+    { "term": "Scalability", "definition": "The ability of a system to cope with growth in users, data or transactions." },
+    { "term": "Concurrent users", "definition": "The number of people using a system at the same moment." },
+    { "term": "WCAG", "definition": "The Web Content Accessibility Guidelines, a standard for making web content usable by people with disabilities." },
+    { "term": "Acceptance criteria", "definition": "The conditions a requirement must satisfy to be accepted by the business." }
+  ],
+  "exercises": [
+    {
+      "question": "Classify each as functional (F) or non-functional (NF): (a) 'The system shall email a receipt after payment.' (b) 'The system shall support 5,000 simultaneous users.' (c) 'An administrator shall be able to deactivate a user account.' (d) 'The app shall work on the last two versions of iOS and Android.'",
+      "answer": "(a) **F**: a behaviour. (b) **NF**: capacity (performance or scalability). (c) **F**: a user action. (d) **NF**: compatibility. Tip: if it describes something the system does it is usually functional, and if it describes how well, how fast, how safe or where it runs, it is usually non-functional."
+    },
+    {
+      "question": "Rewrite these as measurable requirements: (a) 'The system shall be reliable.' (b) 'The site shall be accessible.' (c) 'Pages shall load fast.'",
+      "answer": "(a) **'No more than one failed transaction per 10,000, measured monthly.'** or **'Available 99.9% of the time each month.'** (b) **'The site shall meet WCAG 2.1 level AA.'** (c) **'95% of pages shall load in under 2 seconds on a 4G connection.'** Each has a number and can be tested."
+    },
+    {
+      "question": "A sponsor asks for 99.999% availability. What would you do?",
+      "answer": "Explain that this allows only about **5 minutes of downtime per year** and usually costs far more than 99.9% (about 9 hours a year). Ask what **an hour of downtime really costs the business** and how often the service is truly needed. Show the options and prices (for example 99.5%, 99.9%, 99.99%) so the sponsor can decide what is worth paying for."
+    },
+    {
+      "question": "Give an example where security and usability pull in different directions, and suggest a compromise.",
+      "answer": "Strong security may need long passwords and frequent re-login, which frustrates users, particularly on mobile. A compromise: allow a **biometric login** (fingerprint or face) on trusted devices, require full authentication only for **sensitive actions** such as changing bank details, and use **risk-based checks** that ask for more only when behaviour is unusual."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is a non-functional requirement?",
+      "options": ["A customer can add an item to a basket", "The system calculates VAT", "Search results appear within 2 seconds for 95% of searches", "A manager approves a refund"],
+      "answer": 2,
+      "explanation": "It describes how fast the system must be, which is a quality (performance), not a feature."
+    },
+    {
+      "question": "Why are non-functional requirements often missed?",
+      "options": ["They are not important", "Stakeholders talk about features and rarely mention quality until it fails", "They are always the developers' responsibility", "They cannot be measured"],
+      "answer": 1,
+      "explanation": "People describe what they want to do, not how well it must work. The BA must ask deliberately about each quality."
+    },
+    {
+      "question": "Which statement is best written as a non-functional requirement?",
+      "options": ["The system shall be secure.", "Accounts shall lock for 15 minutes after five failed login attempts.", "The system shall be easy to use.", "The system shall be good."],
+      "answer": 1,
+      "explanation": "It is specific and testable. The other statements are vague and cannot be proven."
+    },
+    {
+      "question": "What is a constraint?",
+      "options": ["A feature users want", "A limit on the solution or project that cannot be changed, such as a fixed deadline", "A type of test", "A user role"],
+      "answer": 1,
+      "explanation": "Constraints, such as budget, deadline or mandatory technology, limit the options and must be respected when choosing a solution."
+    },
+    {
+      "question": "A requirement says: 'The system shall allow search and respond quickly.' What is the best action?",
+      "options": ["Accept it as written", "Split it into a functional and a measurable non-functional requirement", "Delete the word search", "Remove the requirement"],
+      "answer": 1,
+      "explanation": "It combines a function and a quality. Split it and give the quality a number so both can be built and tested."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is the difference between functional and non-functional requirements?",
+      "answer": "**Functional** requirements say what the system must do, such as 'a customer can reset a password'. **Non-functional** requirements say how well it must do it or what qualities it needs, such as performance, security, availability and usability, for example 'the reset email shall arrive within one minute'. A good answer adds that non-functional requirements must be measurable and are often forgotten."
+    },
+    {
+      "level": "beginner",
+      "question": "Can you give examples of non-functional requirements?",
+      "answer": "Performance ('pages load in under 2 seconds'), availability ('99.9% uptime per month'), security ('data encrypted in transit and at rest'), usability ('a new user completes a booking in under 3 minutes'), scalability ('supports 10,000 concurrent users'), accessibility ('meets WCAG 2.1 AA') and compatibility ('works on the latest two versions of major browsers')."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you elicit non-functional requirements when stakeholders only talk about features?",
+      "answer": "I use a checklist of quality categories and turn each one into a plain-language question: *'How many people will use this at the busiest time? What happens if it is unavailable for an hour? What data is sensitive and who may see it? Who are the users and how much training will they get? What do you expect in three years?'* I also review regulations, existing incident reports and similar systems, then confirm measurable targets and show the cost of the higher targets."
+    },
+    {
+      "level": "advanced",
+      "question": "Two non-functional requirements conflict, such as very high security and very simple login. How do you resolve it?",
+      "answer": "I make the conflict visible, explain the trade-off with business impact (risk of data breach versus drop-off at login), and bring the decision-makers together. Options often exist that satisfy both, such as biometrics on trusted devices, step-up authentication only for sensitive actions, or risk-based checks. I record the decision, the reason and the owner, and write acceptance criteria for the agreed compromise."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-02-03",
+    "title": "Quality requirements for a booking app",
+    "brief": "A dentist's practice wants an online appointment booking service.\n\nWrite:\n1. **Five functional requirements** with unique IDs.\n2. **Eight non-functional requirements** covering performance, availability, security, privacy, usability, accessibility, compatibility and data backup. Each must have a number or a named standard.\n3. **Two constraints** you might expect.\n4. One **conflict** between two of your NFRs and how you would resolve it.",
+    "deliverables": ["Five functional requirements with IDs", "Eight measurable non-functional requirements", "Two constraints", "One conflict with a proposed resolution"]
+  }
+}

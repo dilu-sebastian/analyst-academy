@@ -184,6 +184,6 @@ npm run build    # static files in dist/
 | Path | Lessons planned | Lessons written |
 |---|---|---|
 | Data Analyst | 58 | 2 (`da-01-01`, `da-01-02`) |
-| Business Analyst | 53 | 4 (module ba-01 complete) |
+| Business Analyst | 53 | 9 (modules ba-01 and ba-02 complete) |
 
 Update this table whenever lessons are added.

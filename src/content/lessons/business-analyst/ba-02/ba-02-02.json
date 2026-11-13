@@ -1,0 +1,97 @@
+{
+  "id": "ba-02-02",
+  "objectives": [
+    "Define business, stakeholder, solution and transition requirements",
+    "Classify a given requirement into the correct type",
+    "Show how the four types connect from goal to launch",
+    "Use the classification to check a requirements list for gaps"
+  ],
+  "terminology": [
+    { "term": "Business requirement", "definition": "A statement of the goals, objectives or outcomes the organisation wants to achieve with a change." },
+    { "term": "Stakeholder requirement", "definition": "A statement of the needs of a stakeholder or group that must be met to achieve the business goals." },
+    { "term": "Solution requirement", "definition": "A description of the capabilities and qualities a solution must have to meet the stakeholder requirements." },
+    { "term": "Transition requirement", "definition": "A temporary capability needed to move from the current state to the future state, such as data migration or training." },
+    { "term": "Functional requirement", "definition": "A solution requirement describing what the solution must do." },
+    { "term": "Non-functional requirement", "definition": "A solution requirement describing a quality of the solution, such as performance, security or usability." },
+    { "term": "Data migration", "definition": "Moving data from an old system to a new one, with checking and cleaning along the way." },
+    { "term": "Go-live", "definition": "The moment a new solution is put into real use." }
+  ],
+  "exercises": [
+    {
+      "question": "Classify each requirement as business, stakeholder, solution or transition: (a) 'Cut delivery costs by 10% this year.' (b) 'Drivers need to see their route on a phone.' (c) 'The app shall display the day's route as an ordered list of addresses.' (d) 'All drivers shall be trained before the app launches.'",
+      "answer": "(a) **Business**: a measurable organisational goal. (b) **Stakeholder**: a need of a specific group. (c) **Solution**: describes what the solution must do. (d) **Transition**: needed only to move to the new way of working."
+    },
+    {
+      "question": "A project has detailed solution requirements but no transition requirements. Name three transition requirements that might be missing for a new HR system.",
+      "answer": "Examples: **migrating employee records** from the old system and checking their accuracy; **training** HR staff and managers; a **parallel run** or fallback plan for the first payroll cycle; **communication** to all employees explaining the change; **access rights** set up for each user group before launch."
+    },
+    {
+      "question": "Two stakeholders disagree: Sales wants customers to enter 20 fields when ordering, while Customer Services wants only 5. How can the business requirements help?",
+      "answer": "Check the business requirement behind each. If the goal is to **increase online order completion**, a shorter form supports it. Sales' extra fields may be met in other ways, such as asking for optional data after the order. Using the business goal as the basis for the decision keeps it objective instead of political."
+    },
+    {
+      "question": "Write one business, one stakeholder, one solution and one transition requirement for a gym introducing a mobile app for class bookings.",
+      "answer": "Example: **Business:** increase class attendance from 60% to 75% of capacity within six months. **Stakeholder:** members need to book and cancel classes from their phone. **Solution:** the app shall let a member book an available class place and shall release the place when the member cancels. **Transition:** existing member accounts and future bookings shall be migrated to the app before launch."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which type of requirement states why the organisation is making the change?",
+      "options": ["Solution", "Transition", "Business", "Non-functional"],
+      "answer": 2,
+      "explanation": "Business requirements describe goals and objectives, which explain why the change is being made."
+    },
+    {
+      "question": "'All agents shall complete two hours of training before go-live' is a:",
+      "options": ["Business requirement", "Stakeholder requirement", "Functional requirement", "Transition requirement"],
+      "answer": 3,
+      "explanation": "Training is only needed to move to the new solution, so it is a transition requirement."
+    },
+    {
+      "question": "Which statement is a stakeholder requirement?",
+      "options": ["Increase revenue by 5%", "The finance team needs a monthly refund report", "The system shall use a SQL database", "Migrate all customers to the new system"],
+      "answer": 1,
+      "explanation": "It states what a specific group needs. The others are a business goal, a design choice and a transition task."
+    },
+    {
+      "question": "Why is it useful to check a requirements list against the four types?",
+      "options": ["It shortens the document", "It reveals gaps, such as missing transition requirements", "It removes the need for testing", "It replaces stakeholder reviews"],
+      "answer": 1,
+      "explanation": "The classification works as a checklist. Many projects miss transition requirements until launch, when it is expensive to fix."
+    },
+    {
+      "question": "What is the relationship between solution requirements and stakeholder requirements?",
+      "options": ["Solution requirements are independent of stakeholder needs", "Solution requirements describe how to meet the stakeholder needs", "Stakeholder requirements are more detailed", "They are the same thing"],
+      "answer": 1,
+      "explanation": "Stakeholder requirements state what people need. Solution requirements describe the capabilities and qualities of the solution that will meet those needs."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are the four types of requirements in the BABOK Guide?",
+      "answer": "**Business requirements** (the organisation's goals), **stakeholder requirements** (the needs of particular people or groups), **solution requirements** (what the solution must do and the qualities it must have, split into functional and non-functional) and **transition requirements** (what is needed temporarily to move to the new solution, such as training and data migration). A one-line example of each shows you understand the difference."
+    },
+    {
+      "level": "beginner",
+      "question": "What is a transition requirement? Give an example.",
+      "answer": "A transition requirement describes a capability needed only to move from the current state to the future state and not needed afterwards. Examples are **migrating data** from the old system, **training users**, or **running old and new processes in parallel** for a short time."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you handle two stakeholder requirements that contradict each other?",
+      "answer": "I would first understand the interest behind each one. Then I would assess each against the **business requirements and priorities** to see which better supports the goal, look for an option that satisfies both needs (for example, optional fields), and escalate to the sponsor if a real trade-off is needed. I would record the decision and the reason. This keeps decisions fair, evidence-based and traceable."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make sure no requirements are missing from a project?",
+      "answer": "I use several checks: the **four-type classification** to confirm I have goals, stakeholder needs, solution and transition requirements; a **stakeholder list** to ensure each group has been heard, including support, legal and operations; **process models** to look for steps without requirements; and a **traceability matrix** to expose goals with no requirement or requirements with no goal. I also review with stakeholders and ask what would worry them on launch day."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-02-02",
+    "title": "Four layers for a real change",
+    "brief": "Choose a change you could imagine in an organisation you know, for example a university introducing online exam booking.\n\nWrite:\n- **Two business requirements** with measurable targets.\n- **Three stakeholder requirements**, each from a different group.\n- **Four solution requirements** (at least one non-functional).\n- **Three transition requirements**.\n\nThen draw or list the **traceability** from each solution requirement back to a business requirement.",
+    "deliverables": ["Twelve requirements correctly classified", "A traceability table from solution to business requirements", "One gap you found while checking"]
+  }
+}

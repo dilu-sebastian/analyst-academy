@@ -1,0 +1,97 @@
+{
+  "id": "ba-02-04",
+  "objectives": [
+    "Write a requirement using a clear sentence pattern with shall, an actor, an action and a measure",
+    "Identify and replace ambiguous words and phrases",
+    "Split compound statements into atomic requirements",
+    "Review a requirement from the point of view of a tester, a developer and a stakeholder"
+  ],
+  "terminology": [
+    { "term": "Shall / should / may", "definition": "Words used consistently to mark a requirement as mandatory (shall), desirable (should) or optional (may)." },
+    { "term": "Ambiguity", "definition": "A statement that can reasonably be understood in more than one way." },
+    { "term": "Atomic", "definition": "Stating only one requirement, so it can be built, tested and tracked on its own." },
+    { "term": "Acceptance criteria", "definition": "Specific conditions that must be true for a requirement or story to be accepted as done." },
+    { "term": "Given-When-Then", "definition": "A format for acceptance criteria: a starting situation (given), an action (when) and an expected result (then)." },
+    { "term": "User story", "definition": "A short requirement written as 'As a [role], I want [goal] so that [benefit]'." },
+    { "term": "Glossary", "definition": "A list of defined terms so that everyone uses the same words for the same things." },
+    { "term": "Requirement source", "definition": "The person, document or policy that a requirement came from, recorded so it can be verified and understood later." }
+  ],
+  "exercises": [
+    {
+      "question": "Rewrite: 'The system should be quick and handle lots of data.' Make it into two testable requirements. State any assumptions.",
+      "answer": "Example, assuming a reporting tool: **(1) 'The system shall display any standard report within 5 seconds for 95% of requests.'** **(2) 'The system shall store at least 5 years of transaction data (approximately 20 million records) with no change to the response times above.'** Assumptions (to confirm with stakeholders): the volume figures and the 5-second target. Replacing 'quick' and 'lots' with numbers makes the requirements testable."
+    },
+    {
+      "question": "Split into atomic requirements: 'Managers can view, approve and reject leave requests, and the system sends them a weekly summary.'",
+      "answer": "**(1)** A manager shall be able to view leave requests submitted by their direct reports. **(2)** A manager shall be able to approve a leave request. **(3)** A manager shall be able to reject a leave request and enter a reason. **(4)** The system shall email each manager a weekly summary of pending leave requests. Each can now be prioritised, built and tested separately."
+    },
+    {
+      "question": "Which words in this requirement are ambiguous, and what would you ask? 'The report should include relevant data, such as sales, etc., and be sent to appropriate people regularly.'",
+      "answer": "Ambiguous: **'should'** (mandatory?), **'relevant data'** (which fields?), **'such as ... etc.'** (open list), **'appropriate people'** (who?) and **'regularly'** (how often?). Questions: Which exact fields? Who are the recipients? How often and at what time? Is this mandatory or optional?"
+    },
+    {
+      "question": "Write Given-When-Then acceptance criteria for: 'A customer shall be able to apply a discount code at checkout.'",
+      "answer": "**Given** a customer with items in the basket and a valid, unexpired discount code, **when** they enter the code at checkout, **then** the discount is applied to the total and shown as a separate line. **Given** an expired or invalid code, **when** the customer enters it, **then** the system shows a message explaining why it was not accepted and the total is unchanged. A second scenario for failure is as important as the success one."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which requirement is best written?",
+      "options": ["The system should be fast.", "When an order ships, the system shall email the customer a dispatch confirmation containing the tracking number.", "Users can get emails.", "The system will probably send messages."],
+      "answer": 1,
+      "explanation": "It states the trigger, actor, action, object and content, and it uses 'shall' for a mandatory requirement. It can be tested."
+    },
+    {
+      "question": "What does the word 'shall' normally indicate in a requirement?",
+      "options": ["A suggestion", "A mandatory requirement", "An optional feature", "A future idea"],
+      "answer": 1,
+      "explanation": "By convention, 'shall' marks a mandatory requirement, 'should' a desirable one and 'may' an optional one."
+    },
+    {
+      "question": "Why should a BA avoid 'etc.' in a requirement?",
+      "options": ["It looks informal", "It leaves the list open, so nobody knows what is included", "It is too short", "It confuses spellcheckers"],
+      "answer": 1,
+      "explanation": "An open-ended list cannot be built or tested completely. List every item or refer to a defined list."
+    },
+    {
+      "question": "Which sentence is a design instruction rather than a requirement?",
+      "options": ["The user shall select a country from the supported list.", "Use a dropdown menu with 195 countries.", "The system shall store the customer's country.", "A customer shall be able to change their country."],
+      "answer": 1,
+      "explanation": "It prescribes how the interface is built. The requirement is the need to select a country."
+    },
+    {
+      "question": "What is a quick, effective way to find ambiguity in a requirement?",
+      "options": ["Make it longer", "Ask a tester how they would check it, and a developer whether they could build two different things", "Send it by email", "Remove the ID"],
+      "answer": 1,
+      "explanation": "If a tester cannot decide pass or fail, or a developer can satisfy it in two different ways, it is ambiguous."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How do you write a clear requirement?",
+      "answer": "I write it as a single statement with a clear actor, a specific action and a measurable outcome, for example *'When a payment is declined, the system shall display the reason within 2 seconds.'* I use 'shall' for mandatory items, avoid vague words such as 'fast' or 'user-friendly', keep it free of design choices, give it a unique ID, and check it is testable."
+    },
+    {
+      "level": "beginner",
+      "question": "What words do you avoid in requirements, and why?",
+      "answer": "Vague, subjective or open-ended words such as **fast, easy, flexible, robust, etc., as appropriate, support, handle**, and ambiguous pronouns. They allow several interpretations and cannot be tested. I replace them with measurable criteria or an explicit list."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you check whether a requirement is testable?",
+      "answer": "I ask what a tester would do to prove it passes or fails and what the expected result is. If I cannot answer, the requirement is incomplete. I add measures (numbers, units, standards) and acceptance criteria, often in **Given-When-Then** form with both a success and a failure scenario. I also ask a tester to review before sign-off."
+    },
+    {
+      "level": "intermediate",
+      "question": "A developer says a requirement is unclear and could be built two ways. What do you do?",
+      "answer": "I treat it as valuable feedback, not criticism. I clarify with the stakeholder who owns the requirement, rewrite it so that only one reading is possible, add an example or acceptance criteria, record the decision in the requirements log, and check whether similar wording elsewhere has the same problem. I also keep the developer informed so that nothing is built on the old wording."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-02-04",
+    "title": "Rewrite a messy requirements list",
+    "brief": "Below are notes from a meeting about a new staff-expenses app:\n\n- \"Staff should be able to claim expenses easily and managers approve them and finance can pay them and everything has to be quick and secure.\"\n- \"There should be receipts, etc.\"\n- \"The app should notify people as appropriate.\"\n\nRewrite these notes as **at least eight** clear, atomic requirements with IDs, using 'shall'. Include two non-functional requirements with numbers. List **five questions** you would ask stakeholders to fill in the gaps and the assumption you would make for each.",
+    "deliverables": ["At least eight atomic requirements with IDs", "Two measurable non-functional requirements", "Five questions with assumptions", "Given-When-Then criteria for one requirement"]
+  }
+}

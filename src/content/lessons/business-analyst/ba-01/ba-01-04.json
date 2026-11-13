@@ -1,0 +1,98 @@
+{
+  "id": "ba-01-04",
+  "objectives": [
+    "Name the six groups of core BA competencies",
+    "Use open and closed questions appropriately",
+    "Apply the 5 Whys technique to find a root cause",
+    "Plan and run a short, structured workshop",
+    "Assess your own strengths and choose development actions"
+  ],
+  "terminology": [
+    { "term": "BABOK Guide", "definition": "The Business Analysis Body of Knowledge published by the IIBA, a widely used reference for business analysis practice." },
+    { "term": "IIBA", "definition": "The International Institute of Business Analysis, a professional body for business analysts." },
+    { "term": "Open question", "definition": "A question that invites a full answer, such as 'How do you handle refunds today?'" },
+    { "term": "Closed question", "definition": "A question answered with yes, no or a short fact, used to confirm details." },
+    { "term": "5 Whys", "definition": "A technique that repeats the question 'why?' to move from a symptom to a root cause." },
+    { "term": "Facilitation", "definition": "Guiding a group through a meeting or workshop so that it reaches its goal and everyone contributes." },
+    { "term": "Root cause", "definition": "The underlying reason a problem occurs, which, if removed, prevents the problem from happening again." },
+    { "term": "Interest vs position", "definition": "A position is what someone says they want. An interest is the underlying need that explains why they want it." }
+  ],
+  "exercises": [
+    {
+      "question": "Turn these closed questions into open questions: (a) 'Is the form too long?' (b) 'Do you use the report every day?' (c) 'Does the approval take too long?'",
+      "answer": "(a) **'What do you think of the form? Which parts are hard to fill in?'** (b) **'How do you use the report in your work?'** (c) **'Tell me what happens between submitting a request and getting the approval.'** Open questions start with words such as what, how, tell me about, and invite longer, more informative answers."
+    },
+    {
+      "question": "Apply the 5 Whys to: 'Customers are leaving bad reviews about delivery.' Write at least three plausible why-answers.",
+      "answer": "Example chain: *Why bad reviews?* Parcels arrive late. *Why late?* They leave the warehouse a day after ordering. *Why a day later?* Orders placed after 2 pm wait for the next morning pick. *Why is the cut-off 2 pm?* The picking team finishes at 4 pm and prepares trucks. A possible root cause is the **cut-off time and shift pattern**. Each answer must be checked with evidence (data or observation) before it is accepted."
+    },
+    {
+      "question": "A stakeholder insists: 'I need a daily report by email at 8am.' What might be the interest behind this position, and how would you find out?",
+      "answer": "Possible interests: they need to spot problems before the day's work starts, they have a meeting at 9, or they must report upwards. Find out with open questions such as **'What do you do with the report when you receive it?'** and **'What decision does it help you make?'** The answer may show that an alert for exceptions meets the need better than a full report."
+    },
+    {
+      "question": "List three things you would put in a workshop invitation to make the meeting effective.",
+      "answer": "Any three of: a clear **goal**, an **agenda with times**, the **list of invited people and why**, what people should **prepare or bring**, the **ground rules**, and the **expected outputs**. Sending these in advance lets people come prepared and keeps the meeting on track."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which question is open?",
+      "options": ["Is the process slow?", "Do you approve each order?", "Can you describe what happens when an order arrives?", "Is the form three pages?"],
+      "answer": 2,
+      "explanation": "An open question invites a description rather than a yes or no answer."
+    },
+    {
+      "question": "What is the purpose of the 5 Whys technique?",
+      "options": ["To assign blame", "To find the root cause behind a symptom", "To write requirements faster", "To estimate cost"],
+      "answer": 1,
+      "explanation": "Asking why repeatedly moves you from what you can see to the underlying cause that should be fixed."
+    },
+    {
+      "question": "Two stakeholders disagree about a requirement. What is the best first step?",
+      "options": ["Choose the more senior person's view", "Ignore it until testing", "Understand each person's underlying interest and relate it to the business goal", "Remove the requirement"],
+      "answer": 2,
+      "explanation": "Interests often differ less than positions, and the shared business goal provides a fair basis for a decision."
+    },
+    {
+      "question": "A workshop is dominated by one loud participant. Which facilitation technique helps?",
+      "options": ["Let them continue", "Ask everyone to write ideas individually first, then share", "End the workshop", "Only invite the loud person next time"],
+      "answer": 1,
+      "explanation": "Silent writing before discussion gives every person an equal voice and reduces the influence of the loudest speaker."
+    },
+    {
+      "question": "Which is NOT one of the six competency groups described in this lesson?",
+      "options": ["Communication skills", "Interaction skills", "Business knowledge", "Advanced software engineering"],
+      "answer": 3,
+      "explanation": "The six groups are analytical thinking, behavioural characteristics, business knowledge, communication, interaction skills, and tools and technology. Deep engineering is not required."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What skills does a good business analyst need?",
+      "answer": "The core ones are **analytical thinking** (breaking down problems and finding causes), **communication** (listening, asking good questions, clear writing and presenting), **interaction skills** (facilitation, negotiation, handling conflict), **business knowledge**, and comfort with **everyday tools** such as Excel, Jira and diagramming software. Give one example from your own experience for at least two of them."
+    },
+    {
+      "level": "beginner",
+      "question": "What is the difference between open and closed questions, and when do you use each?",
+      "answer": "Open questions ('Tell me how...') invite detailed answers and are best for **exploring** a topic. Closed questions ('Is it always...?') get short, specific answers and are best for **confirming** facts. I usually start open, then use closed questions to check what I understood."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a time you handled a conflict between stakeholders.",
+      "answer": "Use the STAR structure. **Situation:** two teams wanted opposite changes to a form. **Task:** reach a decision without damaging the relationship. **Action:** I met each separately to understand their interests, found the shared goal (faster processing with fewer errors), showed data on where errors came from, and proposed an option that gave each team their key need. **Result:** both agreed, errors dropped, and the change went live on time. If you have no work example, use a university or volunteering example."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you prepare for a requirements workshop?",
+      "answer": "I define the **goal and expected outputs**, invite the **right people**, send an **agenda and any pre-reading**, choose a **technique** to include everyone (such as silent writing and voting), and set **ground rules**. During the session I keep time, capture decisions and parked topics, and afterwards send a **summary with actions and owners** the same day."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-01-04",
+    "title": "My BA competency plan",
+    "brief": "Rate yourself from 1 to 5 on each of the six competency groups and give one piece of evidence for each rating (a time you used the skill).\n\nPick your **two lowest** groups and write one concrete action for each that you can complete within a month, with a date. Then write a short agenda (goal, five timed steps, outputs) for a 45-minute workshop on a problem of your choice.",
+    "deliverables": ["Six ratings with evidence", "Two development actions with dates", "A workshop agenda with timings and outputs"]
+  }
+}

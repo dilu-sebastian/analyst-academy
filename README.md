@@ -4,7 +4,7 @@ A personal learning platform for becoming a job-ready **Data Analyst** or **Busi
 
 It runs entirely in the browser: no backend, no account, no login. Your progress, notes, bookmarks and quiz scores are saved in your browser's `localStorage` and can be exported and imported as JSON.
 
-> **Status: Stage 1 of 5.** The app shell, dashboard, progress tracking and lesson engine work. The full curriculum is outlined, but only **3 of 111 lessons** have content so far. See [Content status](#content-status).
+> **Status: Stage 1 of 5.** The app shell, dashboard, progress tracking and lesson engine work. The full curriculum is outlined, but only **6 of 111 lessons** have content so far. See [Content status](#content-status).
 
 ---
 
@@ -59,6 +59,8 @@ Then open http://localhost:5180.
 | `npm run build` | Type-check with `tsc -b`, then build a static site into `dist/` |
 | `npm run preview` | Serve the built `dist/` folder at http://localhost:5181 to check the production build |
 | `npm run lint` | Run ESLint over the project |
+| `npm run validate` | Check every written lesson (sections, quiz answers, ids) and print the content count |
+| `npm run datasets` | Regenerate the SQL sample datasets (deterministic) |
 
 The production build uses relative paths (`base: './'`) and a hash router, so `dist/` can be dropped onto any static host (GitHub Pages, Netlify, Cloudflare Pages) without extra config.
 
@@ -141,8 +143,8 @@ The curriculum outline is complete; the written content is not.
 | Path | Modules | Lessons planned | Lessons written |
 |---|---|---|---|
 | Data Analyst | 12 | 58 | 2 (`da-01-01`, `da-01-02`) |
-| Business Analyst | 12 | 53 | 1 (`ba-01-01` What is business analysis?) |
-| **Total** | **24** | **111** | **3** |
+| Business Analyst | 12 | 53 | 4 (all of module 1, `ba-01-01` to `ba-01-04`) |
+| **Total** | **24** | **111** | **6** |
 
 **Data Analyst modules:** Introduction to Data Analytics, Excel Fundamentals, Advanced Excel, SQL Fundamentals, Advanced SQL, Data Cleaning, Statistics, Power BI, Python Fundamentals, Python for Data Analysis, Real-world Projects, Interview Preparation.
 

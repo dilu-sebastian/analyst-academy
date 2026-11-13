@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "validate": "node scripts/validate-content.mjs",
+    "datasets": "node scripts/generate-datasets.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

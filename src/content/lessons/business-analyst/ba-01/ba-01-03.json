@@ -1,0 +1,97 @@
+{
+  "id": "ba-01-03",
+  "objectives": [
+    "List the main stages of the business analysis lifecycle and what each one produces",
+    "Explain why the lifecycle is a cycle rather than a straight line",
+    "Describe how the same stages appear in Waterfall and Agile delivery",
+    "Explain traceability from need to requirement to test"
+  ],
+  "terminology": [
+    { "term": "Elicitation", "definition": "The activity of gathering information from stakeholders and sources through interviews, workshops, observation, surveys and document review." },
+    { "term": "As-is", "definition": "The current state of a process or system, before any change." },
+    { "term": "To-be", "definition": "The desired future state of a process or system after the change." },
+    { "term": "Gap analysis", "definition": "A comparison of the current state with the desired state to identify what must change." },
+    { "term": "Scope", "definition": "The boundary of a project: what is included and what is not." },
+    { "term": "Traceability", "definition": "The ability to follow a requirement back to the need it serves and forward to the test that proves it." },
+    { "term": "UAT (User Acceptance Testing)", "definition": "Testing by the business users to confirm that the solution meets their needs before it goes live." },
+    { "term": "Validation", "definition": "Checking that the requirements are the right ones, meaning they reflect real needs and are agreed by stakeholders." }
+  ],
+  "exercises": [
+    {
+      "question": "Put these activities in the correct lifecycle order: (a) Run user acceptance testing. (b) Interview the call-centre team. (c) Define the problem and the goal. (d) Write user stories. (e) Draw the current process.",
+      "answer": "**(c) → (b) → (e) → (d) → (a).** Define the problem and goal, gather information, analyse the current process, specify the requirements, then test and accept. Validation with stakeholders would sit between (d) and (a)."
+    },
+    {
+      "question": "Explain in two sentences why the lifecycle is described as a cycle, not a straight line.",
+      "answer": "During analysis or build you often learn facts that change earlier decisions, such as a missing stakeholder or a rule nobody mentioned, so you return to earlier stages. In Agile delivery the whole loop is repeated in small steps every sprint, so the work is cyclical by design."
+    },
+    {
+      "question": "Create a traceability row for this need: 'Customers want to know where their parcel is.' Give one requirement and one test.",
+      "answer": "Example: **Need:** customers want to track parcels. **Requirement:** 'The system shall display the current delivery status of a parcel when the customer enters a valid tracking number.' **Test:** 'Enter a valid tracking number for a parcel in transit and check that the status page shows \"In transit\" with the last scan location.' The row links the need, the requirement and the test."
+    },
+    {
+      "question": "Which two techniques would you combine to understand how call-handlers really deal with complaints, and why?",
+      "answer": "**Interviews** (to hear their views and the rules they follow) and **observation** (to see what they actually do, including workarounds they forget to mention). Combining what people say with what they do gives a more reliable picture than either alone."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the first stage of the business analysis lifecycle?",
+      "options": ["Write the requirements", "Understand the need and context", "Test the solution", "Choose the software"],
+      "answer": 1,
+      "explanation": "You must understand why the change is wanted and what it should achieve before you can gather or write anything useful."
+    },
+    {
+      "question": "What does 'elicitation' mean?",
+      "options": ["Testing software", "Drawing information out of stakeholders and other sources", "Writing code", "Approving a budget"],
+      "answer": 1,
+      "explanation": "Elicitation is the gathering of information using techniques such as interviews, workshops, observation and document review."
+    },
+    {
+      "question": "A 'to-be' process describes:",
+      "options": ["How the process works today", "How the process should work after the change", "A process that was abandoned", "The testing process"],
+      "answer": 1,
+      "explanation": "As-is is the current state. To-be is the desired future state."
+    },
+    {
+      "question": "What is the purpose of traceability?",
+      "options": ["To make documents longer", "To link each requirement to the need it serves and the test that checks it", "To track employees' working hours", "To store files securely"],
+      "answer": 1,
+      "explanation": "Traceability shows why each requirement exists and proves it has been tested, which also helps assess the impact of changes."
+    },
+    {
+      "question": "Which statement about Agile and the BA lifecycle is most accurate?",
+      "options": ["Agile removes all the lifecycle stages", "Agile repeats the same stages in short cycles for each sprint", "Agile only uses the testing stage", "Agile means no stakeholder involvement"],
+      "answer": 1,
+      "explanation": "Agile teams still understand needs, specify, build, test and evaluate, but they do it in small increments with frequent feedback."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "Can you describe the stages of a typical BA project?",
+      "answer": "I think of it as a cycle: **understand the need**, **elicit information**, **analyse and model** the current and future states, **specify** the requirements, **validate** them with stakeholders, **support design and build**, **test and accept** with the business, and finally **evaluate** whether the benefit was achieved. In Agile I run a smaller version of this for each sprint. Mention that you go back to earlier stages when new facts appear."
+    },
+    {
+      "level": "beginner",
+      "question": "What is the difference between the as-is and the to-be process?",
+      "answer": "The **as-is** is how the process works today, including its problems and workarounds. The **to-be** is the improved process after the change. A BA models the as-is first to find the gaps, then designs the to-be to close them."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make sure requirements are traceable?",
+      "answer": "I give each requirement a unique ID, record the business need or objective it supports, and link it to the design item and the test cases that verify it, usually in a traceability matrix or in tools such as Jira or Excel. When a requirement changes I can see which needs and tests are affected, and when a test fails I know which requirement is not met. It also exposes requirements that serve no need, which can be removed."
+    },
+    {
+      "level": "intermediate",
+      "question": "What would you do if, during build, you discovered a requirement that stakeholders disagree on?",
+      "answer": "I would pause that item, bring the stakeholders together (or speak to each separately first) to understand their reasons, relate each view back to the business goal and the evidence, and propose options with their impact. The sponsor or product owner makes the decision, and I record it with the reason and update the requirements and tests. This shows facilitation, neutrality and good record-keeping."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-01-03",
+    "title": "Walk a small problem through the lifecycle",
+    "brief": "Pick a small, real problem from your own life or workplace (for example, long queues at a canteen, late expense claims, or a messy shared drive).\n\nWrite one short paragraph for each of the eight lifecycle stages describing what you would do and what you would produce. Include one traceability row (need → requirement → test).",
+    "deliverables": ["A paragraph for each of the eight stages", "One traceability row", "The number you would measure to confirm the benefit"]
+  }
+}

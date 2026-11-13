@@ -1,0 +1,98 @@
+{
+  "id": "ba-01-02",
+  "objectives": [
+    "Describe the core responsibilities of a business analyst",
+    "Explain how the BA role differs between Waterfall and Agile teams",
+    "Recognise the skills a BA needs and a typical career path",
+    "Turn a solution request into a need statement with options"
+  ],
+  "terminology": [
+    { "term": "Business analyst (BA)", "definition": "A person who investigates business needs, defines requirements and helps deliver solutions that create value." },
+    { "term": "Stakeholder", "definition": "Anyone affected by, or with an interest in, a change, such as users, managers, customers, IT staff and regulators." },
+    { "term": "Requirement", "definition": "A statement of something a solution must do, or a quality it must have, to meet a need." },
+    { "term": "Need statement", "definition": "A short sentence that states who needs what, and why, without describing the solution." },
+    { "term": "Waterfall", "definition": "A delivery approach in which work moves through planned phases (analysis, design, build, test) one after another." },
+    { "term": "Agile", "definition": "A delivery approach that builds a product in short cycles and welcomes change based on feedback." },
+    { "term": "Product Owner", "definition": "In Scrum, the person responsible for the value of the product and the order of the backlog." },
+    { "term": "Backlog", "definition": "An ordered list of the work (often user stories) a team intends to deliver." }
+  ],
+  "exercises": [
+    {
+      "question": "A manager says: 'We need a dashboard for sales.' List four questions you would ask before agreeing to build one.",
+      "hint": "Ask about the decision, the user, the data and the current process.",
+      "answer": "Good examples: **What decision will the dashboard help you make?** Who will use it, and how often? What do they use today, and what is missing? Which numbers matter most, and where does that data live? How will we know it has been a success? Questions about the decision and the user come first because they reveal the real need."
+    },
+    {
+      "question": "Name two differences between how a BA works in a Waterfall project and in an Agile project.",
+      "answer": "Any two of: in Waterfall the BA writes detailed documents such as a BRD **before** development starts, in Agile requirements are expressed as **user stories** and refined every sprint. Waterfall changes go through a **formal change process**, Agile expects change between sprints. In Agile the BA is often **embedded in the team** and in constant contact with developers, sometimes acting as Product Owner."
+    },
+    {
+      "question": "Write a need statement (who, what, why) for this request: 'HR wants an online form for holiday requests.'",
+      "answer": "A good example: **'Employees need a simple way to request holiday and see the result, so that managers can approve quickly and HR stops chasing paper forms.'** It names the people, the need and the benefit, and does not decide that the solution must be an online form."
+    },
+    {
+      "question": "Which of these tasks would normally belong to a BA, and which to a project manager? (a) Defining what a report must contain. (b) Tracking the budget. (c) Running a requirements workshop. (d) Reporting project delays to the sponsor.",
+      "answer": "BA: **(a)** and **(c)**. Project manager: **(b)** and **(d)**. A BA focuses on *what* and *why*, a project manager on *when*, *cost* and *who*. In small teams one person may do both."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the best description of a BA's main job?",
+      "options": ["Writing code for the solution", "Managing the project budget", "Understanding business needs and defining requirements for a solution", "Testing software only"],
+      "answer": 2,
+      "explanation": "The BA works out what the business needs and why, then defines it clearly so that a delivery team can build the right thing."
+    },
+    {
+      "question": "A manager asks you to 'write requirements for a new booking system'. What should you do first?",
+      "options": ["Start writing detailed screens", "Choose a vendor", "Understand the problem the system is meant to solve", "Estimate the cost"],
+      "answer": 2,
+      "explanation": "The request names a solution. Understanding the problem first may show that a different, cheaper solution is better."
+    },
+    {
+      "question": "In an Agile team, which output is a BA most likely to produce regularly?",
+      "options": ["A 200-page requirements document at the start", "User stories with acceptance criteria", "A Gantt chart", "A compiled software release"],
+      "answer": 1,
+      "explanation": "Agile teams work from user stories that are refined continuously. Long documents up front and Gantt charts belong more to traditional delivery."
+    },
+    {
+      "question": "Which skill is MOST central to the BA role?",
+      "options": ["Advanced programming", "Communication and asking good questions", "Graphic design", "Network engineering"],
+      "answer": 1,
+      "explanation": "A BA's work is built on discovering information from people, so listening, questioning and clear writing matter most. Technical knowledge helps but is secondary."
+    },
+    {
+      "question": "Why is it a mistake to talk only to the manager who requested the change?",
+      "options": ["Managers are never right", "The people who use the process daily often know the real problems", "It breaks company policy", "It makes the project too fast"],
+      "answer": 1,
+      "explanation": "Front-line users see the actual pain points and workarounds. Ignoring them risks solving the wrong problem."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What does a business analyst do?",
+      "answer": "A BA works out what the business really needs and helps deliver a solution that meets it. In practice that means talking to stakeholders, studying current processes, defining and documenting requirements, using models such as process maps to share understanding, and supporting the team through delivery and testing. A short example makes the answer concrete, such as *'I found that the real cause of late orders was a manual approval step, so we changed the process before building any software.'*"
+    },
+    {
+      "level": "beginner",
+      "question": "What is the difference between a business analyst and a project manager?",
+      "answer": "A BA focuses on **what** needs to change and **why** (needs, requirements, value). A project manager focuses on **when**, **how much** and **who** (schedule, budget, resources, risks). They work closely together, and in smaller teams one person may do both."
+    },
+    {
+      "level": "intermediate",
+      "question": "A stakeholder tells you exactly what solution they want. How do you respond?",
+      "answer": "I would thank them, then ask questions to understand the **need behind the request**: what problem are we solving, who is affected, how often, and what would success look like. I would check the evidence and consider alternatives. If their idea is the best option I confirm it with facts, and if not I present options with trade-offs. This keeps the relationship positive and protects the business from building the wrong thing."
+    },
+    {
+      "level": "intermediate",
+      "question": "How does the BA role differ in an Agile team compared with Waterfall?",
+      "answer": "In Waterfall the BA usually produces detailed documents such as a BRD and FRD early, which are signed off before development. In Agile the BA works inside the team, writes and refines **user stories** with acceptance criteria every sprint, clarifies questions in real time and responds to changing priorities. The skills are the same (elicitation, analysis, communication), but the artefacts are lighter and the cycle is faster."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-01-02",
+    "title": "A day in the life of a BA",
+    "brief": "Choose a business you know (a restaurant, a school, a bank branch, your workplace). Imagine its manager says: *\"We need a new system to handle X.\"* Choose your own X.\n\nWrite:\n1. A list of **six stakeholders** and what each cares about.\n2. **Six discovery questions** you would ask first.\n3. A **need statement** in one sentence.\n4. **Two alternatives** to building a new system.",
+    "deliverables": ["Six stakeholders with their concerns", "Six discovery questions", "One need statement", "Two alternative solutions with one pro and one con each"]
+  }
+}

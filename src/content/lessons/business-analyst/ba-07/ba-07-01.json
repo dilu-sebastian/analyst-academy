@@ -1,0 +1,88 @@
+{
+  "id": "ba-07-01",
+  "objectives": [
+    "Write user stories using the As a / I want / So that template",
+    "Explain the 3 Cs: card, conversation, confirmation",
+    "Compare user stories with traditional shall-statements",
+    "Place stories in the hierarchy of themes, epics, features and tasks"
+  ],
+  "terminology": [
+    { "term": "User story", "definition": "A short description of a feature from the perspective of the user who wants it, including the benefit." },
+    { "term": "3 Cs", "definition": "Card, Conversation, Confirmation: the three elements of a user story described by Ron Jeffries." },
+    { "term": "Epic", "definition": "A large body of work that is too big for one sprint and is split into smaller stories." },
+    { "term": "Feature", "definition": "A group of related stories delivering a recognisable capability." },
+    { "term": "Task", "definition": "A unit of technical work, usually hours long, needed to complete a story." },
+    { "term": "Product backlog", "definition": "The ordered list of everything that might be needed in the product." },
+    { "term": "Persona", "definition": "A fictional but research-based description of a typical user, used to make stories specific." }
+  ],
+  "exercises": [
+    {
+      "question": "Write three user stories for a food delivery app from three different user roles.",
+      "answer": "1. *As a hungry customer, I want to see an estimated delivery time before ordering so that I can choose a restaurant that delivers in time.*\n2. *As a restaurant manager, I want to mark dishes as sold out so that customers can't order items we can't make.*\n3. *As a courier, I want turn-by-turn directions to the customer so that I deliver food while it's hot.*"
+    },
+    {
+      "question": "Convert this to a user story: \"The system shall send an SMS when the parcel is out for delivery.\"",
+      "hint": "Who benefits, and why?",
+      "answer": "**As an online shopper, I want an SMS when my parcel is out for delivery so that I can make sure someone is home to receive it.**"
+    },
+    {
+      "question": "Is 'As an admin, I want to manage the product catalogue' a story or an epic? Split it if needed.",
+      "answer": "It's an **epic**: too big and vague. Example split: add a new product; edit product price; upload product images; mark a product as discontinued; bulk-import products from a spreadsheet."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does the 'so that' part of a user story describe?",
+      "options": ["The user role", "The technical solution", "The benefit or value", "The deadline"],
+      "answer": 2,
+      "explanation": "It explains why the user wants the capability, which guides design and priority."
+    },
+    {
+      "question": "The 3 Cs of user stories are:",
+      "options": ["Cost, Code, Customer", "Card, Conversation, Confirmation", "Create, Check, Close", "Clear, Concise, Correct"],
+      "answer": 1,
+      "explanation": "A story is a card that prompts conversation and is confirmed by acceptance criteria."
+    },
+    {
+      "question": "A piece of work too large for one sprint is usually called:",
+      "options": ["A task", "An epic", "A bug", "A spike"],
+      "answer": 1,
+      "explanation": "Epics are split into smaller stories."
+    },
+    {
+      "question": "Which is the best user story?",
+      "options": ["As a user, I want a button", "As a frequent traveller, I want to save my passport details so that booking flights is faster", "Build the passport API", "The system shall store passports"],
+      "answer": 1,
+      "explanation": "It has a specific role, a goal and a clear benefit."
+    },
+    {
+      "question": "Who usually owns the product backlog in Scrum?",
+      "options": ["The developers", "The Product Owner", "The Scrum Master", "The tester"],
+      "answer": 1,
+      "explanation": "The Product Owner owns and orders the backlog; the BA often helps write and refine stories."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a user story?",
+      "answer": "A short description of a feature from the user's perspective, usually written as As a [role], I want [goal], so that [benefit]. It's a placeholder for a conversation, with details captured in acceptance criteria. **Give an example from a domain you know.**"
+    },
+    {
+      "level": "intermediate",
+      "question": "What's the difference between an epic, a story and a task?",
+      "answer": "An epic is a large piece of work spanning multiple sprints, such as online returns. A story is a slice of user value deliverable within a sprint, such as print a prepaid return label. A task is technical work, measured in hours, that the team does to complete a story, such as building the PDF template."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do user stories differ from traditional requirements?",
+      "answer": "Stories are user-centred and conversational, include the value explicitly, and are detailed just in time through refinement and acceptance criteria. Traditional requirements are often system-centred shall-statements fully specified up front. Both need to be clear and testable."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-07-01",
+    "title": "Write a mini backlog",
+    "brief": "Choose a product idea (e.g. a plant-care reminder app).\n\nDefine 3 user roles. Write 2 epics and split them into at least 10 user stories in the As a / I want / So that format. For two of the stories, list the questions you would ask in the conversation.",
+    "deliverables": ["User roles", "Epics", "10+ user stories", "Conversation questions for two stories"]
+  }
+}

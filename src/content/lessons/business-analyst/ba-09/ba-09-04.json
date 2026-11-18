@@ -1,0 +1,87 @@
+{
+  "id": "ba-09-04",
+  "objectives": [
+    "Link Jira issues and Confluence pages in both directions",
+    "Embed live Jira tables in Confluence using JQL",
+    "Create Jira issues directly from Confluence requirement text",
+    "Use Jira and Confluence together for traceability and release notes"
+  ],
+  "terminology": [
+    { "term": "Jira issues macro", "definition": "A Confluence element that embeds one Jira issue or a live table of issues from a JQL query." },
+    { "term": "Smart link", "definition": "A pasted URL that Confluence renders as a rich preview showing key details such as issue status." },
+    { "term": "fixVersion", "definition": "A Jira field identifying the release in which an issue is delivered." },
+    { "term": "Release notes", "definition": "A summary of what changed in a release, often generated from Jira issues." },
+    { "term": "Single source of truth", "definition": "Keeping each piece of information in one authoritative place and linking to it elsewhere." },
+    { "term": "Permissions", "definition": "Settings that control who can view or edit spaces, pages and projects." }
+  ],
+  "exercises": [
+    {
+      "question": "Write the JQL you'd use in a Confluence macro to show all stories and bugs in epic SHOP-5 that are not Done.",
+      "answer": "`parent = SHOP-5 AND type in (Story, Bug) AND status != Done ORDER BY rank` *(older Jira versions may use \"Epic Link\" = SHOP-5)*."
+    },
+    {
+      "question": "Describe a workflow that takes a requirement from a Confluence page into a Jira story and back.",
+      "hint": "Highlight, create, link, embed.",
+      "answer": "Highlight the requirement text on the approved page and create a Jira issue from it, so the issue and page link automatically. Refine the story in Jira with AC and an estimate. Back on the page, embed a Jira issues macro filtered on the epic so the story's status shows live."
+    },
+    {
+      "question": "Why is copying story text from Jira into Confluence a bad idea?",
+      "answer": "The two copies drift apart when either changes, so readers can't tell which is correct. Linking or embedding live issues keeps one source of truth and always shows current status."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The best way to show live story status on a Confluence page is:",
+      "options": ["Copy and paste statuses weekly", "Embed a Jira issues macro with a JQL filter", "Attach a screenshot", "Email the team"],
+      "answer": 1,
+      "explanation": "The macro updates automatically from Jira."
+    },
+    {
+      "question": "Which Jira field is used to generate release notes?",
+      "options": ["Assignee", "fixVersion", "Labels", "Reporter"],
+      "answer": 1,
+      "explanation": "fixVersion identifies the release an issue is delivered in."
+    },
+    {
+      "question": "Stakeholders see 'restricted' instead of Jira issues on a page. The most likely cause is:",
+      "options": ["The macro is broken", "They lack permission to view the Jira project", "The page is a draft", "JQL is too long"],
+      "answer": 1,
+      "explanation": "Viewers need Jira permissions to see embedded issues."
+    },
+    {
+      "question": "Creating a Jira issue from highlighted Confluence text:",
+      "options": ["Copies text with no link", "Creates an issue that links back to the page", "Deletes the text", "Only works for bugs"],
+      "answer": 1,
+      "explanation": "The issue and page are linked automatically, supporting traceability."
+    },
+    {
+      "question": "Which belongs in Confluence rather than Jira?",
+      "options": ["Story status", "Detailed business rules shared by several stories", "Story points", "Sprint assignment"],
+      "answer": 1,
+      "explanation": "Shared rules and context belong in one Confluence page linked from stories."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "How do you use Jira and Confluence together?",
+      "answer": "Confluence holds the context (requirements pages per epic, business rules, process maps, decisions, meeting notes) and Jira holds the work items. I create stories from requirement text so they link automatically, embed live Jira tables on requirement pages, link decisions from stories, and generate release notes from fixVersion. That gives lightweight end-to-end traceability."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you give stakeholders visibility of progress without status meetings?",
+      "answer": "Add live Jira macros and an epic progress or roadmap view to the Confluence epic pages, share a dashboard, make sure permissions allow access, and add a short written summary each sprint. Then use the Sprint Review for discussion rather than status reporting."
+    },
+    {
+      "level": "advanced",
+      "question": "How would you provide audit-ready traceability using Atlassian tools?",
+      "answer": "Approved requirements pages with version history; Jira stories created from and linked to those requirements; test cases in Xray or Zephyr linked to stories with execution results; fixVersions for releases; decision records linked to affected stories; and a Confluence report page pulling these together with JQL macros."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-09-04",
+    "title": "Connect your tools",
+    "brief": "Using your practice Jira project and Confluence space (or documents simulating them):\n1. Create two stories from requirement text on your epic page.\n2. Embed a live list of the epic's stories on the page.\n3. Link a decision record from a story.\n4. Create a release notes page for a fixVersion with a human summary at the top.",
+    "deliverables": ["Screenshots or description of linked page and stories", "JQL used", "Release notes page"]
+  }
+}

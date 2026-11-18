@@ -1,0 +1,88 @@
+{
+  "id": "ba-10-03",
+  "objectives": [
+    "Build a communication plan covering who, what, why, how, when and owner",
+    "Choose suitable channels based on message complexity and sensitivity",
+    "Tailor messages to executives, managers, users and developers",
+    "Write concise status updates using BLUF and RAG"
+  ],
+  "terminology": [
+    { "term": "Communication plan", "definition": "A plan describing what will be communicated to which stakeholders, how, when and by whom." },
+    { "term": "Channel", "definition": "The medium used to communicate, such as meetings, email, chat, demos or intranet." },
+    { "term": "Rich channel", "definition": "A channel allowing two-way, nuanced communication, such as face-to-face conversation." },
+    { "term": "BLUF", "definition": "Bottom Line Up Front: stating the key point or decision at the start of a message." },
+    { "term": "RAG status", "definition": "Red, Amber, Green ratings used to summarise project health." },
+    { "term": "Steering group", "definition": "A senior group that oversees a project, makes key decisions and resolves escalations." },
+    { "term": "Hypercare", "definition": "A period of extra support immediately after go-live." }
+  ],
+  "exercises": [
+    {
+      "question": "Which channel would you choose for: (a) telling reception staff their roles will change, (b) sharing the release date with IT support, (c) a quick question to a developer, (d) a monthly progress update to 300 staff?",
+      "answer": "(a) **Face-to-face briefing** with Q&A, followed by written FAQs (sensitive). (b) **Email** plus calendar invite and Confluence page (formal record). (c) **Chat** (quick). (d) **Intranet article or newsletter** (broad awareness)."
+    },
+    {
+      "question": "Write a 3-line BLUF status update for a sponsor: testing found 12 defects, 2 critical; fixes will take one week; go-live can stay on date if UAT is shortened by 2 days.",
+      "hint": "Status, decision, key facts.",
+      "answer": "**Status: Amber.** Go-live date can hold if UAT is shortened by 2 days; decision needed by Thursday. Testing found 12 defects (2 critical); fixes will be complete within one week."
+    },
+    {
+      "question": "Name four things a communication plan should specify for each audience.",
+      "answer": "Any four of: audience, purpose, key message/content, channel, frequency/timing, owner/sender, feedback mechanism."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For a sensitive message about job changes, the best channel is:",
+      "options": ["Email", "Team chat", "Face-to-face briefing followed by written detail", "Intranet article"],
+      "answer": 2,
+      "explanation": "Rich, two-way channels suit sensitive messages; written follow-up provides a record."
+    },
+    {
+      "question": "BLUF means:",
+      "options": ["Brief, Long, Useful, Factual", "Bottom Line Up Front", "Business Logic Under Focus", "Basic Layout Using Fonts"],
+      "answer": 1,
+      "explanation": "Lead with the main point or decision."
+    },
+    {
+      "question": "Executives usually most want:",
+      "options": ["Detailed acceptance criteria", "Outcomes, cost, risk and decisions needed", "Code samples", "Full meeting minutes"],
+      "answer": 1,
+      "explanation": "They need concise, decision-focused information."
+    },
+    {
+      "question": "An Amber RAG status typically means:",
+      "options": ["On track", "At risk but recoverable with action", "Failed", "Not started"],
+      "answer": 1,
+      "explanation": "Amber signals risk requiring attention."
+    },
+    {
+      "question": "Which is a communication mistake?",
+      "options": ["Tailoring messages to audiences", "Providing a feedback route", "Announcing difficult news only by email", "Regular updates"],
+      "answer": 2,
+      "explanation": "Difficult news needs a richer channel."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How do you keep stakeholders informed?",
+      "answer": "With a communication plan based on stakeholder analysis: each group gets the information they need, in a suitable channel and frequency. Executives get concise BLUF updates, users get demos and plain-language guides, and the team gets daily conversation. I always include a way for people to give feedback."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you communicate a delay to a sponsor?",
+      "answer": "Promptly and in person or by call, not just email. Lead with the impact and options: what's late, why, the effect on dates and benefits, recovery options with trade-offs, and my recommendation and the decision needed. Then confirm in writing and update the plan."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you adapt your communication for technical and non-technical audiences?",
+      "answer": "For business audiences I focus on outcomes, impacts and examples in plain language and use visuals. For technical audiences I provide precise rules, data, edge cases and diagrams like sequence diagrams. I check understanding by asking people to explain back key points."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-10-03",
+    "title": "Communication plan",
+    "brief": "For a project of your choice (e.g. a school introducing a new parent communication app), create a communication plan for at least 6 audiences with purpose, content, channel, frequency, owner and feedback route.\n\nThen write two messages about the same delay: one BLUF update for the sponsor and one plain-language note for end users.",
+    "deliverables": ["Communication plan table", "Sponsor update", "End-user note"]
+  }
+}

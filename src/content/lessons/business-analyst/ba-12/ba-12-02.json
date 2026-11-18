@@ -1,0 +1,88 @@
+{
+  "id": "ba-12-02",
+  "objectives": [
+    "Answer conceptual questions with the Define-Example-Why structure",
+    "Revise the core BA concepts most often tested",
+    "Answer 'difference between' questions concisely",
+    "Handle questions you can't fully answer honestly"
+  ],
+  "terminology": [
+    { "term": "Define-Example-Why", "definition": "A three-part answer structure: definition, concrete example, and why it matters or how you use it." },
+    { "term": "SWOT", "definition": "Analysis of internal Strengths and Weaknesses and external Opportunities and Threats." },
+    { "term": "PESTLE", "definition": "Analysis of Political, Economic, Social, Technological, Legal and Environmental factors." },
+    { "term": "Business case", "definition": "A document justifying a change through options, costs, benefits, risks and a recommendation." },
+    { "term": "Feasibility study", "definition": "An assessment of whether a proposed solution is technically, financially and operationally viable." },
+    { "term": "Change request", "definition": "A formal request to alter agreed scope or requirements, assessed for impact before approval." },
+    { "term": "Scope creep", "definition": "Uncontrolled expansion of scope without matching adjustment to time, cost or resources." }
+  ],
+  "exercises": [
+    {
+      "question": "Answer using Define-Example-Why: \"What is a traceability matrix?\"",
+      "answer": "**Define:** A table linking each requirement to its source, related design or stories and test cases. **Example:** BR-01 online booking → FR-01 to FR-05 → stories GYM-12 to GYM-15 → tests TC-01 to TC-07, with status. **Why:** It proves every requirement is tested (forward), catches work nobody requested (backward) and shows the impact of changes."
+    },
+    {
+      "question": "Give a short answer to: \"What's the difference between a use case and a user story?\"",
+      "hint": "Purpose, detail, example.",
+      "answer": "A use case describes the detailed interaction between an actor and the system, including main, alternate and exception flows, and is often used in more formal documentation. A user story is a short, value-focused statement (As a / I want / So that) that prompts a conversation, with detail in acceptance criteria. One use case often maps to several stories."
+    },
+    {
+      "question": "You're asked about Kano analysis and you've never used it. Write an honest, reasoning answer.",
+      "answer": "*\"I haven't applied Kano directly, but I understand it classifies features by their effect on customer satisfaction: basic expectations, performance features and delighters. I'd use it alongside MoSCoW when deciding which features differentiate a product. For example, secure login is basic, faster checkout is performance, and a personalised recommendation could be a delighter.\"*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The second part of the Define-Example-Why structure is:",
+      "options": ["A definition", "A concrete example", "A question back to the interviewer", "A summary"],
+      "answer": 1,
+      "explanation": "Examples prove you understand and can apply the concept."
+    },
+    {
+      "question": "Ideal length for a conceptual answer is about:",
+      "options": ["10 seconds", "45-90 seconds", "5 minutes", "10 minutes"],
+      "answer": 1,
+      "explanation": "Long enough to define, illustrate and explain; short enough to keep attention."
+    },
+    {
+      "question": "SWOT's Opportunities and Threats are:",
+      "options": ["Internal factors", "External factors", "Project risks only", "Requirements"],
+      "answer": 1,
+      "explanation": "Strengths and weaknesses are internal; opportunities and threats are external."
+    },
+    {
+      "question": "If you don't know an answer, the best approach is:",
+      "options": ["Bluff confidently", "Admit it, then reason from related knowledge", "Change the subject", "Stay silent"],
+      "answer": 1,
+      "explanation": "Honesty plus reasoning shows integrity and analytical thinking."
+    },
+    {
+      "question": "Which answer to 'What is MoSCoW?' is strongest?",
+      "options": ["Must, Should, Could, Won't", "A prioritisation technique with categories, how you apply it, and an example result", "Something Agile teams use", "A city in Russia"],
+      "answer": 1,
+      "explanation": "Definition plus application plus example shows real understanding."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is the difference between a BRD and an FRD?",
+      "answer": "A BRD describes why the change is needed and what the business needs at a high level (objectives, scope, stakeholders, business requirements) for business stakeholders. An FRD describes in detail what the system must do (functional requirements, use cases, rules, data) for business and IT. The FRD traces back to the BRD."
+    },
+    {
+      "level": "beginner",
+      "question": "What is gap analysis?",
+      "answer": "Comparing the current state (as-is) with the desired future state (to-be) to identify what must change: processes, systems, skills, policies or data. For example, moving expense claims from email to an app revealed gaps in approval rules, integration with finance and employee training. Each gap becomes requirements or change activities."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you manage scope creep?",
+      "answer": "Agree clear scope with in and out lists and objectives up front, baseline requirements, route new requests through change control or the backlog with impact analysis, prioritise with MoSCoW against objectives, and make trade-offs visible to the sponsor or PO, so adding something means moving or dropping something else."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-12-02",
+    "title": "Conceptual answer bank",
+    "brief": "Write Define-Example-Why answers (80-150 words each) for 10 conceptual questions, covering at least: requirement types, FR vs NFR, MoSCoW, elicitation techniques, BRD vs FRD, user stories and INVEST, BPMN, Scrum roles, traceability and stakeholder analysis.\n\nRecord yourself answering 3 of them aloud and check timing.",
+    "deliverables": ["10 written answers", "Timing notes for 3 recorded answers"]
+  }
+}

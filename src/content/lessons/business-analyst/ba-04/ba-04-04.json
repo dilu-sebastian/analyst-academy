@@ -1,0 +1,89 @@
+{
+  "id": "ba-04-04",
+  "objectives": [
+    "Describe the purpose and audience of an SRS",
+    "Outline the IEEE-style SRS structure",
+    "Write interface and non-functional requirements with verification methods",
+    "Distinguish an SRS from an FRD",
+    "Manage unknowns with an open items list"
+  ],
+  "terminology": [
+    { "term": "SRS", "definition": "Software Requirements Specification: a complete specification of a software system's functional and non-functional requirements, interfaces and constraints." },
+    { "term": "IEEE 830 / ISO 29148", "definition": "Standards that describe recommended structure and qualities for requirements specifications." },
+    { "term": "Interface requirement", "definition": "A requirement describing data and behaviour exchanged between the system and users, hardware or other systems." },
+    { "term": "User class", "definition": "A group of users with similar characteristics and needs, such as patients or administrators." },
+    { "term": "Operating environment", "definition": "The hardware, software, browsers and locations in which the system will run." },
+    { "term": "Verification method", "definition": "How a requirement will be checked: test, inspection, demonstration or analysis." },
+    { "term": "Open item (to be determined)", "definition": "An unresolved question in a specification that must be resolved, tracked with an owner and due date." }
+  ],
+  "exercises": [
+    {
+      "question": "Write two interface requirements for an online shop that sends orders to a warehouse system and receives stock levels.",
+      "answer": "**IF-01 (outbound):** On order confirmation, the shop shall send order ID, SKU, quantity and delivery address to the warehouse system in real time; failed sends are retried every 5 minutes for 1 hour, then alerted. **IF-02 (inbound):** The shop shall receive stock levels per SKU from the warehouse system every 15 minutes and mark items with zero stock as out of stock."
+    },
+    {
+      "question": "Write three NFRs for a payroll system with verification methods.",
+      "answer": "1. **Accuracy:** Payroll calculations shall match the reference calculation for 100% of 500 test cases (verified by test). 2. **Security:** Only payroll role users can view salary data; access is logged (verified by test and log inspection). 3. **Performance:** A full payroll run for 5,000 employees shall complete in under 30 minutes (verified by load test)."
+    },
+    {
+      "question": "Why keep an open items list instead of leaving gaps blank?",
+      "hint": "Think about visibility.",
+      "answer": "It makes unknowns visible, assigns an owner and deadline, prevents developers from guessing, and lets the project manager track risk. Blank gaps are easy to forget until they cause defects."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which document typically includes interface, functional and non-functional requirements together?",
+      "options": ["BRD", "SRS", "Business case", "Stakeholder register"],
+      "answer": 1,
+      "explanation": "The SRS is the complete specification including interfaces and NFRs."
+    },
+    {
+      "question": "\"Nightly CSV export of fees to the finance system at 02:00\" is an:",
+      "options": ["Interface requirement", "Business objective", "User class", "Assumption"],
+      "answer": 0,
+      "explanation": "It describes data exchanged with another system."
+    },
+    {
+      "question": "Each NFR in an SRS should have:",
+      "options": ["A developer's name", "A measurable target and verification method", "A price", "A screenshot"],
+      "answer": 1,
+      "explanation": "Without a target and verification method, an NFR cannot be tested."
+    },
+    {
+      "question": "The SRS is MOST often required when:",
+      "options": ["A small team builds an internal prototype", "A vendor builds software under contract or in a regulated industry", "Brainstorming ideas", "Running a retrospective"],
+      "answer": 1,
+      "explanation": "Contracts and regulators need a complete, precise specification."
+    },
+    {
+      "question": "Section 2 'Overall description' in an IEEE-style SRS includes:",
+      "options": ["Detailed test scripts", "Product perspective, user classes, environment and constraints", "Sprint plan", "Budget"],
+      "answer": 1,
+      "explanation": "It sets context before the specific requirements in section 3."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is an SRS?",
+      "answer": "A Software Requirements Specification: the complete, precise description of what a software system must do and how well, including functional requirements, non-functional requirements, interfaces, constraints and assumptions. It's used by developers, testers and vendors to build and verify the system."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you document an integration with another system?",
+      "answer": "As interface requirements: the systems involved, direction, the data fields and formats, frequency or trigger, validation and business rules, error handling and retries, and security. I'd add a context diagram and work with the architect, leaving technical protocol choices to them unless constrained."
+    },
+    {
+      "level": "advanced",
+      "question": "A vendor says a requirement in the SRS is ambiguous and wants a change request to deliver it. How do you handle it?",
+      "answer": "First check the requirement and its context objectively. If it is genuinely ambiguous, clarify with stakeholders and agree the interpretation with the vendor, assessing impact through change control. If it's clear and in scope, explain with evidence (trace, acceptance criteria). Either way, record the decision and improve review practices to prevent recurrence."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-04-04",
+    "title": "SRS skeleton",
+    "brief": "Create an SRS skeleton for a food-delivery courier app.\n\nFill in: purpose and scope, a context diagram (text or drawing), three user classes, operating environment, two constraints, five functional requirements, three interface requirements, six NFRs (different categories, each with verification method) and an open items list with three items.",
+    "deliverables": ["SRS skeleton", "Context diagram", "Interface table", "NFR table", "Open items list"]
+  }
+}

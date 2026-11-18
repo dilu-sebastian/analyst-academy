@@ -1,0 +1,89 @@
+{
+  "id": "ba-05-03",
+  "objectives": [
+    "Identify the elements of a UML use case diagram",
+    "Distinguish primary and secondary actors",
+    "Use include and extend relationships correctly",
+    "Draw a use case diagram that defines a system's functional scope"
+  ],
+  "terminology": [
+    { "term": "Actor", "definition": "A role or external system that interacts with the system being modelled." },
+    { "term": "Use case", "definition": "A goal an actor achieves by interacting with the system, drawn as an oval with a verb-noun name." },
+    { "term": "System boundary", "definition": "A rectangle that encloses the use cases inside the system's scope." },
+    { "term": "Association", "definition": "A line connecting an actor to a use case it participates in." },
+    { "term": "«include»", "definition": "A relationship where a base use case always incorporates another use case." },
+    { "term": "«extend»", "definition": "A relationship where a use case optionally adds behaviour to a base use case under certain conditions." },
+    { "term": "Primary actor", "definition": "The actor who initiates a use case to achieve a goal." },
+    { "term": "Secondary actor", "definition": "An actor, often an external system, that supports the system in delivering a use case." }
+  ],
+  "exercises": [
+    {
+      "question": "List the actors and at least six use cases for a food-delivery app.",
+      "answer": "**Actors:** Customer, Restaurant, Courier, Admin, Payment provider (secondary). **Use cases:** Browse restaurants, Place order, Pay for order, Track delivery, Rate order (Customer); Accept order, Update order status (Restaurant); Accept delivery job, Confirm delivery (Courier); Manage restaurants (Admin)."
+    },
+    {
+      "question": "Should 'Apply voucher' include or extend 'Checkout'? Explain.",
+      "hint": "Does it always happen?",
+      "answer": "**«extend»**, with the arrow from Apply voucher to Checkout, because applying a voucher is optional and happens only when the customer has one. «include» would mean every checkout applies a voucher."
+    },
+    {
+      "question": "Why isn't 'Enter delivery address' a good use case?",
+      "answer": "It's a step within a larger goal (Place order), not a goal in itself. Use cases should represent meaningful outcomes for the actor; steps belong in the written use case flow."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does a use case diagram show?",
+      "options": ["The order of steps in a process", "Actors and the goals they achieve with a system", "Database tables", "Screen layouts"],
+      "answer": 1,
+      "explanation": "It shows functional scope: who uses the system and for what."
+    },
+    {
+      "question": "'Log in' is needed every time a user books. The relationship from 'Book appointment' to 'Log in' is:",
+      "options": ["«extend»", "«include»", "Generalisation", "No relationship"],
+      "answer": 1,
+      "explanation": "Include means the base use case always uses the included behaviour."
+    },
+    {
+      "question": "Which is a valid actor?",
+      "options": ["John Smith", "The database", "Customer", "Login button"],
+      "answer": 2,
+      "explanation": "Actors are external roles or systems, not named people or internal components."
+    },
+    {
+      "question": "An SMS gateway that sends reminders is usually a:",
+      "options": ["Primary actor", "Secondary actor", "Use case", "System boundary"],
+      "answer": 1,
+      "explanation": "It supports the system rather than initiating goals."
+    },
+    {
+      "question": "Which use case name is best?",
+      "options": ["Payment screen", "Pay for order", "Click Pay", "Payment stuff"],
+      "answer": 1,
+      "explanation": "Verb-noun names describe a goal from the actor's view."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a use case diagram and when do you use it?",
+      "answer": "A UML diagram showing actors, the use cases they perform and the system boundary. I use it early to agree functional scope with stakeholders on one page, before writing detailed use cases or stories."
+    },
+    {
+      "level": "intermediate",
+      "question": "Explain the difference between include and extend.",
+      "answer": "Include means the base use case always uses the included one, like Place order always including Log in; the arrow points to the included use case. Extend means optional behaviour under a condition, like Apply voucher extending Checkout; the arrow points to the base use case."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do use case diagrams relate to user stories?",
+      "answer": "A use case diagram gives the big picture of scope. Each use case can be broken into one or more user stories for the backlog, and its alternate and exception flows often become acceptance criteria or separate stories."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-05-03",
+    "title": "Use case diagram for a cinema app",
+    "brief": "Draw a use case diagram for a cinema ticket booking app with at least 4 actors (including one external system) and 10 use cases.\n\nInclude at least one «include» and one «extend» with notes explaining why. List out-of-scope items. Then write one use case in full (main, alternate and exception flows).",
+    "deliverables": ["Use case diagram", "Explanation of include/extend choices", "Out-of-scope list", "One full written use case"]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ba-07-03",
+  "objectives": [
+    "Explain the purpose of acceptance criteria",
+    "Write rule-based acceptance criteria covering happy path, rules, errors and permissions",
+    "Distinguish acceptance criteria from the Definition of Done",
+    "Improve vague or design-heavy criteria"
+  ],
+  "terminology": [
+    { "term": "Acceptance criteria (AC)", "definition": "Conditions a user story must satisfy to be accepted by the Product Owner." },
+    { "term": "Definition of Done (DoD)", "definition": "A shared checklist of quality standards that every story must meet to be considered complete." },
+    { "term": "Rule-based criteria", "definition": "Acceptance criteria written as a checklist of rules or conditions." },
+    { "term": "Scenario-based criteria", "definition": "Acceptance criteria written as scenarios, often in Given-When-Then format." },
+    { "term": "Edge case", "definition": "An unusual or extreme situation at the boundary of normal operation." },
+    { "term": "Happy path", "definition": "The default scenario where everything works as expected." },
+    { "term": "Backlog refinement", "definition": "Regular activity to clarify, split, estimate and order backlog items." }
+  ],
+  "exercises": [
+    {
+      "question": "Write 5 acceptance criteria for: \"As a customer, I want to save items to a wishlist so that I can buy them later.\"",
+      "answer": "1. Logged-in customers can add a product to their wishlist from the product page.\n2. Adding an item already in the wishlist does not create a duplicate.\n3. Customers can view and remove items on a Wishlist page.\n4. Wishlist items show current price and stock status.\n5. Guests who try to add to the wishlist are asked to log in, and the item is added after login."
+    },
+    {
+      "question": "Classify each as an acceptance criterion or Definition of Done item: (a) code peer-reviewed, (b) refund over £100 needs manager approval, (c) automated tests pass, (d) error message shown for invalid postcode.",
+      "answer": "(a) **DoD**. (b) **AC** (story-specific business rule). (c) **DoD**. (d) **AC**."
+    },
+    {
+      "question": "A story has 18 acceptance criteria. What does this suggest and what do you do?",
+      "hint": "INVEST.",
+      "answer": "The story is probably too big (not Small) and may contain several user goals. Split it, for example by business rule, user type or workflow step, so each new story has roughly 3-8 criteria."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Acceptance criteria are mainly used to:",
+      "options": ["Estimate the budget", "Define when a specific story is complete and testable", "Assign developers", "Replace the Definition of Done"],
+      "answer": 1,
+      "explanation": "AC confirm what a story must do to be accepted."
+    },
+    {
+      "question": "Which is a Definition of Done item rather than an acceptance criterion?",
+      "options": ["Discount codes are not case-sensitive", "Code has been peer-reviewed", "Expired codes show an error", "One code per order"],
+      "answer": 1,
+      "explanation": "Code review applies to all stories, so it belongs to the DoD."
+    },
+    {
+      "question": "When should acceptance criteria be written?",
+      "options": ["After testing", "Before development, ideally in refinement with the team", "During the retrospective", "After go-live"],
+      "answer": 1,
+      "explanation": "They guide development and testing, so they come first."
+    },
+    {
+      "question": "Which criterion is best?",
+      "options": ["Handle errors properly", "If payment is declined, show a message and keep the basket", "Make it like Amazon", "It should be intuitive"],
+      "answer": 1,
+      "explanation": "It is specific and testable."
+    },
+    {
+      "question": "Which area is often missed in acceptance criteria?",
+      "options": ["The story title", "Error and edge cases", "The user role", "The sprint number"],
+      "answer": 1,
+      "explanation": "Teams naturally think of the happy path; the BA must prompt for exceptions."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are acceptance criteria?",
+      "answer": "Conditions a user story must meet to be accepted. They define scope, create shared understanding and become the basis for test cases. I cover the happy path, business rules, validation, errors and permissions, and keep each criterion testable."
+    },
+    {
+      "level": "intermediate",
+      "question": "What's the difference between acceptance criteria and the Definition of Done?",
+      "answer": "Acceptance criteria are specific to one story and describe its functional behaviour. The Definition of Done applies to every story and covers quality standards like code review, tests passing and documentation. A story is done only when it meets both."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make sure acceptance criteria are complete?",
+      "answer": "I use a checklist (happy path, rules, validation, errors, permissions, notifications, NFRs), ask what-if questions, review them with a developer and tester in refinement, use real examples and boundary values, and check them against the process model for missing paths."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-07-03",
+    "title": "Acceptance criteria workshop",
+    "brief": "Write acceptance criteria for these three stories (5-8 each), covering happy path, business rules, errors and permissions:\n1. As a patient, I want to reschedule an appointment so that I don't have to cancel and rebook.\n2. As a manager, I want to approve expense claims on my phone so that claims aren't delayed.\n3. As a shopper, I want to track my order so that I know when it will arrive.\n\nThen write a 6-item Definition of Done for the team.",
+    "deliverables": ["Acceptance criteria for 3 stories", "Definition of Done"]
+  }
+}

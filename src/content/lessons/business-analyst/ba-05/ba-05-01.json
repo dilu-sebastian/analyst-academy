@@ -1,0 +1,88 @@
+{
+  "id": "ba-05-01",
+  "objectives": [
+    "Explain what modelling is and why BAs use it",
+    "Name the main model types and what each shows",
+    "Describe UML and the three UML diagrams BAs use most",
+    "Choose an appropriate model and level of detail for an audience"
+  ],
+  "terminology": [
+    { "term": "Model", "definition": "A simplified representation of a process, system, data or interaction used to understand and communicate it." },
+    { "term": "UML", "definition": "Unified Modeling Language: a standard set of diagram types for modelling software systems, maintained by the OMG." },
+    { "term": "Process flow", "definition": "A diagram showing the sequence of steps and decisions in a process." },
+    { "term": "Use case diagram", "definition": "A UML diagram showing actors and the goals (use cases) they achieve with a system." },
+    { "term": "Activity diagram", "definition": "A UML diagram showing the flow of activities, decisions and parallel work." },
+    { "term": "Sequence diagram", "definition": "A UML diagram showing messages exchanged between participants over time." },
+    { "term": "Context diagram", "definition": "A high-level diagram showing a system and the external entities it interacts with." },
+    { "term": "Legend", "definition": "A key explaining the symbols used in a diagram." }
+  ],
+  "exercises": [
+    {
+      "question": "Read: \"A customer orders online. If the item is in stock it is shipped; otherwise the customer is emailed.\" Sketch it as a simple text flowchart and name one gap the diagram reveals.",
+      "answer": "`[Order placed] → <In stock?> → yes → [Ship item] → [End]` and `no → [Email customer] → ?`. **Gap:** what happens after the email? Does the customer wait, get a refund, or choose an alternative? Also, is payment taken before or after the stock check?"
+    },
+    {
+      "question": "Give three benefits of modelling over text-only requirements.",
+      "answer": "Shared understanding (everyone sees the same picture), finding gaps (dead ends and missing decisions become visible), and faster validation (stakeholders spot errors in diagrams more quickly than in long text). *Also valid:* simplifies complexity, bridges business and technical language."
+    },
+    {
+      "question": "Which model would you show a CEO, and which a developer, for the same payment integration? Why?",
+      "answer": "**CEO:** a context diagram or high-level process flow showing systems and business steps, because they need the big picture and impacts. **Developer:** a sequence diagram showing messages, responses and error cases, because they need precise interaction detail."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is NOT a main reason BAs model?",
+      "options": ["Shared understanding", "Finding gaps", "Replacing all conversation with stakeholders", "Faster validation"],
+      "answer": 2,
+      "explanation": "Models support conversations; they don't replace them."
+    },
+    {
+      "question": "Which diagram shows messages between systems over time?",
+      "options": ["Use case diagram", "Sequence diagram", "Context diagram", "Flowchart"],
+      "answer": 1,
+      "explanation": "Sequence diagrams show ordered interactions between participants."
+    },
+    {
+      "question": "UML is:",
+      "options": ["A programming language", "A standard modelling notation with many diagram types", "A project management method", "A database"],
+      "answer": 1,
+      "explanation": "UML provides standard diagram types for modelling systems."
+    },
+    {
+      "question": "To agree the scope of what users can do in a new portal, the best model is a:",
+      "options": ["Sequence diagram", "Use case diagram", "Data dictionary", "Gantt chart"],
+      "answer": 1,
+      "explanation": "Use case diagrams show actors and their goals, which defines functional scope."
+    },
+    {
+      "question": "If a diagram doesn't fit on one page, you should:",
+      "options": ["Use smaller font", "Split it into levels or sub-diagrams", "Delete the exceptions", "Convert it to text"],
+      "answer": 1,
+      "explanation": "Layered diagrams keep each view readable."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "Why do business analysts create diagrams?",
+      "answer": "To create shared understanding, simplify complex processes, find gaps and exceptions, validate requirements quickly with stakeholders, and bridge business and technical language. A diagram often reveals missing decisions that long text hides."
+    },
+    {
+      "level": "beginner",
+      "question": "Which UML diagrams do you use most?",
+      "answer": "Use case diagrams for scope and actors, activity diagrams for detailed workflows including parallel steps, and sequence diagrams for interactions between systems. I also use process flows, BPMN and context diagrams, which aren't UML but are common in BA work."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you decide which diagram to use?",
+      "answer": "By the audience and the question. Executives need context and high-level flows; business users need process flows and use cases; developers and testers need activity and sequence diagrams. I pick the simplest model that answers the question and keep each diagram to one page."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-05-01",
+    "title": "Text to model",
+    "brief": "Write a 150-word description of a process you know (e.g. returning an item to a shop).\n\nThen draw it as a process flow (paper, draw.io or any tool), list at least three gaps or questions the diagram revealed that the text did not, and name which other model types would help and why.",
+    "deliverables": ["Text description", "Process flow diagram", "List of gaps", "Recommended additional models"]
+  }
+}

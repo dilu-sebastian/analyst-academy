@@ -1,0 +1,88 @@
+{
+  "id": "ba-10-01",
+  "objectives": [
+    "Define a stakeholder and explain why identification matters",
+    "List common stakeholder categories, internal and external",
+    "Use techniques such as brainstorming, process mapping, snowballing and the onion diagram",
+    "Create a stakeholder register"
+  ],
+  "terminology": [
+    { "term": "Stakeholder", "definition": "Any person, group or organisation that affects, is affected by, or believes they are affected by a change." },
+    { "term": "Stakeholder register", "definition": "A table recording stakeholders, their roles, interests, influence, impact, attitude and engagement approach." },
+    { "term": "Snowballing", "definition": "Asking each stakeholder who else should be involved, to discover more stakeholders." },
+    { "term": "Onion diagram", "definition": "Concentric circles showing stakeholders from the delivery team outward to the wider environment." },
+    { "term": "Sponsor", "definition": "The senior stakeholder who funds and champions the change and makes final decisions." },
+    { "term": "Influence", "definition": "A stakeholder's ability to affect decisions or outcomes." },
+    { "term": "Impact", "definition": "How much a stakeholder is affected by the change." }
+  ],
+  "exercises": [
+    {
+      "question": "List 8 stakeholders for a city introducing an e-scooter rental scheme, mixing internal and external.",
+      "answer": "Council transport department (sponsor), scooter operator (supplier), riders, pedestrians, disabled people's groups, police, local businesses, road safety regulator, insurance providers, council legal team, waste/recycling (battery disposal), local media. Any 8 with a mix is correct."
+    },
+    {
+      "question": "Why is 'users' often not a single stakeholder?",
+      "hint": "Different needs.",
+      "answer": "Users include different groups with different goals, skills and constraints: new and expert users, mobile and desktop users, customers with accessibility needs, internal and external users. Treating them as one hides conflicting needs."
+    },
+    {
+      "question": "Create 3 rows of a stakeholder register for an online exam project.",
+      "answer": "| Stakeholder | Interest | Influence | Impact | Attitude | Approach |\n|---|---|---|---|---|---|\n| Exam office | Smooth exam delivery | High | High | Supportive | Weekly working group |\n| Students with disabilities | Accessible exams, extra time | Low | High | Concerned | Focus group, accessibility testing |\n| IT security | Prevent cheating and breaches | High | Medium | Cautious | Security review sessions |"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A stakeholder is:",
+      "options": ["Only people who pay for the project", "Anyone who affects, is affected by, or thinks they are affected by a change", "Only the project team", "Only customers"],
+      "answer": 1,
+      "explanation": "Stakeholders include anyone with an interest in or impact from the change."
+    },
+    {
+      "question": "Asking each stakeholder 'Who else should I talk to?' is called:",
+      "options": ["Snowballing", "Brainstorming", "Benchmarking", "Shadowing"],
+      "answer": 0,
+      "explanation": "Each conversation leads to more stakeholders, like a snowball growing."
+    },
+    {
+      "question": "Which is an external stakeholder?",
+      "options": ["Finance department", "Regulator", "IT support", "Sponsor"],
+      "answer": 1,
+      "explanation": "Regulators sit outside the organisation."
+    },
+    {
+      "question": "How can process maps help identify stakeholders?",
+      "options": ["They show budgets", "Each lane and handoff reveals people involved", "They list phone numbers", "They don't help"],
+      "answer": 1,
+      "explanation": "Everyone who performs or receives work in the process is a stakeholder."
+    },
+    {
+      "question": "Stakeholder identification should be done:",
+      "options": ["Once at the start", "At the start and revisited throughout", "Only at go-live", "Only if problems arise"],
+      "answer": 1,
+      "explanation": "New stakeholders appear and influence changes over time."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How do you identify stakeholders on a new project?",
+      "answer": "Start with the sponsor and brainstorm who is affected, who can influence and who must approve; walk the process to find everyone involved; check org charts, contracts and regulations; use a category checklist; and ask each stakeholder who else I should speak to. I record them in a register and revisit it each phase."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a time a stakeholder was missed. What happened?",
+      "answer": "Use STAR: describe the situation (e.g. payroll not consulted), the impact discovered late, what you did to recover (urgent workshop, revised requirements, adjusted plan) and what you changed afterwards (stakeholder checklist, process walkthroughs, snowballing)."
+    },
+    {
+      "level": "intermediate",
+      "question": "What goes into a stakeholder register?",
+      "answer": "Name or group, role, interest in the change, level of influence, level of impact, current and desired attitude, key concerns, and the agreed engagement approach and frequency. It's kept up to date and shared with the project team where appropriate."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-10-01",
+    "title": "Stakeholder identification",
+    "brief": "Choose a change such as a hospital introducing online appointment check-in.\n\n1. Draw an onion diagram with at least 15 stakeholders.\n2. Build a stakeholder register with at least 8 rows.\n3. Explain which technique helped you find the stakeholder you would most likely have missed.",
+    "deliverables": ["Onion diagram", "Stakeholder register", "Short reflection"]
+  }
+}

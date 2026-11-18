@@ -1,0 +1,88 @@
+{
+  "id": "ba-03-05",
+  "objectives": [
+    "Distinguish confirming (verification) from validating requirements",
+    "Use walkthroughs, peer reviews, prototypes and scenarios to check requirements",
+    "Explain what sign-off and a requirements baseline mean",
+    "Describe how change control works after sign-off"
+  ],
+  "terminology": [
+    { "term": "Verification", "definition": "Checking that requirements are correctly captured and of good quality: building the requirements right." },
+    { "term": "Validation", "definition": "Checking that requirements meet the real business need: building the right requirements." },
+    { "term": "Walkthrough", "definition": "A session in which the author steps through requirements with stakeholders to check them." },
+    { "term": "Peer review", "definition": "Review of requirements by colleagues such as other BAs, developers and testers." },
+    { "term": "Baseline", "definition": "An agreed, signed-off version of requirements against which changes are controlled." },
+    { "term": "Change control", "definition": "A process for assessing, approving and recording changes to baselined requirements." },
+    { "term": "Wireframe", "definition": "A simple visual layout of a screen used to discuss and validate requirements." }
+  ],
+  "exercises": [
+    {
+      "question": "Write three real-world scenarios you would walk through to validate requirements for an online library renewal feature.",
+      "answer": "1. A member renews a book due tomorrow that no one has reserved → renewal succeeds with a new due date.\n2. A member tries to renew a book reserved by someone else → renewal is refused with a clear message.\n3. A member tries a third renewal when the limit is two → refused, with instructions to return the book."
+    },
+    {
+      "question": "A stakeholder hasn't replied to your request for confirmation after a week. What do you do?",
+      "hint": "Silence is not agreement.",
+      "answer": "Follow up personally (call or short meeting), make it easy by highlighting only the items relevant to them, explain the deadline and impact of delay, and if necessary escalate to the sponsor. Never record silence as confirmation."
+    },
+    {
+      "question": "Explain the difference between verification and validation using a wedding cake analogy.",
+      "answer": "Verification: the order form correctly says three tiers, lemon flavour, white icing, as the couple said. Validation: checking that a three-tier lemon cake is actually right for 150 guests and the couple's dietary needs. You can verify perfectly and still build the wrong thing."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "\"Did we capture the requirement correctly?\" is a question of:",
+      "options": ["Validation", "Verification (confirmation)", "Prioritisation", "Elicitation"],
+      "answer": 1,
+      "explanation": "Verification checks accuracy and quality of what was documented."
+    },
+    {
+      "question": "Which technique is best for validating a new screen design with users?",
+      "options": ["Peer review by a BA", "Clickable prototype", "Glossary check", "Traceability matrix"],
+      "answer": 1,
+      "explanation": "A prototype lets users experience the design and say whether it meets their needs."
+    },
+    {
+      "question": "After sign-off, requirements:",
+      "options": ["Can never change", "Form a baseline; changes go through change control", "Are deleted", "Are owned by developers"],
+      "answer": 1,
+      "explanation": "Sign-off sets a baseline. Changes are still possible but are assessed and approved formally."
+    },
+    {
+      "question": "A stakeholder doesn't reply to a review request. You should:",
+      "options": ["Assume they agree", "Follow up and, if needed, escalate", "Delete their requirements", "Sign off on their behalf"],
+      "answer": 1,
+      "explanation": "Silence is not agreement; unconfirmed requirements are a risk."
+    },
+    {
+      "question": "Tracing every requirement to a business objective mainly helps with:",
+      "options": ["Validation", "Formatting", "Estimation", "Deployment"],
+      "answer": 0,
+      "explanation": "If a requirement supports no objective, it may not be the right thing to build."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What's the difference between verifying and validating requirements?",
+      "answer": "Verification checks that requirements are captured correctly and are well written (clear, consistent, testable). Validation checks they are the right requirements, meaning they meet the business need and objectives. Building the requirements right versus building the right requirements."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you get requirements signed off?",
+      "answer": "Confirm them with each source stakeholder, run peer reviews with developers and testers, validate with scenarios or prototypes, trace to objectives, then present a concise summary to the business owner for formal approval. I agree in advance who signs off and explain that changes after baseline go through change control."
+    },
+    {
+      "level": "advanced",
+      "question": "A sponsor wants to sign off requirements without reading them. What do you do?",
+      "answer": "I respect their time but explain the risk. I offer a one-page summary of scope, key decisions, assumptions and exclusions, and a 30-minute walkthrough of the highest-risk items. That gives meaningful sign-off without needing them to read everything, and I record that the detailed review was done by delegated business owners."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-03-05",
+    "title": "Review and validate a requirements set",
+    "brief": "Take the requirements you wrote in an earlier assignment (or write 8 new ones for a cinema ticket app).\n\n1. Peer-review them against the quality checklist and rewrite any weak ones.\n2. Write four validation scenarios, including two exception cases.\n3. Trace each requirement to a business objective.\n4. Write a short sign-off note for the business owner listing scope, assumptions and exclusions.",
+    "deliverables": ["Reviewed requirements", "Four scenarios", "Trace table", "Sign-off note"]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ba-11-03",
+  "objectives": [
+    "Structure a recommendation using the Pyramid Principle and BLUF",
+    "Open a presentation with SCQA",
+    "Design clear slides with message titles and visuals",
+    "Tailor content to the audience",
+    "Handle questions and objections and close with a clear ask"
+  ],
+  "terminology": [
+    { "term": "Pyramid Principle", "definition": "A communication structure that starts with the answer, followed by grouped supporting arguments and evidence (Barbara Minto)." },
+    { "term": "SCQA", "definition": "Situation, Complication, Question, Answer: a storytelling structure for opening a presentation." },
+    { "term": "Message title", "definition": "A slide title that states the slide's key point as a sentence." },
+    { "term": "Appendix", "definition": "Supporting detail kept at the end of a deck for reference and questions." },
+    { "term": "The ask", "definition": "The specific decision or support requested from the audience." },
+    { "term": "Payback period", "definition": "The time it takes for benefits to repay the investment." },
+    { "term": "Objection", "definition": "A concern or challenge raised by the audience about the recommendation." }
+  ],
+  "exercises": [
+    {
+      "question": "Write an SCQA opening for recommending self-service password reset to an IT director.",
+      "answer": "**S:** The service desk handles 4,000 tickets a month. **C:** 35% are password resets, costing about £12,000 a month in agent time and frustrating staff who wait up to 4 hours. **Q:** How can we cut this cost and delay quickly? **A:** Introduce self-service password reset with MFA, live in 6 weeks, paying back in under 3 months."
+    },
+    {
+      "question": "Rewrite these slide titles as message titles: (a) 'Analysis', (b) 'Options', (c) 'Timeline'.",
+      "hint": "State the point.",
+      "answer": "(a) *Most delays come from manual approvals between three teams.* (b) *Option B is the only option that fits budget and deadline.* (c) *A pilot in June lets us roll out to all sites before December.*"
+    },
+    {
+      "question": "A finance director says: 'This is too expensive.' Write a response.",
+      "answer": "*\"That's a fair challenge. The solution costs £25k in year one; doing nothing costs about £22k a month in commission and lost orders. Based on conservative uptake, it pays back in around 4 months. We've also phased it so you approve only the £8k pilot today, with the rollout decision based on pilot results.\"*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the Pyramid Principle, you should start with:",
+      "options": ["Background", "Methodology", "The answer / recommendation", "Team introductions"],
+      "answer": 2,
+      "explanation": "Lead with the conclusion, then support it."
+    },
+    {
+      "question": "In SCQA, the 'C' stands for:",
+      "options": ["Conclusion", "Complication", "Cost", "Criteria"],
+      "answer": 1,
+      "explanation": "The complication is the problem or tension that creates the question."
+    },
+    {
+      "question": "Which slide title is best?",
+      "options": ["Data", "Findings", "Errors fall from 9% to under 3% with one order system", "Slide 4"],
+      "answer": 2,
+      "explanation": "A message title states the point of the slide."
+    },
+    {
+      "question": "If you don't know the answer to a question, you should:",
+      "options": ["Guess confidently", "Say you'll confirm by a specific time and follow up", "Change the subject", "End the meeting"],
+      "answer": 1,
+      "explanation": "Honesty plus prompt follow-up builds credibility."
+    },
+    {
+      "question": "A presentation to a sponsor should end with:",
+      "options": ["A thank-you slide only", "A clear ask for a decision or support", "The full requirements list", "Team photos"],
+      "answer": 1,
+      "explanation": "A specific ask turns analysis into action."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "How do you present recommendations to senior stakeholders?",
+      "answer": "I lead with the recommendation and the decision needed, then the problem in two or three numbers, root causes in one visual, options compared in one table, why my recommendation wins, the plan, risks and KPIs, and a clear ask. Detail goes in the appendix, and I confirm decisions in writing afterwards."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you handle objections during a presentation?",
+      "answer": "Listen fully, clarify the concern, acknowledge it, answer briefly with evidence (cost of doing nothing, pilot data, comparison with alternatives) and bridge back to the recommendation. If I don't have the answer, I commit to a follow-up time. Objections often reveal stakeholder interests I can address."
+    },
+    {
+      "level": "advanced",
+      "question": "Your recommendation is rejected. What do you do next?",
+      "answer": "Ask what drove the decision and what evidence would change it, document the decision and its risks, and support the chosen direction professionally. If new data appears later, such as pilot results or incidents, I bring it back with a clear update rather than reopening the debate without new information."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-11-03",
+    "title": "Present your case study",
+    "brief": "Using your library case study (ba-11-02 assignment), create a 6-8 slide deck for a 10-minute presentation to the head of libraries.\n\nUse message titles, an SCQA opening, one options table, one visual of the process or root causes, and a clear ask. Record yourself presenting (or present to a friend) and write down three objections you'd expect, with answers.",
+    "deliverables": ["6-8 slide deck", "SCQA script", "Objections and responses", "Self-review notes"]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ba-08-02",
+  "objectives": [
+    "Describe the three Scrum accountabilities: Product Owner, Scrum Master and Developers",
+    "Explain what cross-functional and self-managing teams mean",
+    "Describe where a BA typically fits in a Scrum team",
+    "Correct common misconceptions about Scrum roles"
+  ],
+  "terminology": [
+    { "term": "Scrum Team", "definition": "A small, cross-functional, self-managing team of a Product Owner, a Scrum Master and Developers." },
+    { "term": "Product Owner", "definition": "The person accountable for maximising product value and ordering the Product Backlog." },
+    { "term": "Scrum Master", "definition": "The person accountable for the team's effectiveness by establishing Scrum, coaching and removing impediments." },
+    { "term": "Developers", "definition": "Everyone in the Scrum Team who creates the product increment, including testers, designers and analysts." },
+    { "term": "Cross-functional", "definition": "Having all the skills needed to create value each sprint." },
+    { "term": "Self-managing", "definition": "The team decides internally who does what, when and how." },
+    { "term": "Impediment", "definition": "Anything that blocks the team's progress." },
+    { "term": "Product Goal", "definition": "The long-term objective for the product that the backlog works towards." }
+  ],
+  "exercises": [
+    {
+      "question": "A sales director emails a developer asking them to add a feature this sprint. What should happen?",
+      "hint": "Who owns the backlog?",
+      "answer": "The developer should redirect the request to the **Product Owner**, who decides whether and where it goes in the backlog. The Scrum Master may coach the director on how to work with the team. Changing sprint scope without the PO undermines transparency and the Sprint Goal."
+    },
+    {
+      "question": "Describe three ways a BA can support a Product Owner.",
+      "answer": "1. Eliciting needs from stakeholders and users. 2. Writing and refining user stories and acceptance criteria for the PO to review. 3. Modelling processes and analysing data to inform prioritisation. *(Also valid: managing traceability, facilitating refinement, supporting the sprint review.)*"
+    },
+    {
+      "question": "Why is 'PO by committee' a problem?",
+      "answer": "Decisions slow down or conflict, priorities change constantly and the team gets mixed messages. Scrum requires one Product Owner to make final ordering decisions, while still listening to stakeholders."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Who orders the Product Backlog?",
+      "options": ["Scrum Master", "Product Owner", "Developers", "Project sponsor"],
+      "answer": 1,
+      "explanation": "The PO is accountable for ordering the backlog to maximise value."
+    },
+    {
+      "question": "The Scrum Master is best described as:",
+      "options": ["The team's manager", "A servant-leader and coach", "The lead developer", "The client"],
+      "answer": 1,
+      "explanation": "The SM coaches and removes impediments rather than directing work."
+    },
+    {
+      "question": "In Scrum, 'Developers' includes:",
+      "options": ["Only programmers", "Everyone doing the work, including testers and analysts", "Only senior engineers", "The Product Owner"],
+      "answer": 1,
+      "explanation": "The Scrum Guide uses Developers for all people creating the increment."
+    },
+    {
+      "question": "Who decides how to implement a story technically?",
+      "options": ["Product Owner", "Scrum Master", "Developers", "Stakeholders"],
+      "answer": 2,
+      "explanation": "Developers are self-managing in how they build."
+    },
+    {
+      "question": "Where does a BA most commonly sit in Scrum?",
+      "options": ["Outside the team only", "Within the Developers, supporting the PO", "As Scrum Master", "As the sponsor"],
+      "answer": 1,
+      "explanation": "Most BAs work as part of the Developers, often closely supporting the PO."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are the roles in Scrum?",
+      "answer": "The Product Owner, accountable for value and ordering the backlog; the Scrum Master, accountable for team effectiveness by coaching and removing impediments; and the Developers, everyone who builds the increment. Together they form a small, cross-functional, self-managing Scrum Team."
+    },
+    {
+      "level": "intermediate",
+      "question": "What is the difference between a Product Owner and a Business Analyst?",
+      "answer": "The PO is accountable for product value and decides the backlog order. The BA is a specialist in analysis: eliciting needs, modelling processes, writing stories and acceptance criteria, and helping the PO make informed decisions. In small teams one person may do both."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you work with a PO who has little time?",
+      "answer": "Agree short, regular slots for decisions; prepare stories, options and recommendations in advance so the PO only needs to decide; batch questions; clarify which decisions I can make within agreed guidelines; and escalate the availability risk through the Scrum Master if it blocks the team."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-08-02",
+    "title": "Design a Scrum team",
+    "brief": "A council wants a team to build an online parking permit service. Design the Scrum team: name who would be PO (role, not person), Scrum Master and Developers (with skills).\n\nWrite a one-paragraph description of the BA's responsibilities and a short RACI-style list showing who decides, who does and who advises for: backlog order, story writing, technical design and acceptance.",
+    "deliverables": ["Team design", "BA responsibilities", "Decision list"]
+  }
+}

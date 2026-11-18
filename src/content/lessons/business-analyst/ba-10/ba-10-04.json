@@ -1,0 +1,89 @@
+{
+  "id": "ba-10-04",
+  "objectives": [
+    "Identify common sources of stakeholder conflict",
+    "Describe the five Thomas-Kilmann conflict modes and when to use each",
+    "Separate positions from interests to find options for mutual gain",
+    "Apply approaches for common difficult stakeholder types",
+    "Escalate effectively with options and a recommendation"
+  ],
+  "terminology": [
+    { "term": "Thomas-Kilmann modes", "definition": "Five conflict-handling styles: competing, collaborating, compromising, avoiding and accommodating." },
+    { "term": "Position", "definition": "What a stakeholder says they want." },
+    { "term": "Interest", "definition": "The underlying need or concern behind a position." },
+    { "term": "BATNA", "definition": "Best Alternative To a Negotiated Agreement: what you will do if agreement isn't reached." },
+    { "term": "Objective criteria", "definition": "Neutral standards, such as data, policy or business objectives, used to evaluate options." },
+    { "term": "Escalation", "definition": "Referring an unresolved issue to someone with more authority, ideally with options and a recommendation." },
+    { "term": "Champion", "definition": "A stakeholder who actively supports and promotes the change." }
+  ],
+  "exercises": [
+    {
+      "question": "Identify the interests behind these positions and propose an option meeting both: IT says 'No mobile access to the HR system.' Managers say 'We need to approve leave from our phones.'",
+      "hint": "Why does each side want this?",
+      "answer": "**IT interest:** protect sensitive personal data and prevent breaches. **Managers' interest:** approve requests quickly while travelling. **Option:** a secure mobile approval feature limited to approving or rejecting leave (no personal data shown), with multi-factor authentication and device management, or approval via secure email links with SSO."
+    },
+    {
+      "question": "Which conflict mode fits best: (a) a legal compliance rule that stakeholders dislike, (b) choosing the colour of a report header, (c) designing a new process with two departments that must both commit to it?",
+      "answer": "(a) **Competing** (non-negotiable compliance, explained respectfully). (b) **Accommodating** or **avoiding** (trivial). (c) **Collaborating** (important; commitment needed)."
+    },
+    {
+      "question": "Write an escalation message to a sponsor about two managers disagreeing on report priorities.",
+      "answer": "Example: **\"Decision needed by Friday: Sales and Operations disagree on which report to build first. Option A: Sales pipeline report (supports Q3 revenue target; 2 sprints). Option B: Stock availability report (reduces stock-outs ~10%; 3 sprints). Both managers have reviewed this summary. Recommendation: A first, because it supports the quarterly objective and is smaller; B follows immediately.\"**"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which conflict mode aims for a win-win outcome?",
+      "options": ["Competing", "Avoiding", "Collaborating", "Accommodating"],
+      "answer": 2,
+      "explanation": "Collaborating seeks solutions that fully meet both parties' concerns."
+    },
+    {
+      "question": "'We need approval on every order' is a:",
+      "options": ["Interest", "Position", "BATNA", "Objective criterion"],
+      "answer": 1,
+      "explanation": "It's what they say they want; the interest is why (e.g. prevent fraud)."
+    },
+    {
+      "question": "When escalating a conflict, a BA should:",
+      "options": ["Just report the problem", "Present options, impacts and a recommendation", "Take one side", "Wait until the end of the project"],
+      "answer": 1,
+      "explanation": "Options and a recommendation help the decision-maker act quickly."
+    },
+    {
+      "question": "A good approach to a stakeholder who keeps changing their mind is:",
+      "options": ["Ignore them", "Document decisions and show the impact of changes", "Always accept every change", "Remove them from the project"],
+      "answer": 1,
+      "explanation": "Visible decisions and trade-offs encourage thoughtful changes."
+    },
+    {
+      "question": "Why should a BA stay neutral in conflicts?",
+      "options": ["It's a legal requirement", "Credibility and trust depend on being seen as fair", "BAs have no opinions", "To avoid work"],
+      "answer": 1,
+      "explanation": "Neutrality lets the BA facilitate solutions all parties accept."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "How do you handle conflicting requirements from two stakeholders?",
+      "answer": "Meet each separately to understand positions and the interests behind them, gather data, bring them together around shared objectives, generate options that meet both interests, evaluate them against objective criteria, and agree. If we can't agree, I escalate to the decision-maker with options and a recommendation, then document the outcome."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a difficult stakeholder you worked with.",
+      "answer": "Use STAR. Describe the behaviour neutrally (not personally), what you did to understand their concerns (1:1, listening for interests), how you involved them (ownership, data, options), and the result, ideally that they became supportive. End with what you learned."
+    },
+    {
+      "level": "advanced",
+      "question": "A senior stakeholder insists on a requirement you believe is harmful to users. What do you do?",
+      "answer": "Seek to understand their reasons first, then present evidence of the user impact (data, research, usability tests) and alternative options that meet their underlying interest. If they still insist and it's within their authority, I document the decision and risks clearly and escalate if it breaches policy, law or agreed objectives."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-10-04",
+    "title": "Resolve a conflict scenario",
+    "brief": "Scenario: in a hospital app project, doctors want patients to see test results immediately; the clinical safety officer wants results released only after a doctor has reviewed them.\n\n1. Identify each side's positions and interests.\n2. Propose at least three options and evaluate them against objective criteria.\n3. Recommend one and write an escalation note to the sponsor.\n4. Write a decision record.",
+    "deliverables": ["Positions and interests", "Options evaluation", "Escalation note", "Decision record"]
+  }
+}

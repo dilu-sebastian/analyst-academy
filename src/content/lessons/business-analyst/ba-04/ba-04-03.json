@@ -1,0 +1,90 @@
+{
+  "id": "ba-04-03",
+  "objectives": [
+    "Explain how an FRD expands business requirements into system behaviour",
+    "List the standard sections of an FRD",
+    "Write a use case with main, alternate and exception flows",
+    "Create a simple data dictionary entry",
+    "Trace functional requirements back to the BRD"
+  ],
+  "terminology": [
+    { "term": "FRD", "definition": "Functional Requirements Document describing in detail what a system must do." },
+    { "term": "Use case", "definition": "A description of how an actor interacts with a system to achieve a goal, including alternate and exception flows." },
+    { "term": "Actor", "definition": "A person, role or external system that interacts with the system being specified." },
+    { "term": "Main flow (happy path)", "definition": "The normal sequence of steps when everything goes as expected." },
+    { "term": "Alternate flow", "definition": "A valid variation of the main flow, such as choosing a different option." },
+    { "term": "Exception flow", "definition": "What happens when an error or unexpected condition occurs." },
+    { "term": "Precondition / Postcondition", "definition": "What must be true before a use case starts, and what is true after it completes." },
+    { "term": "Data dictionary", "definition": "A table defining each data field's name, type, length, validation and meaning." }
+  ],
+  "exercises": [
+    {
+      "question": "Write a use case (actor, preconditions, main flow, one alternate, one exception, postconditions) for 'Withdraw cash at an ATM'.",
+      "answer": "**Actor:** Bank customer. **Preconditions:** ATM is in service; customer has a valid card. **Main flow:** 1. Insert card. 2. Enter PIN. 3. System validates PIN. 4. Choose Withdraw cash. 5. Select amount. 6. System checks balance and limit. 7. System dispenses cash and returns card. 8. System offers receipt. **Alternate:** 5a. Customer enters a custom amount (multiples of £10). **Exception:** 3a. Wrong PIN three times: system retains card and shows message. **Postconditions:** Account debited; transaction logged."
+    },
+    {
+      "question": "Create data dictionary entries for 'Email address' and 'Order quantity'.",
+      "answer": "| Field | Type | Length | Required | Validation | Example |\n|---|---|---|---|---|---|\n| Email address | Text | 254 | Yes | Valid email format; unique per account | sam@example.com |\n| Order quantity | Integer | | Yes | 1 to 99 | 3 |"
+    },
+    {
+      "question": "Why do most defects hide in alternate and exception flows?",
+      "hint": "What do stakeholders naturally describe?",
+      "answer": "Stakeholders naturally describe the normal case. Exceptions such as errors, timeouts, missing data or concurrent actions are rarely mentioned unless the BA asks what if, so they're often unspecified and developers guess."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Compared with a BRD, an FRD is:",
+      "options": ["Higher level", "More detailed about what the system must do", "About budget", "Only for executives"],
+      "answer": 1,
+      "explanation": "The FRD expands business needs into detailed system behaviour."
+    },
+    {
+      "question": "\"Card declined: show a message and keep the basket\" is part of:",
+      "options": ["The main flow", "An exception flow", "Preconditions", "Document control"],
+      "answer": 1,
+      "explanation": "It describes behaviour when something goes wrong."
+    },
+    {
+      "question": "Which belongs in a data dictionary?",
+      "options": ["Project budget", "Field name, type, length and validation rules", "Stakeholder map", "Sprint dates"],
+      "answer": 1,
+      "explanation": "A data dictionary defines each data element precisely."
+    },
+    {
+      "question": "\"Patient is logged in\" is a:",
+      "options": ["Postcondition", "Precondition", "Business objective", "Exception"],
+      "answer": 1,
+      "explanation": "It must be true before the use case begins."
+    },
+    {
+      "question": "Why trace FRs to the BRD?",
+      "options": ["To make the document longer", "To show each function supports a business need and nothing is missed", "Because developers require it", "To set prices"],
+      "answer": 1,
+      "explanation": "Traceability proves value and completeness in both directions."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is an FRD and what does it contain?",
+      "answer": "A document that details what the system must do to meet the business requirements. It includes user roles, numbered functional requirements traced to the BRD, use cases with alternate and exception flows, business rules and validations, data definitions, screen mock-ups, reports, notifications and interface descriptions."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you write a good use case?",
+      "answer": "Name it as a verb-noun goal, identify the actor, preconditions and trigger, write a clear numbered main flow, then ask what-if questions at each step to capture alternate and exception flows, and finish with postconditions and linked business rules. I review it with users and testers."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make sure you've captured edge cases?",
+      "answer": "I ask what-if at every step (missing data, timeouts, duplicates, permissions, concurrency, limits), use boundary examples, review with testers who think in edge cases, look at production incident logs, and use decision tables for complex rules."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-04-03",
+    "title": "FRD section for a feature",
+    "brief": "Choose one feature, such as 'customer returns an item online'.\n\nWrite: 6-10 numbered functional requirements traced to a business requirement, one full use case with at least two alternate and two exception flows, a data dictionary with 5 fields, and one notification specification (trigger, recipient, content).",
+    "deliverables": ["Functional requirements table", "Use case", "Data dictionary", "Notification spec"]
+  }
+}

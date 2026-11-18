@@ -1,0 +1,87 @@
+{
+  "id": "ba-07-02",
+  "objectives": [
+    "Explain each letter of INVEST",
+    "Evaluate user stories against INVEST and identify problems",
+    "Distinguish vertical from horizontal slicing",
+    "Rewrite or split stories to meet INVEST"
+  ],
+  "terminology": [
+    { "term": "INVEST", "definition": "Independent, Negotiable, Valuable, Estimable, Small, Testable: qualities of a good user story (Bill Wake)." },
+    { "term": "Vertical slice", "definition": "A story that delivers a thin piece of working functionality through all layers (UI, logic, data)." },
+    { "term": "Horizontal slice", "definition": "Work split by technical layer, which delivers no user value on its own." },
+    { "term": "Spike", "definition": "A short, time-boxed investigation to reduce uncertainty so a story can be estimated." },
+    { "term": "Dependency", "definition": "A relationship where one story cannot be completed without another." },
+    { "term": "Estimate", "definition": "The team's judgement of a story's size or effort, often in story points." }
+  ],
+  "exercises": [
+    {
+      "question": "Apply INVEST to: \"As a user, I want an amazing dashboard.\" Identify the problems and rewrite it.",
+      "answer": "Problems: user not specific; 'amazing' not testable; too big; not estimable. Rewrite, e.g.: *As a sales manager, I want to see this month's sales against target on one screen so that I can spot shortfalls early.* Acceptance criteria then define the figures, refresh frequency and filters."
+    },
+    {
+      "question": "A team plans three stories: build the payments database, build the payments API, build the payments screen. What's wrong and how would you re-slice?",
+      "hint": "Horizontal vs vertical.",
+      "answer": "They're **horizontal** slices; none delivers user value alone, and they depend on each other. Re-slice vertically: (1) pay by card for a single item with confirmation; (2) pay with a saved card; (3) pay with PayPal. Each slice touches database, API and screen, and works end to end."
+    },
+    {
+      "question": "The team can't estimate a story because nobody has used the shipping provider's API. What do you do?",
+      "answer": "Create a **spike**: a time-boxed investigation (e.g. 1 day) to explore the API, its limitations and effort. After the spike, the team can estimate the story with confidence."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In INVEST, the N stands for:",
+      "options": ["Necessary", "Negotiable", "New", "Numbered"],
+      "answer": 1,
+      "explanation": "Stories are negotiable: details are discussed rather than fixed like a contract."
+    },
+    {
+      "question": "\"Create the customers database table\" fails which INVEST quality most clearly?",
+      "options": ["Valuable", "Small", "Estimable", "Negotiable"],
+      "answer": 0,
+      "explanation": "It is a technical layer with no user value on its own."
+    },
+    {
+      "question": "A spike is used when a story is not:",
+      "options": ["Valuable", "Estimable", "Negotiable", "Independent"],
+      "answer": 1,
+      "explanation": "Spikes reduce uncertainty so the team can estimate."
+    },
+    {
+      "question": "Vertical slicing means:",
+      "options": ["Splitting by technical layer", "Delivering thin pieces of working functionality through all layers", "Writing taller user story cards", "Ordering stories by priority"],
+      "answer": 1,
+      "explanation": "Each vertical slice is usable end to end."
+    },
+    {
+      "question": "Which story is most testable?",
+      "options": ["The app should be user-friendly", "Search should be quick", "Search results appear within 2 seconds for 95% of searches", "Make the app better"],
+      "answer": 2,
+      "explanation": "It has a measurable condition that can be checked."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What does INVEST mean?",
+      "answer": "It's a checklist for good user stories: Independent, Negotiable, Valuable, Estimable, Small and Testable. I use it in refinement to spot stories that are too big, too vague, too technical or missing acceptance criteria."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you make a story small enough for a sprint without losing value?",
+      "answer": "Slice vertically so each piece works end to end: by workflow step, business rule, data variation, user type, or simple case first then complex. Each slice should still deliver something a user can see or test."
+    },
+    {
+      "level": "intermediate",
+      "question": "What do you do when a story has dependencies on another team?",
+      "answer": "Make the dependency visible on the board, agree timing with the other team early, order the backlog so the dependency is resolved first, and where possible re-slice to reduce coupling or use a stub so we can progress independently."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-07-02",
+    "title": "INVEST review",
+    "brief": "Take the 10 stories from your previous assignment (or write 10 new ones). Score each against all six INVEST letters (pass / partial / fail) in a table.\n\nRewrite or split every story with a fail, and identify any story that needs a spike.",
+    "deliverables": ["INVEST scoring table", "Rewritten or split stories", "Spike list with time-box"]
+  }
+}

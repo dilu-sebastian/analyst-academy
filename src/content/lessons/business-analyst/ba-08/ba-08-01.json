@@ -1,0 +1,89 @@
+{
+  "id": "ba-08-01",
+  "objectives": [
+    "Compare Waterfall and Agile delivery approaches",
+    "State the four values of the Agile Manifesto",
+    "Name common Agile frameworks and their key ideas",
+    "Recommend an approach for a given project context",
+    "Describe how the BA role differs between Waterfall and Agile"
+  ],
+  "terminology": [
+    { "term": "Waterfall", "definition": "A sequential delivery approach where each phase is completed before the next begins." },
+    { "term": "Agile", "definition": "An iterative approach that delivers working increments in short cycles and adapts to feedback." },
+    { "term": "Agile Manifesto", "definition": "A 2001 statement of four values and twelve principles for agile software development." },
+    { "term": "Iteration / Sprint", "definition": "A short, fixed time-box (often 1-4 weeks) in which a team delivers a working increment." },
+    { "term": "Increment", "definition": "A usable piece of the product delivered at the end of an iteration." },
+    { "term": "Kanban", "definition": "A flow-based method using a visual board and work-in-progress limits." },
+    { "term": "Hybrid approach", "definition": "A combination of Waterfall and Agile practices." }
+  ],
+  "exercises": [
+    {
+      "question": "List the four Agile Manifesto values.",
+      "answer": "1. Individuals and interactions over processes and tools. 2. Working software over comprehensive documentation. 3. Customer collaboration over contract negotiation. 4. Responding to change over following a plan."
+    },
+    {
+      "question": "A hospital must implement a new national data standard by a fixed date with requirements fully defined by the regulator. Which approach would you suggest and why?",
+      "hint": "How stable are the requirements?",
+      "answer": "**Waterfall or a hybrid.** Requirements are fixed and well understood, there's a hard deadline and compliance must be proven. A hybrid could still use iterative build and testing to find problems early, within a fixed scope."
+    },
+    {
+      "question": "Explain why risks are discovered earlier in Agile.",
+      "answer": "Working software is built, tested and demonstrated every sprint, so technical problems, misunderstood requirements and poor user fit appear within weeks. In Waterfall, testing and user feedback come late, so problems surface when they are most expensive to fix."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is an Agile Manifesto value?",
+      "options": ["Contract negotiation over customer collaboration", "Working software over comprehensive documentation", "Following a plan over responding to change", "Tools over individuals"],
+      "answer": 1,
+      "explanation": "Agile values working software more, while still valuing documentation."
+    },
+    {
+      "question": "Waterfall is most suitable when:",
+      "options": ["Requirements are uncertain", "Requirements are stable and changes are very costly", "Customers want weekly releases", "The team is experimenting"],
+      "answer": 1,
+      "explanation": "Sequential phases work best with stable, well-understood scope."
+    },
+    {
+      "question": "In Agile, changing requirements are:",
+      "options": ["Forbidden", "Welcomed and handled through the backlog", "Only allowed after go-live", "Handled by the sponsor alone"],
+      "answer": 1,
+      "explanation": "Agile principles welcome change, even late in development."
+    },
+    {
+      "question": "Which is a framework, not a mindset?",
+      "options": ["Agile", "Scrum", "Collaboration", "Continuous improvement"],
+      "answer": 1,
+      "explanation": "Scrum is a specific framework implementing Agile values."
+    },
+    {
+      "question": "A major risk of Waterfall is that:",
+      "options": ["There is too much feedback", "Problems are often found late, during testing or after release", "There's no documentation", "There are no phases"],
+      "answer": 1,
+      "explanation": "Testing and user feedback come late in the sequence."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is the difference between Agile and Waterfall?",
+      "answer": "Waterfall delivers in sequential phases with fixed requirements up front and one release at the end. Agile delivers in short iterations with evolving requirements, continuous customer involvement and frequent releases, so it adapts to change and surfaces risk early. **Mention where each fits best.**"
+    },
+    {
+      "level": "intermediate",
+      "question": "How does the BA role change in an Agile team?",
+      "answer": "Instead of writing large documents up front and handing them over, the Agile BA works daily with the team: refining the backlog, writing stories and acceptance criteria just in time, modelling processes, answering questions, supporting testing and demos, and helping the Product Owner prioritise."
+    },
+    {
+      "level": "intermediate",
+      "question": "Have you worked in a hybrid environment? How did it work?",
+      "answer": "Describe or imagine: business case and high-level requirements agreed up front for funding and governance, then delivery in sprints with a backlog and stories. The BA bridged both, keeping a high-level requirements baseline and traceability while refining stories each sprint."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-08-01",
+    "title": "Choose the delivery approach",
+    "brief": "For each project, recommend Waterfall, Agile or hybrid, with three reasons and one risk of your choice:\n1. A new feature for a popular food delivery app.\n2. Replacing a bank's core payments system with a vendor package.\n3. Building a booking website for a small yoga studio.\n4. Implementing a new tax rule by a legal deadline.",
+    "deliverables": ["Recommendation table", "Reasons and risks for each"]
+  }
+}

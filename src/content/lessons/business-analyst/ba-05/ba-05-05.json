@@ -1,0 +1,89 @@
+{
+  "id": "ba-05-05",
+  "objectives": [
+    "Identify the elements of a UML sequence diagram",
+    "Distinguish synchronous, asynchronous and return messages",
+    "Use alt, opt, loop and par fragments",
+    "Model a system interaction including error paths"
+  ],
+  "terminology": [
+    { "term": "Sequence diagram", "definition": "A UML diagram showing messages exchanged between participants in time order." },
+    { "term": "Lifeline", "definition": "The dashed vertical line under a participant representing its existence over time." },
+    { "term": "Synchronous message", "definition": "A message where the sender waits for a response before continuing." },
+    { "term": "Asynchronous message", "definition": "A message where the sender continues without waiting for a response." },
+    { "term": "Return message", "definition": "A dashed arrow showing a response to an earlier message." },
+    { "term": "Activation bar", "definition": "A narrow rectangle on a lifeline showing when the participant is processing." },
+    { "term": "Combined fragment", "definition": "A labelled box (alt, opt, loop, par) adding logic to a group of messages." },
+    { "term": "Self-message", "definition": "A message a participant sends to itself, representing internal processing." }
+  ],
+  "exercises": [
+    {
+      "question": "List the participants and messages (in order) for 'Customer withdraws cash from an ATM', including one alt fragment.",
+      "answer": "**Participants:** Customer, ATM, Bank system. **Messages:** 1. Customer → ATM: insert card and PIN. 2. ATM → Bank: verify PIN. 3. Bank ┄► ATM: PIN OK. 4. Customer → ATM: request £100. 5. ATM → Bank: authorise £100. 6. `alt [sufficient funds]` Bank ┄► ATM: approved → ATM → Customer: dispense cash; `[insufficient funds]` Bank ┄► ATM: declined → ATM → Customer: show message. 7. ATM → Customer: return card."
+    },
+    {
+      "question": "Which fragment would you use for: (a) retry up to 3 times, (b) send a marketing email only if the customer opted in, (c) approve or reject?",
+      "answer": "(a) **loop**, (b) **opt**, (c) **alt**."
+    },
+    {
+      "question": "Why is sending an order confirmation email usually modelled as asynchronous?",
+      "hint": "Does the website wait?",
+      "answer": "The website doesn't need to wait for the email to be delivered before showing the confirmation page. Making it asynchronous means a slow email service doesn't block the customer, and failures can be retried separately."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In a sequence diagram, time flows:",
+      "options": ["Left to right", "Top to bottom", "Bottom to top", "In a circle"],
+      "answer": 1,
+      "explanation": "Messages lower on the diagram happen later."
+    },
+    {
+      "question": "A dashed arrow usually represents:",
+      "options": ["A synchronous call", "A return message", "A loop", "A new participant"],
+      "answer": 1,
+      "explanation": "Return messages are drawn as dashed lines back to the caller."
+    },
+    {
+      "question": "Which fragment shows if/else alternatives?",
+      "options": ["loop", "opt", "alt", "par"],
+      "answer": 2,
+      "explanation": "alt contains mutually exclusive alternatives with guards."
+    },
+    {
+      "question": "Sequence diagrams are most useful for:",
+      "options": ["Agreeing project budget", "Specifying interactions and integrations between systems", "Prioritising requirements", "Mapping stakeholder influence"],
+      "answer": 1,
+      "explanation": "They show who sends what message to whom and in what order."
+    },
+    {
+      "question": "An asynchronous message means:",
+      "options": ["The sender waits for the reply", "The sender continues without waiting", "The message is optional", "The message repeats"],
+      "answer": 1,
+      "explanation": "Async messages don't block the sender."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a sequence diagram used for?",
+      "answer": "To show how participants such as users, systems and services interact over time by exchanging messages. BAs use it to specify integrations, the order of interactions and error handling so developers and testers share a precise picture."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you show error handling in a sequence diagram?",
+      "answer": "With combined fragments: alt for success versus failure responses, loop for retries, and opt for conditional steps. I label guards clearly, for example [timeout after 10s], and include what the user sees in each case."
+    },
+    {
+      "level": "advanced",
+      "question": "How would you use a sequence diagram when working with an external API vendor?",
+      "answer": "I'd model the full interaction with them: requests and responses with key data fields, synchronous versus asynchronous calls, timeouts, retries, error codes and idempotency for repeated requests. We'd review it together to agree responsibilities and use it as the basis for interface requirements and integration test cases."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-05-05",
+    "title": "Sequence diagram for food ordering",
+    "brief": "Draw a sequence diagram for placing a food delivery order with participants: Customer, App, Order Service, Payment Provider, Restaurant System and Notification Service.\n\nInclude at least one alt (payment approved/declined), one opt and one loop, and mark asynchronous messages. Add a short list of interface questions the diagram raised.",
+    "deliverables": ["Sequence diagram", "Explanation of fragments used", "List of interface questions"]
+  }
+}

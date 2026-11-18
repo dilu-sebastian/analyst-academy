@@ -1,0 +1,89 @@
+{
+  "id": "ba-09-02",
+  "objectives": [
+    "Use the Jira backlog view to order, estimate and prepare items",
+    "Create, start and complete a sprint in Jira",
+    "Configure board columns, swimlanes and quick filters",
+    "Interpret Jira reports: burndown, velocity, sprint and epic reports"
+  ],
+  "terminology": [
+    { "term": "Backlog view", "definition": "The Jira screen for ordering, refining and planning items into sprints." },
+    { "term": "Rank", "definition": "Jira's ordering of backlog items, set by drag and drop." },
+    { "term": "Swimlane", "definition": "A horizontal grouping of cards on a Jira board, e.g. by epic or for urgent items." },
+    { "term": "Quick filter", "definition": "A one-click filter on a Jira board or backlog based on a JQL condition." },
+    { "term": "Sprint report", "definition": "A Jira report showing completed, incomplete and added work for a sprint." },
+    { "term": "WIP limit", "definition": "A maximum number of items allowed in a workflow column at once." },
+    { "term": "Cycle time", "definition": "The time an item takes from starting work to done." },
+    { "term": "Dashboard", "definition": "A Jira page combining gadgets such as charts and filter results." }
+  ],
+  "exercises": [
+    {
+      "question": "Describe the steps to plan and start a sprint in Jira.",
+      "answer": "1. In the backlog view, create a sprint. 2. Drag the top-ranked, ready items into it until total story points match capacity. 3. Click Start sprint, set the name, dates and Sprint Goal. 4. The team works from the active sprint board."
+    },
+    {
+      "question": "A sprint burndown chart is flat for the first 5 days, then drops sharply. Give two possible reasons.",
+      "hint": "Is it the work or the data?",
+      "answer": "1. Stories were too big, so nothing reached Done until late in the sprint (slice smaller). 2. The team didn't update the board until later. *(Also valid: blockers early in the sprint; work done but not reviewed or tested.)*"
+    },
+    {
+      "question": "Design a BA dashboard with four gadgets and explain each.",
+      "answer": "1. **Filter results: stories without AC** (prepare refinement). 2. **Epic progress / burnup** (stakeholder updates). 3. **Pie chart of open bugs by priority** (quality view). 4. **Filter results: items flagged Needs PO decision** (unblock the team)."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Where do you order backlog items in Jira?",
+      "options": ["Dashboard", "Backlog view by drag and drop", "Sprint report", "Project settings"],
+      "answer": 1,
+      "explanation": "Dragging items in the backlog sets their rank."
+    },
+    {
+      "question": "Which report helps forecast how many sprints remaining work will take?",
+      "options": ["Velocity chart", "Pie chart", "Created vs resolved", "Audit log"],
+      "answer": 0,
+      "explanation": "Average velocity lets you divide remaining points by points per sprint."
+    },
+    {
+      "question": "When you complete a sprint with unfinished items, Jira:",
+      "options": ["Deletes them", "Asks where to move them (next sprint or backlog)", "Marks them done", "Assigns them to the PO"],
+      "answer": 1,
+      "explanation": "Unfinished work moves to the backlog or a future sprint."
+    },
+    {
+      "question": "A swimlane for urgent production bugs is called an:",
+      "options": ["Epic lane", "Expedite lane", "Archive lane", "Story lane"],
+      "answer": 1,
+      "explanation": "Expedite swimlanes make urgent work visible and prioritised."
+    },
+    {
+      "question": "WIP limits are most associated with:",
+      "options": ["Kanban", "Waterfall", "BRDs", "Use cases"],
+      "answer": 0,
+      "explanation": "Limiting work in progress is a core Kanban practice."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How do you manage a backlog in Jira?",
+      "answer": "I keep it ordered with the PO by ranking items, link stories to epics, use filters and labels to find items missing AC or estimates, refine the top items before planning, and close obsolete items regularly so the backlog stays focused."
+    },
+    {
+      "level": "intermediate",
+      "question": "Which Jira reports do you find most useful and why?",
+      "answer": "The sprint burndown to spot risk to the Sprint Goal early, the sprint report to discuss scope changes in the retro, the velocity chart for forecasting, and epic burnups or dashboards for stakeholder updates. I treat reports as conversation starters, not judgements."
+    },
+    {
+      "level": "intermediate",
+      "question": "A stakeholder asks when a feature will be ready. How do you answer using Jira?",
+      "answer": "Check the epic's remaining estimated points, divide by the team's average velocity to get a range of sprints, consider unestimated items and risks, and give a range rather than a date, such as 3-4 sprints, with what's needed to narrow it. Then share an epic burnup so they can follow progress."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-09-02",
+    "title": "Run a simulated sprint",
+    "brief": "Using your Jira practice project (or a spreadsheet), plan a sprint: rank 10 stories, estimate them, select items for a 15-point capacity, write a Sprint Goal, and start the sprint.\n\nSimulate 5 days of progress by moving cards, then complete the sprint with one unfinished item. Capture the burndown and sprint report (or sketch them) and write a short retrospective note.",
+    "deliverables": ["Ranked backlog", "Sprint Goal and selected items", "Burndown/sprint report screenshots or sketches", "Retrospective note"]
+  }
+}

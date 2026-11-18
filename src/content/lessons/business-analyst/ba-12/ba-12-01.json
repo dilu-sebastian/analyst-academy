@@ -1,0 +1,88 @@
+{
+  "id": "ba-12-01",
+  "objectives": [
+    "Describe the typical stages of a BA hiring process and what each assesses",
+    "Recognise the four main types of interview questions",
+    "Tailor a CV for BA roles with quantified, keyword-rich achievements",
+    "Research a company and decode a job advert into likely questions",
+    "Build a story bank and prepare questions for the interviewer"
+  ],
+  "terminology": [
+    { "term": "Screening call", "definition": "A short initial interview, usually with a recruiter, checking motivation and basic fit." },
+    { "term": "Competency interview", "definition": "An interview assessing skills and behaviours through questions about knowledge and past experience." },
+    { "term": "Assessment centre", "definition": "A selection event with multiple exercises such as case studies, presentations and group tasks." },
+    { "term": "Story bank", "definition": "A prepared set of short STAR examples that can be adapted to many interview questions." },
+    { "term": "Transferable skills", "definition": "Skills gained in one role or context that apply in another, such as facilitation or process improvement." },
+    { "term": "Take-home task", "definition": "An assignment completed in your own time, such as writing user stories for a feature." }
+  ],
+  "exercises": [
+    {
+      "question": "Rewrite this CV bullet to show impact: \"Responsible for gathering requirements for a new reporting tool.\"",
+      "hint": "Add actions, scope and a measurable result.",
+      "answer": "Example: **\"Ran 6 interviews and 2 workshops with finance and sales to define requirements for a new reporting dashboard; agreed a single definition of active customer, ending conflicting reports and saving managers ~5 hours a week.\"**"
+    },
+    {
+      "question": "List 8 story-bank themes you should prepare for BA interviews.",
+      "answer": "Eliciting requirements; stakeholder conflict; process improvement; dealing with ambiguity; a mistake or failure; influencing without authority; working in an Agile team; a data-driven decision. *(Also valid: tight deadline, difficult stakeholder, presenting to senior leaders.)*"
+    },
+    {
+      "question": "Write three good questions to ask an interviewer for a BA role.",
+      "answer": "1. What does success look like for this role in the first six months? 2. How do BAs and Product Owners work together here? 3. What's the biggest challenge the team is facing right now? *(Also valid: questions on tools, templates, team structure, how requirements quality is measured.)*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "'Tell me about a time you resolved a conflict' is which type of question?",
+      "options": ["Conceptual", "Behavioural", "Technical", "Screening"],
+      "answer": 1,
+      "explanation": "Behavioural questions ask for real past examples."
+    },
+    {
+      "question": "The best source for predicting interview questions is:",
+      "options": ["Random online lists only", "The job advert's responsibilities and requirements", "The company's logo", "Your horoscope"],
+      "answer": 1,
+      "explanation": "Each responsibility in the advert is likely to be tested."
+    },
+    {
+      "question": "Which CV bullet is strongest?",
+      "options": ["Did process mapping", "Mapped claims process in BPMN; removed 3 duplicate steps, cutting processing time by 4 days", "Good with stakeholders", "Used Jira"],
+      "answer": 1,
+      "explanation": "It shows the technique, action and quantified impact."
+    },
+    {
+      "question": "A case study stage mainly assesses:",
+      "options": ["Salary expectations", "Applying BA techniques under pressure and communicating results", "Typing speed", "Holiday preferences"],
+      "answer": 1,
+      "explanation": "Case studies test practical application and communication."
+    },
+    {
+      "question": "Career changers should:",
+      "options": ["Hide previous experience", "Highlight transferable BA-like experience and course projects", "Only apply to senior roles", "Avoid mentioning learning"],
+      "answer": 1,
+      "explanation": "Process improvement, user needs and facilitation from previous roles are relevant evidence."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "Why do you want to be a business analyst?",
+      "answer": "Connect your motivation to the core of the role: enjoying understanding problems, working with people across the business, and seeing changes that make a measurable difference. Give one short example of when you did this, and link it to the company's work. Avoid generic answers like I like analysis."
+    },
+    {
+      "level": "beginner",
+      "question": "Walk me through your CV.",
+      "answer": "Give a 90-second narrative, not a list: where you started, the experiences that built BA skills (with one quantified achievement), why you're moving into or progressing in BA now, and why this role fits. End by inviting their questions."
+    },
+    {
+      "level": "intermediate",
+      "question": "What do you know about our company and why this role?",
+      "answer": "Show research: products, customers, recent news or challenges (for example, slow claims mentioned in reviews), and connect them to how a BA could help. Then explain what attracts you: the domain, methodology or team, and how your skills match the advert."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-12-01",
+    "title": "Interview preparation pack",
+    "brief": "Find a real BA job advert you'd like to apply for.\n\n1. Decode it into a table of 8 likely questions.\n2. Rewrite 5 CV bullets to show quantified impact.\n3. Write 8 story-bank entries (one line each, theme + situation + result).\n4. Write 4 questions to ask the interviewer.\n5. Write a one-paragraph company research summary.",
+    "deliverables": ["Advert-to-question table", "5 CV bullets", "Story bank list", "Questions for interviewer", "Company research summary"]
+  }
+}

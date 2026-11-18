@@ -1,0 +1,89 @@
+{
+  "id": "ba-03-03",
+  "objectives": [
+    "Explain when to use a workshop instead of interviews",
+    "Describe the roles in a requirements workshop",
+    "Plan a workshop agenda with suitable activities",
+    "Use brainstorming, affinity mapping and dot voting",
+    "Handle dominant, silent and off-topic participants"
+  ],
+  "terminology": [
+    { "term": "Requirements workshop", "definition": "A structured, facilitated session where stakeholders work together to define or agree requirements." },
+    { "term": "Facilitator", "definition": "The neutral person who guides the workshop process so the group reaches its goals." },
+    { "term": "Scribe", "definition": "The person who records decisions, actions and requirements during a session." },
+    { "term": "Parking lot", "definition": "A visible list of off-topic items to be handled later." },
+    { "term": "Brainwriting", "definition": "Silent brainstorming where people write ideas individually before sharing." },
+    { "term": "Affinity mapping", "definition": "Grouping many ideas or notes into related themes." },
+    { "term": "Dot voting", "definition": "A quick prioritisation where participants place a limited number of dots on preferred items." },
+    { "term": "Ground rules", "definition": "Agreed behaviours for a session, such as one conversation at a time." }
+  ],
+  "exercises": [
+    {
+      "question": "Design a 90-minute workshop agenda to identify problems with a university's student enrolment process.",
+      "answer": "Example: 0:00 welcome, purpose and ground rules; 0:10 walk through the current enrolment steps; 0:30 silent brainstorm of problems on sticky notes; 0:45 affinity mapping into themes; 1:00 dot voting on the worst problems; 1:15 agree next steps and owners; 1:25 close and quick feedback."
+    },
+    {
+      "question": "Why is silent brainstorming often better than shouting out ideas?",
+      "answer": "It gives everyone equal space, prevents dominant or senior people from steering the group, avoids group-think, and usually produces more and more varied ideas because people think independently first."
+    },
+    {
+      "question": "Two managers start arguing about who is responsible for approval delays. As facilitator, what do you do?",
+      "answer": "Stay neutral and calm, move from blame to facts (look at the process map and data), remind the group of the shared goal, capture both viewpoints, and if it can't be resolved in the room, park it and agree that the sponsor will decide with the evidence."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The main advantage of a workshop over individual interviews is:",
+      "options": ["It needs less preparation", "It builds shared understanding and agreement across groups", "It is always shorter", "It avoids conflict"],
+      "answer": 1,
+      "explanation": "Bringing groups together surfaces differences and allows decisions in the room."
+    },
+    {
+      "question": "Where should off-topic but useful points go?",
+      "options": ["Ignore them", "The parking lot", "The requirements document immediately", "The sponsor's email"],
+      "answer": 1,
+      "explanation": "The parking lot keeps the session focused while showing the idea was heard."
+    },
+    {
+      "question": "Which technique turns many sticky notes into themes?",
+      "options": ["Dot voting", "Affinity mapping", "Round robin", "MoSCoW"],
+      "answer": 1,
+      "explanation": "Affinity mapping groups related ideas into clusters."
+    },
+    {
+      "question": "A facilitator should mainly:",
+      "options": ["Argue for the best solution", "Guide the process and remain neutral", "Take all the notes", "Make final decisions"],
+      "answer": 1,
+      "explanation": "The facilitator owns the process; participants own the content."
+    },
+    {
+      "question": "How can you stop a senior person's view from shutting down discussion?",
+      "options": ["Not invite them", "Collect ideas anonymously first and ask them to speak last", "Agree with them immediately", "End the workshop"],
+      "answer": 1,
+      "explanation": "Anonymous input and speaking order reduce the influence of hierarchy."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "When would you run a workshop instead of interviews?",
+      "answer": "When I need agreement across several groups, when there are conflicting views, when the process spans departments, or when time is short and I need decisions quickly. Interviews are better for depth, sensitive topics or very senior individuals."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you run an effective requirements workshop?",
+      "answer": "Clear objective, right participants including decision makers, agenda sent in advance, a separate scribe, ground rules, structured activities like silent brainstorming, affinity mapping and dot voting, a parking lot for off-topic items, and a written summary of decisions and actions within 24 hours."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me how you would handle a participant who dominates a workshop.",
+      "answer": "Thank them, then invite others by name; switch to silent brainstorming or round robin so everyone contributes equally; if it continues, speak to them privately at a break and ask for their help in drawing out quieter colleagues."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-03-03",
+    "title": "Plan and simulate a workshop",
+    "brief": "Plan a 2-hour workshop for a small business (e.g. a bakery) wanting to start online orders.\n\nList objectives, participants and roles, ground rules, and a timed agenda with at least three different techniques. Then write a sample one-page workshop summary with decisions, parking-lot items and actions.",
+    "deliverables": ["Objectives and participants", "Timed agenda", "Ground rules", "Sample workshop summary"]
+  }
+}

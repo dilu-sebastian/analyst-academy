@@ -1,0 +1,89 @@
+{
+  "id": "ba-09-01",
+  "objectives": [
+    "Explain Jira's core concepts: projects, issues, issue types, fields, workflows and boards",
+    "Choose the right issue type for a piece of work",
+    "Create a well-structured story in Jira with description, AC and links",
+    "Write basic JQL queries to find work"
+  ],
+  "terminology": [
+    { "term": "Jira", "definition": "An Atlassian tool for planning, tracking and reporting work, widely used by Agile teams." },
+    { "term": "Project key", "definition": "A short prefix used in all issue IDs in a Jira project, e.g. GYM in GYM-42." },
+    { "term": "Issue", "definition": "A single item of work in Jira, such as a story, task or bug (also called a work item)." },
+    { "term": "Issue type", "definition": "The category of an issue: Epic, Story, Task, Bug or Sub-task." },
+    { "term": "Workflow", "definition": "The set of statuses and transitions an issue moves through." },
+    { "term": "JQL", "definition": "Jira Query Language, used to search for issues with precise conditions." },
+    { "term": "Filter", "definition": "A saved JQL search that can be shared or used on boards and dashboards." },
+    { "term": "Component", "definition": "A subdivision of a project, such as a module or system area, used to group issues." }
+  ],
+  "exercises": [
+    {
+      "question": "Write a JQL query to find all unresolved bugs in project SHOP with priority High or Highest, newest first.",
+      "answer": "`project = SHOP AND type = Bug AND priority in (High, Highest) AND resolution = Unresolved ORDER BY created DESC`"
+    },
+    {
+      "question": "List the fields you would fill in when creating a story, and what you'd put in each.",
+      "hint": "Think summary, description, AC, parent, links.",
+      "answer": "**Summary** (short user-focused title); **Description** (user story text plus context); **Acceptance criteria** (numbered or Gherkin); **Parent/Epic**; **Priority**; **Labels/Components**; **Attachments/links** (wireframes, Confluence pages); **Linked issues** (dependencies). Story points are added by the team in refinement."
+    },
+    {
+      "question": "A developer logs 'Login broken on iPhone' as a Story. What's wrong and why does it matter?",
+      "answer": "It should be a **Bug**: it describes something not working as intended. Correct issue types keep bug reports, quality metrics and prioritisation accurate."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In issue ID GYM-42, 'GYM' is the:",
+      "options": ["Issue type", "Project key", "Epic name", "Sprint name"],
+      "answer": 1,
+      "explanation": "The project key prefixes every issue ID in that project."
+    },
+    {
+      "question": "Which issue type groups many stories delivered over several sprints?",
+      "options": ["Sub-task", "Bug", "Epic", "Task"],
+      "answer": 2,
+      "explanation": "Epics are large bodies of work containing stories."
+    },
+    {
+      "question": "A workflow in Jira defines:",
+      "options": ["Who is on the team", "Statuses and transitions an issue moves through", "The project budget", "Story point values"],
+      "answer": 1,
+      "explanation": "Workflows model the life cycle of an issue."
+    },
+    {
+      "question": "JQL is used to:",
+      "options": ["Write code", "Search for issues with conditions", "Draw diagrams", "Send emails"],
+      "answer": 1,
+      "explanation": "Jira Query Language builds precise searches and filters."
+    },
+    {
+      "question": "Which is a common BA mistake in Jira?",
+      "options": ["Linking stories to epics", "Writing acceptance criteria", "Creating stories with only a one-line summary", "Using labels"],
+      "answer": 2,
+      "explanation": "A summary alone doesn't give the team enough to build or test."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How have you used Jira?",
+      "answer": "Creating and refining epics, stories and bugs; writing descriptions and acceptance criteria; linking stories to epics and dependencies; prioritising the backlog with the PO; using boards to track sprints; and building JQL filters and dashboards for reporting. **If you lack work experience, mention a practice project you set up in a free Jira account.**"
+    },
+    {
+      "level": "intermediate",
+      "question": "What makes a good Jira story?",
+      "answer": "A clear user-focused summary, a description in user story format with context, testable acceptance criteria, a parent epic, links to supporting material like wireframes or Confluence pages, dependencies linked, and an estimate from the team. It should meet the team's Definition of Ready before entering a sprint."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you find all stories in an epic that don't yet have acceptance criteria?",
+      "answer": "If AC is a custom field: `parent = GYM-1 AND type = Story AND \"Acceptance Criteria\" is EMPTY`. If AC is in the description, use a label such as needs-ac and query `parent = GYM-1 AND labels = needs-ac`. Save it as a filter and review it before refinement."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-09-01",
+    "title": "Set up a Jira practice project",
+    "brief": "Create a free Jira Cloud account (or simulate one in a spreadsheet if you can't).\n\nCreate a Scrum project for a library app. Add 2 epics, 8 stories with full descriptions and acceptance criteria, 1 task and 1 bug. Link stories to epics and add one dependency link. Write 3 JQL filters useful for a BA.",
+    "deliverables": ["Screenshots or export of the backlog", "One fully detailed story", "Three JQL filters with purpose"]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ba-11-01",
+  "objectives": [
+    "Apply an 8-step framework to any BA case study",
+    "Read a case brief to extract facts, stakeholders, pain points, constraints and gaps",
+    "Make and state assumptions explicitly",
+    "Use fishbone diagrams and weighted scoring to analyse causes and options",
+    "Recognise what assessors look for"
+  ],
+  "terminology": [
+    { "term": "Case study", "definition": "A realistic scenario used to practise or assess applying BA techniques end to end." },
+    { "term": "Assumption", "definition": "Something treated as true for the analysis that should be stated and later verified." },
+    { "term": "Fishbone (Ishikawa) diagram", "definition": "A diagram grouping possible causes of a problem into categories such as people, process and technology." },
+    { "term": "Weighted scoring", "definition": "Comparing options by scoring them against criteria that each have an importance weight." },
+    { "term": "Options analysis", "definition": "Identifying and comparing alternative solutions before recommending one." },
+    { "term": "Pilot", "definition": "A small-scale trial of a change to test it before full rollout." },
+    { "term": "KPI", "definition": "Key Performance Indicator: a measure showing whether objectives are being achieved." }
+  ],
+  "exercises": [
+    {
+      "question": "Read this brief and list facts, stakeholders, pain points, constraints and missing information: \"A florist takes orders by phone and Instagram messages. 10% of orders are delivered late or wrong. The owner has £8,000 and wants a fix before Valentine's Day.\"",
+      "answer": "**Facts:** phone and Instagram orders; 10% late or wrong. **Stakeholders:** owner, florists, delivery drivers, customers, possibly Instagram/website provider. **Pain points:** late and wrong deliveries; orders spread over channels. **Constraints:** £8,000 budget; Valentine's Day deadline. **Missing:** order volumes (especially peak), causes of errors, delivery process, existing tools."
+    },
+    {
+      "question": "Draw (as text) a fishbone with at least two causes in each of People, Process and Technology for 'Customer support tickets take 5 days to resolve'.",
+      "hint": "Think broadly before narrowing.",
+      "answer": "**People:** too few agents at peak; new agents lack product knowledge. **Process:** no triage by urgency; tickets bounce between teams. **Technology:** no knowledge base; ticketing tool doesn't route automatically. *(Other categories: Policy, e.g. refunds need manager approval.)*"
+    },
+    {
+      "question": "Calculate the weighted score: criteria Cost 40%, Speed 30%, Fit 30%. Option X scores Cost 4, Speed 2, Fit 5.",
+      "answer": "(4 × 0.4) + (2 × 0.3) + (5 × 0.3) = 1.6 + 0.6 + 1.5 = **3.7**"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What should you do first in a case study?",
+      "options": ["Propose a solution", "Understand the context and the real problem", "Write user stories", "Estimate costs"],
+      "answer": 1,
+      "explanation": "Problem-first thinking is what assessors look for."
+    },
+    {
+      "question": "When information is missing from a brief, you should:",
+      "options": ["Ignore it", "State a reasonable assumption and how you'd verify it", "Refuse to continue", "Invent data without saying so"],
+      "answer": 1,
+      "explanation": "Explicit assumptions show judgement and transparency."
+    },
+    {
+      "question": "A fishbone diagram is used to:",
+      "options": ["Prioritise requirements", "Group possible causes of a problem", "Show system messages", "Plan sprints"],
+      "answer": 1,
+      "explanation": "It organises causes into categories for root cause analysis."
+    },
+    {
+      "question": "Why compare multiple options?",
+      "options": ["To make the answer longer", "To show the recommendation is justified against alternatives", "Because the brief always says so", "To confuse the assessor"],
+      "answer": 1,
+      "explanation": "Comparison demonstrates objective, evidence-based reasoning."
+    },
+    {
+      "question": "Which is a common case study mistake?",
+      "options": ["Defining KPIs", "Considering stakeholders", "Jumping straight to a technology solution", "Stating assumptions"],
+      "answer": 2,
+      "explanation": "Solution-first answers miss the analysis assessors want to see."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "How do you approach a business analysis case study?",
+      "answer": "I use a consistent framework: understand the context and problem, identify stakeholders and success measures, analyse the as-is, find root causes, compare options and recommend one, define key requirements and the to-be, plan delivery with an MVP, KPIs and transition needs, then present a concise summary. I state assumptions where the brief is incomplete."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you decide between several solution options?",
+      "answer": "Agree criteria linked to objectives (cost, time to value, fit to need, risk, strategic alignment), weight them with stakeholders, score each option with evidence, and check sensitivity: does the winner change if weights shift? I present the result with trade-offs and a recommendation."
+    },
+    {
+      "level": "advanced",
+      "question": "The brief says the CEO wants an AI chatbot. How do you handle that in a case study?",
+      "answer": "Treat it as a proposed solution, not the requirement. Explore the problem it's meant to solve, use the data to identify root causes, include the chatbot as one option alongside simpler alternatives, and compare them objectively. If the chatbot wins, I'd still recommend an MVP with clear success measures."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-11-01",
+    "title": "Mini case study",
+    "brief": "Brief: A local gym chain (4 sites) sees 20% of new members cancel within 3 months. Exit surveys mention crowded equipment at peak times, unclear onboarding and difficulty booking personal trainers.\n\nApply the 8-step framework. Include a stakeholder list, a fishbone diagram, three options with weighted scoring, 6 prioritised requirements and 3 KPIs. Keep it to 3 pages.",
+    "deliverables": ["8-step analysis", "Fishbone diagram", "Options scoring table", "Prioritised requirements", "KPIs"]
+  }
+}

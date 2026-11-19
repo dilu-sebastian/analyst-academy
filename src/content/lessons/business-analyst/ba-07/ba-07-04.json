@@ -1,0 +1,89 @@
+{
+  "id": "ba-07-04",
+  "objectives": [
+    "Write acceptance criteria in Given-When-Then format",
+    "Use Gherkin keywords including Feature, Background, Scenario and Scenario Outline",
+    "Explain BDD and the Three Amigos practice",
+    "Write declarative scenarios with concrete data and boundary examples"
+  ],
+  "terminology": [
+    { "term": "Given-When-Then", "definition": "A scenario structure: Given a context, When an action occurs, Then an expected outcome." },
+    { "term": "Gherkin", "definition": "A structured plain-language syntax for writing BDD scenarios, used by tools like Cucumber." },
+    { "term": "BDD (Behaviour-Driven Development)", "definition": "An approach where teams define behaviour through concrete examples before building, often automated as tests." },
+    { "term": "Scenario Outline", "definition": "A Gherkin template scenario run once per row of an Examples table." },
+    { "term": "Background", "definition": "Gherkin steps shared by all scenarios in a feature." },
+    { "term": "Three Amigos", "definition": "A collaboration between business, development and testing perspectives to define a story's behaviour." },
+    { "term": "Declarative scenario", "definition": "A scenario describing behaviour and intent rather than detailed UI steps." },
+    { "term": "Cucumber", "definition": "A popular tool that runs Gherkin scenarios as automated tests." }
+  ],
+  "exercises": [
+    {
+      "question": "Write two Gherkin scenarios for: \"Customers aged 65 or over get a 10% discount on cinema tickets.\"",
+      "answer": "```gherkin\nScenario: Customer aged 65 gets discount\n  Given a customer born exactly 65 years ago today\n  When they buy a £12.00 ticket\n  Then the price charged is £10.80\n\nScenario: Customer aged 64 pays full price\n  Given a customer who will turn 65 tomorrow\n  When they buy a £12.00 ticket\n  Then the price charged is £12.00\n```"
+    },
+    {
+      "question": "Rewrite this imperative scenario declaratively: \"Given I open the site, And click Login, And type my email, And type my password, And click Submit, When I click Basket, Then I see my basket.\"",
+      "hint": "Focus on intent.",
+      "answer": "```gherkin\nGiven I am logged in as a customer with 2 items in my basket\nWhen I view my basket\nThen I see the 2 items and the basket total\n```"
+    },
+    {
+      "question": "Write a Scenario Outline for a parking fee rule: up to 1 hour £2, up to 3 hours £5, over 3 hours £10.",
+      "answer": "```gherkin\nScenario Outline: Parking fee by duration\n  Given I parked for <minutes> minutes\n  When I pay at the exit\n  Then the fee is <fee>\n\n  Examples:\n    | minutes | fee |\n    | 60      | £2  |\n    | 61      | £5  |\n    | 180     | £5  |\n    | 181     | £10 |\n```"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In Given-When-Then, the 'When' describes:",
+      "options": ["The expected result", "The starting context", "The action or event", "The user role"],
+      "answer": 2,
+      "explanation": "When is the trigger; Given sets up context and Then states outcomes."
+    },
+    {
+      "question": "Which Gherkin keyword runs one scenario template with many data rows?",
+      "options": ["Background", "Scenario Outline with Examples", "Feature", "And"],
+      "answer": 1,
+      "explanation": "Scenario Outline uses an Examples table to repeat the scenario with different data."
+    },
+    {
+      "question": "The Three Amigos are:",
+      "options": ["PO, Scrum Master, Sponsor", "Business, development and testing perspectives", "Three developers", "Three customers"],
+      "answer": 1,
+      "explanation": "Combining these perspectives produces complete, testable scenarios."
+    },
+    {
+      "question": "Which step is declarative?",
+      "options": ["When I click the blue button at the top right", "When I type 'abc' in the third field", "When I submit my order", "When I scroll down 300 pixels"],
+      "answer": 2,
+      "explanation": "It describes intent, not UI mechanics."
+    },
+    {
+      "question": "A key benefit of Gherkin is that scenarios:",
+      "options": ["Replace the Product Owner", "Can be automated as tests and act as living documentation", "Need no conversation", "Are only readable by developers"],
+      "answer": 1,
+      "explanation": "Tools like Cucumber execute them, keeping documentation and tests in sync."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is Given-When-Then?",
+      "answer": "A way of writing acceptance criteria as scenarios: Given sets the context, When describes the action, Then states the expected outcome. It comes from BDD and its syntax, Gherkin, can be automated with tools like Cucumber."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you write good BDD scenarios?",
+      "answer": "Write them collaboratively with the Three Amigos, keep one behaviour per scenario, write declaratively rather than click-by-click, use concrete data and boundary values, use Background for shared setup and Scenario Outline for data variations, and cover errors and edge cases, not just the happy path."
+    },
+    {
+      "level": "intermediate",
+      "question": "When would you choose rule-based criteria over Gherkin?",
+      "answer": "For simple stories with a few clear rules, or where the team doesn't automate acceptance tests. Gherkin shines for behaviour that varies by situation, complex rules with boundaries, and when scenarios will be automated."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-07-04",
+    "title": "Write a Gherkin feature file",
+    "brief": "Write a complete Gherkin feature for 'Book a cinema ticket' including the user story, a Background, at least 5 scenarios (happy path, sold out, seat already taken, payment declined, child ticket rules) and one Scenario Outline with boundary values.",
+    "deliverables": ["Feature file text", "Note of questions raised while writing it"]
+  }
+}

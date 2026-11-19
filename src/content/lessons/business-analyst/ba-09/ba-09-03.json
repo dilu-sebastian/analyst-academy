@@ -1,0 +1,89 @@
+{
+  "id": "ba-09-03",
+  "objectives": [
+    "Explain the difference between Jira and Confluence",
+    "Organise a Confluence space for a product with a clear page tree",
+    "Write a lean product requirements page",
+    "Record decisions so the reasoning is preserved"
+  ],
+  "terminology": [
+    { "term": "Confluence", "definition": "An Atlassian wiki for creating, organising and sharing team documentation." },
+    { "term": "Space", "definition": "A Confluence container for pages belonging to a team, product or project." },
+    { "term": "Page tree", "definition": "The parent-child hierarchy of pages in a space." },
+    { "term": "Template", "definition": "A pre-built page structure, such as product requirements or meeting notes." },
+    { "term": "Status lozenge", "definition": "A coloured label on a page such as DRAFT, IN REVIEW or APPROVED." },
+    { "term": "Decision record", "definition": "A page or entry capturing a decision, options, rationale, decider and impact." },
+    { "term": "Page history", "definition": "Confluence's version record allowing comparison and restoration of earlier versions." },
+    { "term": "Inline comment", "definition": "A comment attached to specific text on a page for focused discussion." }
+  ],
+  "exercises": [
+    {
+      "question": "Design a page tree for a Confluence space for an online pharmacy product.",
+      "answer": "Home (vision, goals, team) → Discovery (user research, personas) → Requirements (Epic: Prescriptions, Epic: Delivery, Epic: Accounts, NFRs, Regulatory requirements) → Process maps → Decisions log → Meeting notes (reviews, workshops) → Glossary."
+    },
+    {
+      "question": "Write a decision record for: the team decided to launch with card payment only, adding PayPal later.",
+      "hint": "Decision, date, decider, options, rationale, impact.",
+      "answer": "**Decision:** Release 1 supports card payment only. **Date:** (today). **Decided by:** PO with finance lead. **Options:** card only; card + PayPal; card + PayPal + Apple Pay. **Rationale:** 85% of current customers pay by card; PayPal integration adds 2 sprints and would delay launch past the campaign. **Impact:** PayPal story moved to Release 2; checkout page wording updated."
+    },
+    {
+      "question": "Why should business rules usually live in Confluence rather than inside every Jira story?",
+      "answer": "Rules are often shared by several stories. Keeping them on one Confluence page avoids duplication and inconsistency; stories link to the page, and when a rule changes it's updated in one place with version history."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is best stored in Confluence rather than Jira?",
+      "options": ["A bug report", "The status of a story", "A decision log explaining why options were chosen", "Story points"],
+      "answer": 2,
+      "explanation": "Confluence is for knowledge and context; Jira tracks work items."
+    },
+    {
+      "question": "A Confluence space is:",
+      "options": ["A single page", "A container for a team's or product's pages", "A Jira board", "A comment"],
+      "answer": 1,
+      "explanation": "Spaces group related pages."
+    },
+    {
+      "question": "Page history in Confluence lets you:",
+      "options": ["Track sprint velocity", "See and restore earlier versions of a page", "Assign stories", "Run JQL"],
+      "answer": 1,
+      "explanation": "It provides version control for pages."
+    },
+    {
+      "question": "Which section helps prevent scope creep on a requirements page?",
+      "options": ["Background", "Not doing / out of scope", "Team photo", "Page history"],
+      "answer": 1,
+      "explanation": "Explicit exclusions manage expectations."
+    },
+    {
+      "question": "A common Confluence mistake is:",
+      "options": ["Using templates", "Copying Jira story content into pages instead of linking", "Adding a glossary", "Using status lozenges"],
+      "answer": 1,
+      "explanation": "Duplication causes inconsistencies; link instead."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What's the difference between Jira and Confluence?",
+      "answer": "Jira tracks work items like stories, bugs and tasks and their progress. Confluence is a wiki for documentation: requirements context, business rules, process maps, decisions and meeting notes. They're usually linked so stories reference the detailed pages."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you organise requirements documentation in Confluence?",
+      "answer": "A space per product with a clear home page, a page per epic using a requirements template (problem, goals, scope, rules, diagrams, questions, not doing), shared pages for NFRs and glossary, a decisions log, and meeting notes. Pages show owner and status, link to Jira issues, and are reviewed regularly."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you keep Confluence documentation from going stale?",
+      "answer": "Assign an owner and status to each page, update pages as part of the Definition of Done when rules change, link rather than copy from Jira, review key pages at the end of each release, and archive obsolete content with a clear note."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-09-03",
+    "title": "Create a requirements page",
+    "brief": "Using a free Confluence account (or a document that imitates one), create a space structure for your library app and write one full requirements page for an epic, including: header, background, goals and metrics, scope, at least 5 business rules with examples, a diagram, open questions and a not-doing list. Add one decision record.",
+    "deliverables": ["Page tree", "Requirements page", "Decision record"]
+  }
+}

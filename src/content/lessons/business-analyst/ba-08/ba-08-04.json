@@ -1,0 +1,88 @@
+{
+  "id": "ba-08-04",
+  "objectives": [
+    "Describe the three Scrum artefacts and their commitments",
+    "Explain the purpose of the Definition of Done",
+    "Read a burndown chart and explain velocity",
+    "Explain story points and Planning Poker"
+  ],
+  "terminology": [
+    { "term": "Product Backlog", "definition": "The ordered, emergent list of everything that might be needed to improve the product." },
+    { "term": "Sprint Backlog", "definition": "The Sprint Goal, the items selected for the sprint and the Developers' plan to deliver them." },
+    { "term": "Increment", "definition": "A usable step towards the Product Goal that meets the Definition of Done." },
+    { "term": "Definition of Done", "definition": "The formal description of the quality standards an increment must meet." },
+    { "term": "Burndown chart", "definition": "A chart showing the work remaining over time in a sprint or release." },
+    { "term": "Velocity", "definition": "The average amount of work, usually in story points, a team completes per sprint." },
+    { "term": "Planning Poker", "definition": "An estimation technique where team members reveal estimates simultaneously and discuss differences." }
+  ],
+  "exercises": [
+    {
+      "question": "A team's last four sprints completed 18, 22, 20 and 20 points. The backlog for the next release has 120 points. Roughly how many sprints will the release take?",
+      "hint": "Average velocity.",
+      "answer": "Average velocity = (18+22+20+20) / 4 = **20 points**. 120 / 20 = about **6 sprints**. It's a forecast; scope changes and uncertainty mean it should be reviewed every sprint."
+    },
+    {
+      "question": "Write a 6-item Definition of Done for a team building a public website.",
+      "answer": "1. Code peer-reviewed. 2. Automated tests written and passing. 3. Acceptance criteria accepted by the PO. 4. Accessibility checked to WCAG 2.2 AA. 5. Deployed to staging and smoke tested. 6. Content and help text proofread."
+    },
+    {
+      "question": "Mid-sprint, the team realises a story is twice as big as estimated. What should happen?",
+      "answer": "The Developers raise it immediately and negotiate with the Product Owner. They may split the story, move part to the next sprint, or swap scope, while keeping the Sprint Goal intact. The burndown will show the change transparently."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Who owns the Sprint Backlog?",
+      "options": ["Product Owner", "Scrum Master", "Developers", "Stakeholders"],
+      "answer": 2,
+      "explanation": "Developers own the plan for the sprint."
+    },
+    {
+      "question": "The commitment for the Increment is the:",
+      "options": ["Product Goal", "Sprint Goal", "Definition of Done", "Velocity"],
+      "answer": 2,
+      "explanation": "Work is only part of the increment when it meets the DoD."
+    },
+    {
+      "question": "Story points measure:",
+      "options": ["Exact hours", "Relative effort, complexity and uncertainty", "Developer salaries", "Number of tasks"],
+      "answer": 1,
+      "explanation": "Points are relative, not time-based."
+    },
+    {
+      "question": "A burndown chart shows:",
+      "options": ["Team morale", "Work remaining over time", "Budget spent", "Number of defects in production"],
+      "answer": 1,
+      "explanation": "It tracks remaining work against the ideal trend."
+    },
+    {
+      "question": "Velocity should NOT be used to:",
+      "options": ["Forecast releases", "Compare different teams' productivity", "Plan sprint capacity", "Spot trends"],
+      "answer": 1,
+      "explanation": "Points are team-specific; comparing teams leads to point inflation."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are the Scrum artefacts?",
+      "answer": "The Product Backlog, committed to the Product Goal; the Sprint Backlog, committed to the Sprint Goal; and the Increment, committed to the Definition of Done. They make work and progress transparent."
+    },
+    {
+      "level": "intermediate",
+      "question": "What's the difference between acceptance criteria and the Definition of Done?",
+      "answer": "Acceptance criteria are story-specific functional conditions. The Definition of Done is a team-wide quality standard for every increment, covering things like code review, testing and deployment. An item is done only when it meets both."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you help keep the Product Backlog healthy?",
+      "answer": "Regular refinement, pruning obsolete items, keeping the top 1-2 sprints ready with clear stories and acceptance criteria, linking items to the Product Goal and epics, and making sure the PO's ordering reflects value, risk and dependencies."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-08-04",
+    "title": "Build Scrum artefacts",
+    "brief": "For a product of your choice:\n1. Write a Product Goal.\n2. Create an ordered Product Backlog of 12 items with story point estimates.\n3. Assuming velocity of 15, create a Sprint Backlog with a Sprint Goal.\n4. Write a Definition of Done.\n5. Sketch a burndown chart for a 10-day sprint showing one problem day and explain it.",
+    "deliverables": ["Product Goal", "Ordered backlog", "Sprint Backlog with goal", "Definition of Done", "Burndown sketch and explanation"]
+  }
+}

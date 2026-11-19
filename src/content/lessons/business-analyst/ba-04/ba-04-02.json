@@ -1,0 +1,89 @@
+{
+  "id": "ba-04-02",
+  "objectives": [
+    "Describe the purpose and audience of a BRD",
+    "List the standard sections of a BRD",
+    "Write a problem statement, SMART objectives and scope for a BRD",
+    "Separate business requirements, business rules, assumptions, constraints and dependencies"
+  ],
+  "terminology": [
+    { "term": "Executive summary", "definition": "A short overview of the problem, proposed change and benefits for senior readers." },
+    { "term": "Scope", "definition": "The boundaries of the change: what is included and explicitly excluded." },
+    { "term": "Business rule", "definition": "A policy or condition that governs business behaviour, independent of any system." },
+    { "term": "Assumption", "definition": "Something believed to be true for planning purposes but not yet proven." },
+    { "term": "Constraint", "definition": "A limitation the solution must respect, such as budget, deadline or regulation." },
+    { "term": "Dependency", "definition": "Something the project relies on that is outside its direct control." },
+    { "term": "KPI", "definition": "Key Performance Indicator: a measure used to track progress towards an objective." },
+    { "term": "Document control", "definition": "Section recording version history, authors, reviewers and approvals." }
+  ],
+  "exercises": [
+    {
+      "question": "Write a problem statement and two SMART objectives for a restaurant whose online orders often arrive late.",
+      "answer": "**Problem:** 28% of online orders arrive more than 15 minutes after the promised time, generating 40 complaints a week and an estimated £3,000 a month in refunds. **Objectives:** Reduce late deliveries to under 10% within 4 months; cut delivery-related refunds by 60% within 6 months."
+    },
+    {
+      "question": "Classify: (a) The system must go live before Black Friday. (b) Customers will accept email-only receipts. (c) Requires the payment provider's new API. (d) Orders over £200 need ID verification.",
+      "answer": "(a) **Constraint** (deadline). (b) **Assumption**. (c) **Dependency**. (d) **Business rule**."
+    },
+    {
+      "question": "Why should a BRD include an out-of-scope list?",
+      "hint": "Think about expectations.",
+      "answer": "It prevents stakeholders assuming that related items are included, reduces scope creep and disputes, and makes estimation and sign-off more accurate. What isn't written as out of scope is often assumed to be in."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The main audience of a BRD is:",
+      "options": ["Developers only", "Business stakeholders and the sponsor", "External auditors only", "End customers"],
+      "answer": 1,
+      "explanation": "The BRD is written in business language for those who approve and own the change."
+    },
+    {
+      "question": "\"Appointments cancelled within 24 hours are recorded as missed\" is a:",
+      "options": ["Business rule", "Constraint", "Dependency", "Non-functional requirement"],
+      "answer": 0,
+      "explanation": "It's a business policy that the solution must enforce."
+    },
+    {
+      "question": "Which BRD objective is best?",
+      "options": ["Improve efficiency", "Make customers happier", "Reduce average claim processing time from 10 to 4 days by Q3", "Use modern technology"],
+      "answer": 2,
+      "explanation": "It is specific, measurable and time-bound."
+    },
+    {
+      "question": "\"The project relies on the new HR system going live in May\" is a:",
+      "options": ["Assumption", "Dependency", "Business rule", "Risk mitigation"],
+      "answer": 1,
+      "explanation": "The project depends on something outside its control."
+    },
+    {
+      "question": "Which content does NOT usually belong in a BRD?",
+      "options": ["Business objectives", "Database table designs", "Scope", "Stakeholders"],
+      "answer": 1,
+      "explanation": "Technical design detail belongs in technical or system specifications, not the BRD."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What does a BRD contain?",
+      "answer": "Document control, executive summary, background and problem statement, business objectives, scope in and out, stakeholders, as-is and to-be overview, numbered business requirements with priorities, business rules, assumptions, constraints, dependencies, risks, success measures, glossary and sign-off."
+    },
+    {
+      "level": "intermediate",
+      "question": "How is a business rule different from a business requirement?",
+      "answer": "A business rule is a policy that exists regardless of the system (orders over £200 need ID verification). A requirement describes what the solution must do, often to enforce rules (the system shall request ID for orders over £200). Keeping rules separate lets them be reused and changed in one place."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you get stakeholders to actually read and approve a BRD?",
+      "answer": "Keep it concise with a strong executive summary, build it with them incrementally rather than presenting a surprise, highlight decisions and out-of-scope items, walk through it in a short meeting, and agree in advance who signs off and by when."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-04-02",
+    "title": "Write a mini-BRD",
+    "brief": "Write a 3-4 page BRD for a local library introducing self-service book lockers for collecting reserved books after hours.\n\nInclude: executive summary, problem statement with plausible numbers, 3 SMART objectives, scope in/out, stakeholders, 6-8 prioritised business requirements, 3 business rules, assumptions/constraints/dependencies, 3 risks and success measures.",
+    "deliverables": ["Mini-BRD document", "Requirements table with IDs and priorities", "Glossary of at least 4 terms"]
+  }
+}

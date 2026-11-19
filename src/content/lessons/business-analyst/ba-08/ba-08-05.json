@@ -1,0 +1,88 @@
+{
+  "id": "ba-08-05",
+  "objectives": [
+    "Describe the main activities of a BA in an Agile team",
+    "Explain working ahead and dual-track Agile",
+    "Build a user story map to slice releases",
+    "Distinguish outputs from outcomes and help measure value"
+  ],
+  "terminology": [
+    { "term": "Agile BA", "definition": "A business analyst working continuously within an Agile team on discovery, backlog, collaboration and value." },
+    { "term": "Dual-track Agile", "definition": "Running a discovery track (what to build) alongside a delivery track (building it)." },
+    { "term": "User story map", "definition": "A visual arrangement of stories by user activity and priority, used to plan releases." },
+    { "term": "Discovery", "definition": "Activities to understand problems and validate ideas before building." },
+    { "term": "Output", "definition": "What the team produced, such as a released feature." },
+    { "term": "Outcome", "definition": "The change in behaviour or results caused by an output, such as fewer calls." },
+    { "term": "Release slice", "definition": "A horizontal cut across a story map defining what goes into a release." }
+  ],
+  "exercises": [
+    {
+      "question": "Create a simple story map (3 activities, 2 releases) for an online grocery app.",
+      "answer": "**Activities:** Find products | Build basket | Checkout. **Release 1:** search by name | add/remove items | pay by card and choose delivery slot. **Release 2:** browse by category and filters | save favourites and reorder | pay with saved card and use vouchers."
+    },
+    {
+      "question": "Turn these outputs into outcomes: (a) launched live chat, (b) added address autocomplete, (c) released self-service password reset.",
+      "hint": "What should change for users or the business?",
+      "answer": "(a) Email support volume down 20% and satisfaction up. (b) Delivery failures due to wrong addresses down 30%; checkout time reduced. (c) Password reset calls to the help desk down 50%."
+    },
+    {
+      "question": "Why does the BA usually work one or two sprints ahead?",
+      "answer": "So that stories are understood, split and have acceptance criteria before Sprint Planning. If analysis happens during the sprint, developers wait or guess, which causes delays and rework. Working ahead also leaves time for discovery and stakeholder input."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Dual-track Agile means:",
+      "options": ["Two Scrum Masters", "Discovery and delivery run in parallel", "Two backlogs for two products", "Running Waterfall and Agile together"],
+      "answer": 1,
+      "explanation": "The team discovers what to build next while delivering current work."
+    },
+    {
+      "question": "A user story map is organised by:",
+      "options": ["Developer and date", "User activities left to right and priority top to bottom", "Cost and risk", "Bug severity"],
+      "answer": 1,
+      "explanation": "It shows the user journey and lets you slice releases horizontally."
+    },
+    {
+      "question": "Which is an outcome?",
+      "options": ["Released a new search page", "Wrote 20 stories", "Search-to-purchase conversion increased by 12%", "Held 5 workshops"],
+      "answer": 2,
+      "explanation": "It measures a change in results, not just what was produced."
+    },
+    {
+      "question": "When a developer raises an edge case mid-sprint, the Agile BA should:",
+      "options": ["Wait until the next release", "Quickly clarify with the PO, update the AC and inform the team", "Tell the developer to decide alone", "Raise a formal change request document"],
+      "answer": 1,
+      "explanation": "Fast, lightweight clarification keeps the team moving."
+    },
+    {
+      "question": "A common mistake for Agile BAs is:",
+      "options": ["Running Three Amigos", "Writing all requirements up front", "Facilitating refinement", "Tracking outcomes"],
+      "answer": 1,
+      "explanation": "Writing everything up front recreates Waterfall."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What does a business analyst do in an Agile team?",
+      "answer": "Discovers needs with users and stakeholders, refines the backlog with the PO, writes stories and acceptance criteria, models processes just enough, facilitates refinement and Three Amigos, supports testing and reviews, and tracks whether features deliver outcomes."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you balance current-sprint support with preparing future work?",
+      "answer": "I plan my week across three horizons: supporting this sprint (questions, testing, demos), refining stories for the next one or two sprints, and discovery for later. I protect time for each and keep the top of the backlog meeting the Definition of Ready."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you measure whether a feature was successful?",
+      "answer": "By agreeing an expected outcome and metric before building, such as calls down 25%, then tracking data after release with analytics or reports, and sharing results at reviews so the PO can decide to iterate, extend or stop."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-08-05",
+    "title": "Agile BA plan",
+    "brief": "Imagine you've joined an Agile team building a pet-sitting marketplace app.\n\n1. Create a story map with 4 activities and 3 release slices.\n2. Write a one-week BA schedule showing current-sprint, next-sprint and discovery work.\n3. Define 3 outcome metrics for the MVP.",
+    "deliverables": ["Story map", "Weekly BA schedule", "Outcome metrics"]
+  }
+}

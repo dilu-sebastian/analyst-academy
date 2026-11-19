@@ -1,0 +1,88 @@
+{
+  "id": "ba-03-04",
+  "objectives": [
+    "Plan and carry out observation, and recognise the Hawthorne effect",
+    "Design a short, unbiased survey",
+    "Identify useful documents for analysis and what each reveals",
+    "Use triangulation to confirm findings across techniques"
+  ],
+  "terminology": [
+    { "term": "Observation (job shadowing)", "definition": "Watching people perform their work in its real environment to understand the actual process." },
+    { "term": "Hawthorne effect", "definition": "The tendency of people to change their behaviour when they know they are being observed." },
+    { "term": "Survey / questionnaire", "definition": "A set of written questions sent to many people to collect data efficiently." },
+    { "term": "Likert scale", "definition": "A rating scale, usually 5 points, measuring agreement or satisfaction." },
+    { "term": "Document analysis", "definition": "Reviewing existing documents, such as policies, manuals and reports, to elicit requirements." },
+    { "term": "Triangulation", "definition": "Using several techniques or sources to confirm a finding." },
+    { "term": "Workaround", "definition": "An unofficial method people use to get around a limitation in a process or system." },
+    { "term": "SLA (Service Level Agreement)", "definition": "A formal commitment about the level of service, such as response or delivery times." }
+  ],
+  "exercises": [
+    {
+      "question": "Write five survey questions (with formats) to learn how students feel about a university library's opening hours.",
+      "answer": "1. How often do you visit the library? (Daily / Weekly / Monthly / Rarely)\n2. How satisfied are you with current opening hours? (5-point Likert)\n3. Which times would you most like the library to be open? (choose up to 2: early morning, evenings, late night, weekends)\n4. Have you ever been unable to use the library because it was closed? (Yes / No)\n5. What one change to opening hours would help you most? (open text)"
+    },
+    {
+      "question": "Give an example where document analysis and observation would give different answers, and say which you would trust.",
+      "answer": "Example: the procedure manual says invoices are checked by two people, but observation shows one clerk checks and signs both names to save time. Observation shows **reality**, so it's the stronger evidence for the as-is process, but the gap itself is a finding (a control risk) to raise with management."
+    },
+    {
+      "question": "How can you reduce the Hawthorne effect during observation?",
+      "answer": "Explain that you are studying the process, not judging individuals; observe for longer or over several sessions so people relax; observe several people; and compare with system data such as timestamps to check whether observed behaviour is typical."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which technique best reveals workarounds people don't mention?",
+      "options": ["Survey", "Observation", "Policy review", "Dot voting"],
+      "answer": 1,
+      "explanation": "Watching real work exposes unofficial steps people take for granted."
+    },
+    {
+      "question": "The Hawthorne effect means:",
+      "options": ["Surveys get low responses", "People behave differently when observed", "Documents are out of date", "Workshops run late"],
+      "answer": 1,
+      "explanation": "Being watched changes behaviour, which can distort observation findings."
+    },
+    {
+      "question": "Which survey question is best?",
+      "options": ["Don't you think the app is great?", "How satisfied are you with the app's speed? (Very dissatisfied to Very satisfied)", "Rate the app's UX and price", "Is the SPA performant?"],
+      "answer": 1,
+      "explanation": "It's neutral, about one thing, uses plain language and a balanced scale."
+    },
+    {
+      "question": "Triangulation means:",
+      "options": ["Drawing triangles on process maps", "Confirming findings with multiple techniques or sources", "Interviewing three people", "Prioritising with three categories"],
+      "answer": 1,
+      "explanation": "Agreement across sources increases confidence; disagreement highlights issues."
+    },
+    {
+      "question": "Help desk ticket logs are an example of:",
+      "options": ["Observation", "Document (and data) analysis", "A workshop output", "A prototype"],
+      "answer": 1,
+      "explanation": "Existing records like tickets and complaints are analysed as documents and data."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "Why would you observe users rather than just interviewing them?",
+      "answer": "Because what people say they do and what they actually do often differ. Observation reveals workarounds, interruptions, real timings and tacit knowledge that people forget or don't think to mention."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you design an effective survey?",
+      "answer": "Clear objective, short (5-10 questions), neutral wording, one idea per question, balanced scales, a mix of closed and open questions, a pilot with a few people, and an explanation of how results will be used. I analyse both numbers and open comments and share a summary back."
+    },
+    {
+      "level": "intermediate",
+      "question": "What documents would you review at the start of a project?",
+      "answer": "Policies and procedures, existing system documentation and reports, forms, contracts and SLAs, relevant regulations, previous project documents, and complaint or ticket logs. They give context so stakeholder time is spent on gaps and reality, not basics."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-03-04",
+    "title": "Triangulate a process",
+    "brief": "Pick a service you can observe, such as a coffee shop at peak time or a supermarket checkout.\n\n1. Find any written information about it (website, signs, policies).\n2. Observe it for 20 minutes and record steps, timings and problems.\n3. Write a 5-question survey you would give to customers.\n4. Compare what is written with what you observed and list three findings.",
+    "deliverables": ["Document notes", "Observation log", "Survey questions", "Three triangulated findings"]
+  }
+}

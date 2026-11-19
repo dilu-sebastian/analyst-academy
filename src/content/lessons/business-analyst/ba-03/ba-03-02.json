@@ -1,0 +1,87 @@
+{
+  "id": "ba-03-02",
+  "objectives": [
+    "Prepare for, run and follow up on a stakeholder interview",
+    "Use open, probing, closed, quantifying and summarising questions",
+    "Apply the funnel technique",
+    "Recognise and fix leading, double-barrelled and solution-first questions"
+  ],
+  "terminology": [
+    { "term": "Semi-structured interview", "definition": "An interview with prepared topics and questions but freedom to follow up on answers." },
+    { "term": "Open question", "definition": "A question that cannot be answered with yes or no and invites explanation." },
+    { "term": "Closed question", "definition": "A question with a short, specific answer such as yes, no or a number." },
+    { "term": "Probing question", "definition": "A follow-up question that digs into detail, examples or reasons." },
+    { "term": "Leading question", "definition": "A question that suggests the answer the asker expects." },
+    { "term": "Funnel technique", "definition": "Moving from broad open questions to specific probing and closed questions." },
+    { "term": "Interview summary", "definition": "A written record of key points sent to the interviewee for confirmation." }
+  ],
+  "exercises": [
+    {
+      "question": "Write five interview questions, using the funnel technique, for a nurse about how patient handovers happen between shifts.",
+      "answer": "1. *Open:* Can you walk me through a typical shift handover?\n2. *Probing:* What information is hardest to pass on?\n3. *Probing:* Can you tell me about a time something was missed?\n4. *Quantifying:* How long does a handover usually take for your ward?\n5. *Closed / summarising:* So handovers are verbal and medication changes are the biggest risk; is that right?"
+    },
+    {
+      "question": "Rewrite this leading question: \"Wouldn't it be easier if the system did this automatically?\"",
+      "answer": "Neutral version: **\"How do you feel about the way this step is done today?\"** or **\"What would make this step easier for you?\"** These let the stakeholder give their own view without being steered."
+    },
+    {
+      "question": "Why should you send an interview summary within 24 hours?",
+      "answer": "Memories fade quickly; a prompt summary is more accurate. It lets the stakeholder correct misunderstandings early, creates a record for traceability, and shows professionalism, which builds trust for future sessions."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is an open question?",
+      "options": ["Do you use Excel?", "How many orders a day?", "Can you walk me through how you handle a complaint?", "Is the system slow?"],
+      "answer": 2,
+      "explanation": "It invites a full explanation rather than a short answer."
+    },
+    {
+      "question": "\"You'd prefer a mobile app, right?\" is a:",
+      "options": ["Probing question", "Leading question", "Quantifying question", "Summarising question"],
+      "answer": 1,
+      "explanation": "It suggests the answer the interviewer expects."
+    },
+    {
+      "question": "The funnel technique moves from:",
+      "options": ["Closed to open questions", "Broad open questions to specific closed questions", "Hypothetical to leading questions", "Managers to staff"],
+      "answer": 1,
+      "explanation": "Start broad to explore, then narrow to detail and confirmation."
+    },
+    {
+      "question": "What should happen at the end of an interview?",
+      "options": ["Promise a delivery date", "Summarise key points, ask who else to speak to, and agree next steps", "Show the final design", "Leave immediately"],
+      "answer": 1,
+      "explanation": "Summarising confirms understanding; asking for other contacts extends your stakeholder list."
+    },
+    {
+      "question": "Which question is double-barrelled?",
+      "options": ["How do you approve and pay invoices?", "How do you approve invoices?", "What happens when an invoice is wrong?", "How many invoices a week?"],
+      "answer": 0,
+      "explanation": "It asks about two different activities at once, so answers become muddled."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "How do you prepare for a stakeholder interview?",
+      "answer": "Define the objectives, research the stakeholder and existing documents, prepare a semi-structured interview guide, book enough time, send the purpose in advance, and decide how I'll record the session. Afterwards I send a summary within 24 hours."
+    },
+    {
+      "level": "intermediate",
+      "question": "What kinds of questions do you ask in a requirements interview?",
+      "answer": "Open questions to get people talking, probing questions for detail and examples, quantifying questions for volumes, hypothetical questions for future needs, and summarising questions to check understanding. I avoid leading and double-barrelled questions, and I always ask who else I should talk to."
+    },
+    {
+      "level": "intermediate",
+      "question": "A stakeholder gives very short answers and seems reluctant. What do you do?",
+      "answer": "Explain why their input matters and how it will be used, start with easy questions about their own work, ask for stories about specific recent events, and listen without judging. If needed, offer a follow-up later or observe their work instead. Reluctance often comes from fear of change, so I acknowledge concerns honestly."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-03-02",
+    "title": "Run a practice interview",
+    "brief": "Interview a friend or family member about a process they do regularly (for example, planning weekly meals or handling bills).\n\nPrepare an interview guide with at least 10 questions of mixed types, run a 20-minute interview, and write a one-page summary listing at least three problems and three needs you discovered.",
+    "deliverables": ["Interview guide", "One-page summary", "Problems and needs list", "Reflection: one thing you'd do differently"]
+  }
+}

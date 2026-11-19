@@ -1,0 +1,89 @@
+{
+  "id": "ba-05-02",
+  "objectives": [
+    "Use standard flowchart symbols correctly",
+    "Draw a swimlane process flow showing roles and handoffs",
+    "Apply rules for clean, readable process flows",
+    "Analyse an as-is flow for handoffs, waits, rework and duplication"
+  ],
+  "terminology": [
+    { "term": "Flowchart", "definition": "A diagram showing the steps and decisions of a process in sequence." },
+    { "term": "Terminator", "definition": "The rounded symbol marking the start or end of a process." },
+    { "term": "Decision", "definition": "A diamond symbol representing a question with two or more outcomes." },
+    { "term": "Swimlane", "definition": "A horizontal or vertical band in a diagram representing a role, team or system responsible for the steps in it." },
+    { "term": "Handoff", "definition": "The point where work passes from one person, team or system to another." },
+    { "term": "Rework loop", "definition": "A path where work is sent back to an earlier step to be corrected." },
+    { "term": "Bottleneck", "definition": "A step that limits the speed of the whole process." },
+    { "term": "Sub-process", "definition": "A step that represents a separately modelled, more detailed process." }
+  ],
+  "exercises": [
+    {
+      "question": "Draw (as text) a swimlane flow for a library book reservation with lanes Member, System and Librarian.",
+      "answer": "`Member: (Want book) → [Search catalogue] → [Reserve book]`\n`System: → <Book available?> yes → [Notify librarian]; no → [Add to queue] → [Notify member when returned]`\n`Librarian: → [Pull book from shelf] → [Place on hold shelf] → [Notify member]`\n`Member: → [Collect book] → (Book collected)`"
+    },
+    {
+      "question": "An as-is flow shows that 25% of expense claims are returned to employees for missing receipts. Name the problem type and suggest an improvement.",
+      "hint": "Look at the analysis table.",
+      "answer": "It's a **rework loop**. Improvement: validate at entry, so the claim form won't submit without a receipt image for claims over a threshold, and give clear guidance on receipt requirements."
+    },
+    {
+      "question": "List four rules for drawing clean process flows.",
+      "answer": "Any four of: one clear start and end(s); verb-noun step labels; decisions phrased as questions with labelled exits; flow left-to-right or top-to-bottom with no crossing lines; one level of detail per diagram; no dead ends; use swimlanes for ownership."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which symbol represents a decision?",
+      "options": ["Rectangle", "Diamond", "Oval", "Parallelogram"],
+      "answer": 1,
+      "explanation": "Diamonds represent decision points with labelled exits."
+    },
+    {
+      "question": "Swimlanes are mainly used to show:",
+      "options": ["Costs", "Who is responsible for each step and where handoffs occur", "Data types", "Screen layouts"],
+      "answer": 1,
+      "explanation": "Each lane represents a role or system, making ownership and handoffs visible."
+    },
+    {
+      "question": "Which step label is best?",
+      "options": ["Invoice", "Invoice stuff", "Approve invoice", "Invoice?"],
+      "answer": 2,
+      "explanation": "Verb-noun labels clearly state the action."
+    },
+    {
+      "question": "Delays in processes most often occur at:",
+      "options": ["The start symbol", "Handoffs between people or teams", "The legend", "The end symbol"],
+      "answer": 1,
+      "explanation": "Work often waits in queues when it passes between teams."
+    },
+    {
+      "question": "Why draw as-is and to-be flows separately?",
+      "options": ["Tools can't show both", "Mixing them confuses readers about what happens today versus in future", "It's required by UML", "To make more diagrams"],
+      "answer": 1,
+      "explanation": "Separate diagrams make the current state and the proposed change clear."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What symbols are used in a basic flowchart?",
+      "answer": "Terminators (ovals or rounded rectangles) for start and end, rectangles for steps, diamonds for decisions, arrows for flow, plus document and data symbols when needed. Swimlanes divide steps by role."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you analyse a process to find improvements?",
+      "answer": "I map the as-is flow with the people who do the work, add volumes and timings, then look for handoffs, waits, rework loops, duplication, manual data entry and unclear ownership. I quantify the impact and design a to-be flow that removes or automates the worst issues, then validate it with stakeholders."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a process you mapped and what you found.",
+      "answer": "Use STAR. Example: mapped a purchase request process across five teams; found four email handoffs and a two-day budget check; proposed a form with automatic routing and budget validation; cycle time dropped from 8 days to 3."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-05-02",
+    "title": "As-is and to-be process flows",
+    "brief": "Choose a process with at least three roles (e.g. hiring a new employee, ordering food in a restaurant, handling a customer complaint).\n\n1. Draw the as-is swimlane flow.\n2. Annotate at least four problems (handoffs, waits, rework, duplication).\n3. Draw a to-be flow that fixes them.\n4. Write a short summary of expected benefits.",
+    "deliverables": ["As-is swimlane diagram", "Annotated problems", "To-be diagram", "Benefits summary"]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ba-03-01",
+  "objectives": [
+    "Explain what elicitation is and why it needs planning",
+    "Describe the contents of an elicitation plan",
+    "Compare the main elicitation techniques, their strengths and weaknesses",
+    "Choose suitable techniques for given stakeholders and situations"
+  ],
+  "terminology": [
+    { "term": "Elicitation", "definition": "Drawing out information about needs and requirements from stakeholders and other sources." },
+    { "term": "Elicitation plan", "definition": "A plan describing what information is needed, from whom, using which techniques, and when." },
+    { "term": "Tacit knowledge", "definition": "Know-how people have but rarely express, such as workarounds and habits." },
+    { "term": "Subject matter expert (SME)", "definition": "A person with deep knowledge of a specific business area or process." },
+    { "term": "Prototype", "definition": "An early, simplified model of a solution used to explore and validate requirements." },
+    { "term": "Focus group", "definition": "A facilitated discussion with a small group of customers or users to gather opinions." },
+    { "term": "Interview guide", "definition": "A prepared list of topics and questions for a stakeholder interview." }
+  ],
+  "exercises": [
+    {
+      "question": "A bank wants to understand why mortgage applications take 6 weeks. Propose three elicitation techniques and say what each will reveal.",
+      "answer": "- **Data analysis** of application timestamps: where in the process time is spent.\n- **Observation** of underwriters: real steps, waits and workarounds.\n- **Interviews** with brokers and underwriters: reasons for delays, such as missing documents.\n*(A workshop afterwards can agree root causes and priorities.)*"
+    },
+    {
+      "question": "Why is observation useful even if you have already interviewed the users?",
+      "hint": "Think about what people say versus what they do.",
+      "answer": "People describe the official process or forget routine steps and workarounds. Observation reveals tacit knowledge, interruptions, manual workarounds and real timings that interviews miss."
+    },
+    {
+      "question": "List four things to prepare before a stakeholder workshop.",
+      "answer": "Clear objectives and agenda; the right attendees invited with the agenda in advance; background material such as a draft process map; materials and roles (facilitator, note-taker), plus a plan for recording outputs."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which technique is best for gathering opinions from 3,000 customers?",
+      "options": ["Interview", "Observation", "Survey", "Job shadowing"],
+      "answer": 2,
+      "explanation": "Surveys reach many people efficiently and produce quantitative data."
+    },
+    {
+      "question": "Observation is especially good at revealing:",
+      "options": ["Budget figures", "Tacit knowledge and workarounds", "Legal requirements", "Executive strategy"],
+      "answer": 1,
+      "explanation": "Watching work exposes what people do but don't think to mention."
+    },
+    {
+      "question": "When stakeholder groups disagree, which technique helps reach agreement?",
+      "options": ["Survey", "Document analysis", "Facilitated workshop", "Individual interviews only"],
+      "answer": 2,
+      "explanation": "Workshops bring groups together to discuss differences and agree outcomes."
+    },
+    {
+      "question": "Why read existing documents before interviews?",
+      "options": ["To avoid talking to people", "So stakeholders don't have to repeat what is already written, and your questions are sharper", "Because documents are always accurate", "It is required by BABOK"],
+      "answer": 1,
+      "explanation": "Background knowledge shows respect for stakeholders' time and lets you focus on gaps."
+    },
+    {
+      "question": "A risk of prototyping is that:",
+      "options": ["Users can't give feedback", "Users may think the prototype is almost finished", "It replaces requirements", "It is only for back-end systems"],
+      "answer": 1,
+      "explanation": "Realistic prototypes can create false expectations about how close the solution is."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What elicitation techniques have you used or would you use?",
+      "answer": "Interviews for depth, workshops for agreement, observation to see real work, surveys for many users, document analysis for rules and background, prototypes for UI ideas, and data analysis for volumes. **Explain that you combine them and give one example of matching technique to situation.**"
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you plan elicitation for a new project?",
+      "answer": "I clarify what we need to learn, identify stakeholders, choose techniques for each group, sequence them (usually documents, then interviews and observation, then a workshop to agree), schedule them, prepare materials, and agree the plan with the sponsor so people make time."
+    },
+    {
+      "level": "intermediate",
+      "question": "Stakeholders tell you the process works fine, but the data shows delays. What do you do?",
+      "answer": "Observe the process directly and walk through specific recent cases with timestamps. Share the data neutrally and ask about specific examples. Often the delays happen between teams or in workarounds that individuals don't see as part of the process."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-03-01",
+    "title": "Write an elicitation plan",
+    "brief": "Scenario: a city council wants to improve how residents report potholes and how quickly they get fixed.\n\nWrite an elicitation plan covering objectives, stakeholders, techniques for each stakeholder with reasons, a three-week schedule, preparation needed and expected outputs.",
+    "deliverables": ["Objectives", "Stakeholder-technique table", "Schedule", "Preparation list", "Expected outputs"]
+  }
+}

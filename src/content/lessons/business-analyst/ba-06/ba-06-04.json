@@ -1,0 +1,90 @@
+{
+  "id": "ba-06-04",
+  "objectives": [
+    "Explain the purpose of as-is and to-be process models",
+    "Model and annotate an as-is process with metrics and pain points",
+    "Use the DOWNTIME wastes to analyse a process",
+    "Apply improvement patterns to design a to-be process",
+    "Perform a gap analysis that leads to requirements"
+  ],
+  "terminology": [
+    { "term": "As-is model", "definition": "A model of how a process works today." },
+    { "term": "To-be model", "definition": "A model of how a process should work after a change." },
+    { "term": "Gap analysis", "definition": "Comparing current and future states to identify what must change." },
+    { "term": "Pain point", "definition": "A specific problem in a process that causes cost, delay, errors or frustration." },
+    { "term": "Waste (Lean)", "definition": "Any activity that consumes resources without adding value for the customer; the eight types spell DOWNTIME." },
+    { "term": "Cycle time", "definition": "The total time from the start to the end of a process instance." },
+    { "term": "Baseline", "definition": "Measured current performance used to compare improvements against." },
+    { "term": "Process owner", "definition": "The person accountable for a process's performance and changes to it." }
+  ],
+  "exercises": [
+    {
+      "question": "An as-is process shows a job application is checked by HR, then the hiring manager, then HR again for the same eligibility criteria. Which waste is this, and what to-be change would you propose?",
+      "answer": "**Extra processing** (duplicate checking), which also adds **waiting**. To-be: one eligibility check at submission (automated where possible) and a single HR review, with the hiring manager focusing only on suitability."
+    },
+    {
+      "question": "Write a 3-row gap analysis table for moving a restaurant from phone orders to online orders.",
+      "answer": "| Area | As-is | To-be | Gap |\n|---|---|---|---|\n| Ordering | Phone call, staff write order on paper | Customer orders online | Online ordering system; menu data |\n| Payment | Cash on delivery | Card payment at order | Payment integration; refund policy |\n| Kitchen | Paper ticket | Order appears on kitchen screen | Kitchen display; staff training |"
+    },
+    {
+      "question": "Why is 'automating the as-is' often a mistake?",
+      "hint": "What happens to waste?",
+      "answer": "Automation speeds up whatever exists, including unnecessary steps, duplicate approvals and rework. The waste remains, just faster and harder to change. First simplify and remove waste, then automate what's left."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The as-is model should show:",
+      "options": ["The process described in the policy manual", "How the process really works today, including workarounds", "The ideal future process", "Only the automated steps"],
+      "answer": 1,
+      "explanation": "Accurate current reality is needed to find real problems."
+    },
+    {
+      "question": "Approvals sitting in an inbox for days are which waste?",
+      "options": ["Motion", "Waiting", "Overproduction", "Inventory"],
+      "answer": 1,
+      "explanation": "Work idle between steps is waiting."
+    },
+    {
+      "question": "A gap analysis compares:",
+      "options": ["Two vendors", "The as-is and to-be states", "Budget and actual cost", "Two teams' performance"],
+      "answer": 1,
+      "explanation": "It identifies what must change to move from current to future state."
+    },
+    {
+      "question": "Which is an improvement pattern?",
+      "options": ["Add another approval for safety", "Validate data at the point of entry", "Print more reports", "Add more handoffs"],
+      "answer": 1,
+      "explanation": "Early validation prevents rework downstream."
+    },
+    {
+      "question": "Why add metrics to an as-is model?",
+      "options": ["To decorate it", "To prioritise problems and measure improvement", "Because BPMN requires it", "To replace stakeholders"],
+      "answer": 1,
+      "explanation": "Numbers show where the biggest problems are and set the baseline."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is the difference between as-is and to-be models?",
+      "answer": "The as-is model shows how a process works today, including problems and workarounds. The to-be model shows how it should work after the change. Comparing them in a gap analysis identifies the requirements and changes needed."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you identify improvement opportunities in a process?",
+      "answer": "Model the real as-is with the people who do the work, add metrics like volumes, wait times and error rates, then look for waste: waiting, rework, duplication, handoffs, manual re-keying and unnecessary approvals. I find root causes and prioritise by impact, then design a to-be using patterns like eliminate, automate, parallelise and validate early."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a process you improved.",
+      "answer": "Use STAR with numbers: the as-is problem and baseline metric, how you modelled and analysed it, the to-be changes, and the measured result, such as reimbursement time falling from 21 to 6 days."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-06-04",
+    "title": "Process improvement case",
+    "brief": "Choose a process you experience (e.g. GP appointment booking, university assignment submission, returning online purchases).\n\n1. Model the as-is in BPMN with plausible metrics.\n2. Annotate at least 5 pain points and classify each with DOWNTIME.\n3. Model the to-be.\n4. Write a gap analysis table and estimated benefits.",
+    "deliverables": ["As-is BPMN with metrics", "Pain points with waste type", "To-be BPMN", "Gap analysis", "Benefits estimate"]
+  }
+}

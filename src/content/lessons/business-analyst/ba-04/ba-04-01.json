@@ -1,0 +1,88 @@
+{
+  "id": "ba-04-01",
+  "objectives": [
+    "Explain why requirements documents exist and the jobs they do",
+    "Distinguish BRD, FRD and SRS by audience, level and content",
+    "Choose an appropriate level of documentation for a project's context",
+    "Describe how documentation works in Agile teams"
+  ],
+  "terminology": [
+    { "term": "BRD", "definition": "Business Requirements Document: describes business objectives, scope, stakeholders and high-level business needs." },
+    { "term": "FRD", "definition": "Functional Requirements Document: describes in detail what the system must do to meet business requirements." },
+    { "term": "SRS", "definition": "Software Requirements Specification: a complete description of the software's functional and non-functional requirements, interfaces and constraints." },
+    { "term": "Single source of truth", "definition": "One agreed place where the current, correct version of information is kept." },
+    { "term": "Version control", "definition": "Tracking changes to a document with version numbers, dates, authors and a change log." },
+    { "term": "Just enough, just in time", "definition": "The Agile principle of producing only the documentation needed, when it is needed." },
+    { "term": "Template", "definition": "A standard document structure used to ensure consistency and completeness." }
+  ],
+  "exercises": [
+    {
+      "question": "A small internal team is building a staff holiday-booking tool in Agile. What documentation would you produce, and why?",
+      "answer": "A one-page vision or lean BRD (objective, scope, stakeholders), a product backlog of user stories with acceptance criteria, a Confluence page for business rules (e.g. carry-over limits) and NFRs, and a simple process diagram. Heavy BRD/FRD/SRS would add cost without benefit for a small internal team that talks daily."
+    },
+    {
+      "question": "Why does outsourced, fixed-price development usually need a detailed SRS?",
+      "hint": "Think about contracts.",
+      "answer": "The vendor quotes and builds against it, so it effectively becomes part of the contract. Gaps or ambiguity lead to disputes, change requests and extra cost. A detailed SRS defines exactly what is in scope and how acceptance will be judged."
+    },
+    {
+      "question": "List four sections you would expect in a BRD.",
+      "answer": "Any four of: executive summary, business objectives, background and problem statement, scope (in and out), stakeholders, high-level business requirements, business rules, assumptions and constraints, risks, success measures, sign-off."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which document mainly answers why the project exists?",
+      "options": ["SRS", "FRD", "BRD", "Test plan"],
+      "answer": 2,
+      "explanation": "The BRD captures business objectives and justification."
+    },
+    {
+      "question": "Which document is most detailed and technical?",
+      "options": ["BRD", "SRS", "Project charter", "Business case"],
+      "answer": 1,
+      "explanation": "The SRS fully specifies functional and non-functional requirements for developers and testers."
+    },
+    {
+      "question": "Agile teams typically:",
+      "options": ["Produce no documentation", "Produce just enough documentation, often a backlog plus living pages", "Always write a full SRS", "Document only after go-live"],
+      "answer": 1,
+      "explanation": "Agile favours lightweight, living documentation that supports delivery."
+    },
+    {
+      "question": "Which is NOT a job of requirements documentation?",
+      "options": ["Shared understanding", "Traceability", "Replacing all conversations with stakeholders", "Baseline for agreement"],
+      "answer": 2,
+      "explanation": "Documents support conversations; they never replace them."
+    },
+    {
+      "question": "An outdated requirements document is dangerous because:",
+      "options": ["It uses too much storage", "People may trust and build from wrong information", "Auditors prefer new documents", "It can't be printed"],
+      "answer": 1,
+      "explanation": "Stale documents mislead the team; keep them current or clearly retire them."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is the difference between a BRD, FRD and SRS?",
+      "answer": "The BRD describes business objectives, scope and high-level needs for business stakeholders. The FRD details what the system must do, often with use cases and screens. The SRS is the most complete technical specification, covering functional and non-functional requirements, interfaces and constraints for developers and testers. Many organisations merge them, so I focus on content and audience."
+    },
+    {
+      "level": "intermediate",
+      "question": "How much documentation do you write on an Agile project?",
+      "answer": "Just enough for the team to build and maintain the product: a product vision, a backlog of stories with acceptance criteria, and living Confluence pages for business rules, NFRs, process maps and key decisions. In regulated contexts I add what auditors need, such as traceability."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you keep requirements documents up to date?",
+      "answer": "One single source of truth, version control with a change log, change control after baseline, clear ownership, and updating the document as part of the definition of done for any change. I also archive obsolete versions clearly so nobody uses them by mistake."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-04-01",
+    "title": "Choose the right documentation",
+    "brief": "For each scenario, recommend which documents you would produce and why:\n1. A hospital replacing its patient records system with a vendor product.\n2. A 5-person start-up building its first mobile app.\n3. A bank adding a new regulatory report.\n\nFor each, explain the readers, the level of formality and who signs off.",
+    "deliverables": ["Recommendation for each scenario", "Readers and sign-off for each", "One risk of too little and too much documentation"]
+  }
+}

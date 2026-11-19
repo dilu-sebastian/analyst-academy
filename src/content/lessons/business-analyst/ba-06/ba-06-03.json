@@ -1,0 +1,90 @@
+{
+  "id": "ba-06-03",
+  "objectives": [
+    "Distinguish pools from lanes and decide which to use",
+    "Apply the rule that sequence flows stay within a pool",
+    "Use message flows to show communication between participants",
+    "Use black-box pools for external parties",
+    "Build a collaboration diagram"
+  ],
+  "terminology": [
+    { "term": "Pool", "definition": "A BPMN container representing an independent participant, usually an organisation." },
+    { "term": "Lane", "definition": "A subdivision of a pool representing a role, department or system." },
+    { "term": "Message flow", "definition": "A dashed arrow showing a message passed between two different pools." },
+    { "term": "Collaboration diagram", "definition": "A BPMN diagram showing two or more pools interacting through message flows." },
+    { "term": "Black-box pool", "definition": "A collapsed pool whose internal process is not shown." },
+    { "term": "White-box pool", "definition": "An expanded pool showing its internal process." },
+    { "term": "Data object", "definition": "An artefact representing information used or produced, such as an invoice." },
+    { "term": "Data store", "definition": "An artefact representing persistent storage, such as a database." }
+  ],
+  "exercises": [
+    {
+      "question": "For a mortgage application, list the pools and lanes you would use.",
+      "answer": "**Pools:** Applicant, Broker, Bank, Property Valuer (black box), Solicitor (black box). **Lanes in Bank:** Application Processing, Underwriting, Offer & Completion (and possibly a Bank System lane for automated steps)."
+    },
+    {
+      "question": "Why must sequence flows not cross pool boundaries?",
+      "hint": "Who controls the process?",
+      "answer": "A sequence flow means one step directly controls the next within a single process. Separate pools are independent participants; one cannot control the other's steps, only send messages. Message flows show that communication correctly."
+    },
+    {
+      "question": "When should you use a black-box pool?",
+      "answer": "For external participants whose internal process you don't know, don't control, or don't need to show, such as a payment provider or courier. You still show the messages exchanged with them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Sales and Warehouse departments of the same company should usually be:",
+      "options": ["Separate pools", "Lanes within one pool", "Data stores", "Message flows"],
+      "answer": 1,
+      "explanation": "Departments of one organisation share a process, so they are lanes."
+    },
+    {
+      "question": "A message flow connects:",
+      "options": ["Two tasks in the same lane", "Two different pools", "A gateway to a task", "Two lanes in the same pool"],
+      "answer": 1,
+      "explanation": "Message flows are only used between pools."
+    },
+    {
+      "question": "A collapsed pool with only a name is called:",
+      "options": ["White-box", "Black-box", "Sub-process", "Lane"],
+      "answer": 1,
+      "explanation": "Black-box pools hide internal details."
+    },
+    {
+      "question": "Which is a BPMN error?",
+      "options": ["A message flow from Customer pool to Shop pool", "A sequence flow from a Customer task to a Shop task", "A sequence flow between two lanes in one pool", "A labelled message flow"],
+      "answer": 1,
+      "explanation": "Sequence flows must not cross pool boundaries."
+    },
+    {
+      "question": "A diagram with several pools connected by message flows is a:",
+      "options": ["Use case diagram", "Collaboration diagram", "Data dictionary", "Sequence diagram"],
+      "answer": 1,
+      "explanation": "Collaboration diagrams show interactions between participants."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What's the difference between a pool and a lane in BPMN?",
+      "answer": "A pool represents an independent participant, usually an organisation like a customer or supplier. Lanes divide a pool into roles, departments or systems within that participant. Sequence flows stay within a pool; message flows connect pools."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you model a process involving an external supplier?",
+      "answer": "As a collaboration diagram: my organisation as a white-box pool with lanes, the supplier as a separate pool (black-box if their internals are unknown), and labelled message flows for purchase orders, confirmations, deliveries and invoices, with intermediate message events where we wait for their responses."
+    },
+    {
+      "level": "intermediate",
+      "question": "What common BPMN errors do you look for when reviewing a diagram?",
+      "answer": "Sequence flows crossing pools, message flows within a pool, departments drawn as pools, unlabelled gateways or message flows, parallel splits without matching joins, and paths with no end event."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-06-03",
+    "title": "Collaboration diagram",
+    "brief": "Draw a BPMN collaboration diagram for buying a concert ticket online with pools: Fan, Ticketing Company (with at least 2 lanes), Payment Provider (black box) and Email Service (black box).\n\nInclude at least 5 labelled message flows, one exclusive gateway, one data store and one text annotation.",
+    "deliverables": ["Collaboration diagram", "List of message flows and their content"]
+  }
+}

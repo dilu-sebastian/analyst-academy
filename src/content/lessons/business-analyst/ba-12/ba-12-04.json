@@ -1,0 +1,87 @@
+{
+  "id": "ba-12-04",
+  "objectives": [
+    "Structure behavioural answers using STAR, with most time on Action",
+    "Use STAR+L for failure and mistake questions",
+    "Make answers strong with I-statements, named techniques and quantified results",
+    "Build and map a story bank to BA competencies, including from non-BA experience"
+  ],
+  "terminology": [
+    { "term": "Behavioural question", "definition": "An interview question asking for a real past example of how you behaved in a situation." },
+    { "term": "STAR", "definition": "Situation, Task, Action, Result: a structure for telling concise, complete stories." },
+    { "term": "STAR+L", "definition": "STAR with an added Learning step, useful for questions about mistakes or failures." },
+    { "term": "Competency", "definition": "A skill or behaviour an employer assesses, such as stakeholder management or communication." },
+    { "term": "Quantified result", "definition": "An outcome expressed with numbers, such as time saved or error rate reduced." },
+    { "term": "Follow-up question", "definition": "A probing question an interviewer asks after your answer, such as what you would do differently." }
+  ],
+  "exercises": [
+    {
+      "question": "Rewrite this weak answer using STAR: \"We had a tight deadline for a report. It was stressful but we worked late and got it done.\"",
+      "hint": "Use I, actions and a result.",
+      "answer": "**S:** In my admin role, the finance director needed a quarterly cost report two days earlier than usual for a board meeting. **T:** I was responsible for gathering data from four departments and producing the report. **A:** I listed what was essential for the board versus nice-to-have and agreed this with the director; I sent each department a short template with a clear deadline and called the two slowest contacts directly; I automated the totals in Excel instead of calculating by hand. **R:** I delivered the report a day early with no errors, and the template was adopted for future quarters, cutting preparation from 4 days to 2. I learned to agree essentials first when time is short."
+    },
+    {
+      "question": "Write a STAR+L answer outline for \"Tell me about a mistake you made.\"",
+      "answer": "**S:** On a course project, I gathered requirements for an expense app. **T:** Deliver a requirements set for review. **A (mistake):** I didn't include the payroll team as a stakeholder; at review, I learned claims fed into payroll exports. **A (fix):** I contacted payroll the same day, ran a 30-minute session and added three integration requirements. **R:** The requirements were accepted with a one-week delay. **L:** I now use a stakeholder checklist and walk the end-to-end process, including downstream teams, before finalising scope."
+    },
+    {
+      "question": "Map one story to three different behavioural questions and say what you'd emphasise for each.",
+      "answer": "Story: resistant warehouse manager. **Difficult stakeholder:** emphasise listening and understanding his fear. **Influence without authority:** emphasise giving ownership and the pilot role. **Uncovering hidden requirements:** emphasise the three loading rules he corrected and their impact."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which part of STAR should take the most time?",
+      "options": ["Situation", "Task", "Action", "Result"],
+      "answer": 2,
+      "explanation": "Action shows what you did; it's the core evidence of your skills."
+    },
+    {
+      "question": "Why use 'I' rather than 'we'?",
+      "options": ["It sounds more confident only", "The interviewer needs to know your personal contribution", "'We' is grammatically wrong", "It makes the answer shorter"],
+      "answer": 1,
+      "explanation": "They're assessing you, not your team."
+    },
+    {
+      "question": "'I would hold a workshop' in response to 'Tell me about a time...' is a problem because:",
+      "options": ["Workshops are bad", "It's hypothetical; behavioural questions need a real example", "It's too long", "It uses jargon"],
+      "answer": 1,
+      "explanation": "Behavioural questions require actual past behaviour."
+    },
+    {
+      "question": "STAR+L adds:",
+      "options": ["Length", "Learning", "Leadership", "Logic"],
+      "answer": 1,
+      "explanation": "Learning is especially important for failure questions."
+    },
+    {
+      "question": "If you have no BA job experience, you should:",
+      "options": ["Say you can't answer", "Use examples from other jobs, volunteering, education or course projects", "Make up a BA job", "Only answer conceptual questions"],
+      "answer": 1,
+      "explanation": "Behaviour and thinking matter more than job titles."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "Tell me about a time you had to explain something complex to a non-technical audience.",
+      "answer": "Use STAR: the situation and audience, your task, the actions you took (finding out what they cared about, using plain language, a diagram or analogy, checking understanding by asking them to explain back) and the result (decision made, fewer follow-up questions). Close with what you learned about tailoring messages."
+    },
+    {
+      "level": "intermediate",
+      "question": "Tell me about a time two stakeholders disagreed. What did you do?",
+      "answer": "Use STAR with emphasis on Action: meeting each separately, finding the interests behind their positions, using data, facilitating a joint session to create options, evaluating against objectives, and escalating with a recommendation if needed. Give the outcome with numbers if possible and what you'd repeat next time."
+    },
+    {
+      "level": "intermediate",
+      "question": "What is your biggest weakness?",
+      "answer": "Choose a genuine but manageable development area relevant to the role, show self-awareness, and explain concrete steps you're taking. For example: I used to over-document early on; I now agree with the team what's just enough and use lightweight templates, which has cut my documentation time while keeping quality."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-12-04",
+    "title": "STAR story bank and mock interview",
+    "brief": "Write 8 full STAR stories (200-300 words each) covering: difficult stakeholder, conflict, uncovering a hidden requirement, influence, ambiguity, tight deadline, mistake (STAR+L), and process improvement.\n\nThen run a 30-minute mock interview with a friend using 2 conceptual, 2 scenario and 3 behavioural questions from this module. Write down their feedback and three improvements.",
+    "deliverables": ["8 STAR stories", "Competency mapping table", "Mock interview feedback and improvements"]
+  }
+}

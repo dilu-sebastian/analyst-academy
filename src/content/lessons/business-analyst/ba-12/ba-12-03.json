@@ -1,0 +1,87 @@
+{
+  "id": "ba-12-03",
+  "objectives": [
+    "Answer scenario questions using Clarify-Analyse-Act-Confirm",
+    "Apply BA principles such as problem-first thinking, evidence and visible trade-offs",
+    "Prepare model answers for the most common BA scenarios",
+    "Recognise and avoid signs of a weak scenario answer"
+  ],
+  "terminology": [
+    { "term": "Scenario (situational) question", "definition": "An interview question describing a hypothetical situation and asking how you would respond." },
+    { "term": "Clarify-Analyse-Act-Confirm", "definition": "A four-step structure for answering scenario questions." },
+    { "term": "Impact analysis", "definition": "Assessing what a change affects in scope, time, cost, design and tests." },
+    { "term": "Delegate", "definition": "A person given authority to make decisions on behalf of another stakeholder." },
+    { "term": "Adoption", "definition": "The extent to which users actually use a new solution or process." },
+    { "term": "Lessons learned", "definition": "Reflection on what went well and what to change, captured to improve future work." }
+  ],
+  "exercises": [
+    {
+      "question": "Answer with Clarify-Analyse-Act-Confirm: \"Users are not adopting a system that went live 3 months ago.\"",
+      "answer": "**Clarify:** which users, how adoption is measured, and what they use instead. **Analyse:** gather usage data, observe and interview users to find causes (usability, missing features, lack of training, old system still available). **Act:** prioritise fixes with the PO: quick usability improvements, targeted training, champions, retiring workarounds, communicating benefits. **Confirm:** track adoption KPIs, follow up with users and record lessons learned."
+    },
+    {
+      "question": "Answer: \"The Product Owner wants to skip writing acceptance criteria to save time.\"",
+      "hint": "Respect the role; show the trade-off.",
+      "answer": "**Clarify:** why: time pressure, or seeing AC as bureaucracy? **Analyse:** recent rework or defects linked to unclear stories. **Act:** offer a lighter approach: 3-5 key criteria written together in refinement or Three Amigos, which takes minutes and reduces rework; show data on defects avoided. **Confirm:** agree a minimum in the Definition of Ready and review in the retrospective."
+    },
+    {
+      "question": "Identify what's wrong with this answer: \"If developers say something can't be built, I'd tell them the business needs it and they must find a way.\"",
+      "answer": "It ignores clarifying why, doesn't revisit the underlying need, doesn't explore alternatives with technical experts, oversteps the BA role, damages collaboration, and doesn't involve the PO or sponsor in trade-offs. A strong answer collaborates on options and brings a recommendation to the decision-maker."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The first step in answering a scenario question should be to:",
+      "options": ["Propose a technical solution", "Clarify the situation and what you'd want to understand", "Escalate to the sponsor", "Blame the stakeholder"],
+      "answer": 1,
+      "explanation": "Clarifying shows problem-first thinking."
+    },
+    {
+      "question": "When two senior stakeholders disagree and can't resolve it, a BA should:",
+      "options": ["Choose the more senior one's view", "Escalate to the sponsor with options and a recommendation", "Ignore both", "Build both versions"],
+      "answer": 1,
+      "explanation": "Decisions belong to the right authority; the BA brings structured options."
+    },
+    {
+      "question": "A sign of a weak scenario answer is:",
+      "options": ["Mentioning stakeholders", "Using evidence", "Doing everything alone and making all decisions", "Documenting decisions"],
+      "answer": 2,
+      "explanation": "BAs facilitate and respect decision rights."
+    },
+    {
+      "question": "When UAT shows the solution meets requirements but not the need, the BA should:",
+      "options": ["Say it's not their problem", "Trace back, raise a change, prioritise with the business owner and capture lessons", "Cancel go-live automatically", "Rewrite history"],
+      "answer": 1,
+      "explanation": "Handle it constructively and improve validation for the future."
+    },
+    {
+      "question": "A good length for a scenario answer is about:",
+      "options": ["15 seconds", "1.5-2 minutes", "10 minutes", "As long as possible"],
+      "answer": 1,
+      "explanation": "Enough to show structure; then let the interviewer probe."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "What would you do if a stakeholder kept changing requirements?",
+      "answer": "Clarify why they're changing; check whether requirements were ambiguous or the business context changed; show the impact of each change on scope, time and cost; route changes through the backlog or change control for the PO or sponsor to prioritise; use prototypes and examples early; and document decisions and the agreed baseline."
+    },
+    {
+      "level": "intermediate",
+      "question": "What would you do if you joined a project with no documentation?",
+      "answer": "Meet the PM and PO for goals and status, review Jira and existing material, interview key people, map the current understanding of scope and process, create lightweight documentation (scope summary, process map, cleaned-up backlog, open questions), validate it with stakeholders, and agree how it will be kept up to date."
+    },
+    {
+      "level": "advanced",
+      "question": "The sponsor wants a feature by a date the team says is impossible. What do you do?",
+      "answer": "Understand what drives the date and what's truly needed by then, break the feature into slices with the team, identify an MVP that can make the date, and present options to the sponsor: reduced scope on time, full scope later, or more resources with risks. Agree in writing and track progress transparently, escalating early if risks grow."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-12-03",
+    "title": "Scenario answer practice",
+    "brief": "Write Clarify-Analyse-Act-Confirm answers (150-250 words each) for 6 scenarios: the 5 in the practical example plus one of your own. For each, name at least one specific BA technique you would use.\n\nRecord yourself answering two aloud, keeping each under 2 minutes.",
+    "deliverables": ["6 written scenario answers", "Techniques named for each", "Recording notes"]
+  }
+}

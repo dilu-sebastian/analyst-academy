@@ -1,0 +1,89 @@
+{
+  "id": "ba-06-02",
+  "objectives": [
+    "Recognise start, intermediate and end events and common trigger types",
+    "Use boundary events for escalations and exceptions",
+    "Distinguish tasks, sub-processes and common task types",
+    "Choose between exclusive, parallel, inclusive and event-based gateways"
+  ],
+  "terminology": [
+    { "term": "Intermediate event", "definition": "An event (double-bordered circle) that occurs between the start and end of a process, such as waiting for a message or a timer." },
+    { "term": "Boundary event", "definition": "An event attached to the edge of an activity that triggers an alternative path when it occurs." },
+    { "term": "Timer event", "definition": "An event triggered by a date, time or duration." },
+    { "term": "Sub-process", "definition": "An activity that contains its own detailed process, shown with a + marker when collapsed." },
+    { "term": "Exclusive gateway (XOR)", "definition": "A gateway where exactly one outgoing path is taken based on conditions." },
+    { "term": "Parallel gateway (AND)", "definition": "A gateway that activates all outgoing paths, or waits for all incoming paths when merging." },
+    { "term": "Inclusive gateway (OR)", "definition": "A gateway where one or more paths may be taken based on conditions." },
+    { "term": "Event-based gateway", "definition": "A gateway where the path is chosen by whichever event occurs first." }
+  ],
+  "exercises": [
+    {
+      "question": "Model (as text) a customer support case that closes automatically if the customer doesn't reply within 7 days.",
+      "answer": "`○ Case opened → [Agent sends questions to customer] → ◇ event-based → ✉ Customer reply received → [Agent resolves case] → ◉ Resolved`; `→ ⏱ 7 days → [Close case automatically] → ◉ Closed (no reply)`"
+    },
+    {
+      "question": "Which gateway for each: (a) send welcome email AND create account record, (b) assign to Gold or Standard support based on plan, (c) add optional gift wrap and/or express delivery?",
+      "hint": "All, one, or one-or-more?",
+      "answer": "(a) **Parallel** (both happen). (b) **Exclusive** (exactly one). (c) **Inclusive** (none, one or both, depending on choices; add a default path for none)."
+    },
+    {
+      "question": "How would you show that a manager's approval escalates after 48 hours?",
+      "answer": "Attach a **boundary timer event** (48 hours) to the Manager approves task, with a sequence flow from the timer to an Escalate to senior manager task. If interrupting, the original task is cancelled; if non-interrupting (dashed border), a reminder could be sent while the task stays open."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A double-bordered circle is a:",
+      "options": ["Start event", "Intermediate event", "End event", "Gateway"],
+      "answer": 1,
+      "explanation": "Intermediate events have a double border."
+    },
+    {
+      "question": "Which gateway takes ALL outgoing paths?",
+      "options": ["Exclusive", "Parallel", "Inclusive", "Event-based"],
+      "answer": 1,
+      "explanation": "Parallel (AND) gateways activate every outgoing flow."
+    },
+    {
+      "question": "A process that starts every Monday at 9am uses a:",
+      "options": ["Message start event", "Timer start event", "Error end event", "Signal end event"],
+      "answer": 1,
+      "explanation": "Timer start events trigger by schedule."
+    },
+    {
+      "question": "Wait for either a customer reply or a deadline, whichever comes first, is modelled with:",
+      "options": ["Parallel gateway", "Event-based gateway", "Inclusive gateway", "Sub-process"],
+      "answer": 1,
+      "explanation": "Event-based gateways route by which event occurs first."
+    },
+    {
+      "question": "A task where a system automatically calculates tax is a:",
+      "options": ["Manual task", "User task", "Service task", "Receive task"],
+      "answer": 2,
+      "explanation": "Service tasks are performed automatically by a system."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "Explain the types of BPMN gateways.",
+      "answer": "Exclusive (XOR) chooses exactly one path; parallel (AND) takes all paths and, when merging, waits for all; inclusive (OR) takes one or more paths based on conditions and waits for the activated ones; event-based chooses the path by whichever event happens first, such as a reply or a timeout."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you model escalations or timeouts in BPMN?",
+      "answer": "With a boundary timer event on the task that might be delayed, leading to an escalation path. For waiting on one of several possible events, I use an event-based gateway followed by message and timer intermediate events."
+    },
+    {
+      "level": "advanced",
+      "question": "What is a common modelling error with parallel gateways?",
+      "answer": "Splitting with a parallel gateway but merging with an exclusive gateway, or with no gateway. The flow then continues as soon as the first branch finishes, possibly running the next step multiple times. A parallel split should be matched with a parallel join."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-06-02",
+    "title": "Analytical BPMN model",
+    "brief": "Model an online subscription renewal process in BPMN with: a timer start event, at least three task types (user, service, send), an exclusive gateway, a parallel gateway pair, an event-based gateway (customer pays vs deadline passes), and a boundary timer event.\n\nAdd annotations explaining each non-basic element.",
+    "deliverables": ["BPMN diagram", "Annotations for each advanced element", "List of gateway conditions"]
+  }
+}

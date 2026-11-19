@@ -1,0 +1,88 @@
+{
+  "id": "ba-04-05",
+  "objectives": [
+    "Explain what a requirements traceability matrix is and why it is used",
+    "Distinguish forward, backward and bidirectional traceability",
+    "Build a simple RTM linking requirements, stories and tests",
+    "Use an RTM to find coverage gaps and analyse the impact of a change"
+  ],
+  "terminology": [
+    { "term": "Requirements Traceability Matrix (RTM)", "definition": "A table linking requirements to their sources, related requirements, design items and tests." },
+    { "term": "Forward traceability", "definition": "Tracing from requirements to design, build and tests to confirm everything is delivered and tested." },
+    { "term": "Backward traceability", "definition": "Tracing from deliverables and tests back to requirements to confirm everything built is needed." },
+    { "term": "Bidirectional traceability", "definition": "Tracing in both directions." },
+    { "term": "Test coverage", "definition": "The extent to which requirements are verified by test cases." },
+    { "term": "Impact analysis", "definition": "Assessing what is affected by a proposed change before approving it." },
+    { "term": "Gold plating", "definition": "Adding features or polish beyond what was required, consuming time without agreed value." }
+  ],
+  "exercises": [
+    {
+      "question": "Build a 4-row RTM for an online library: BR-01 renew books online, BR-02 reserve books. Include FR, story and test columns.",
+      "answer": "| BR | FR | Story | Test | Status |\n|---|---|---|---|---|\n| BR-01 | FR-01 Renew a loan if not reserved | LIB-10 | TC-01, TC-02 | Not run |\n| BR-01 | FR-02 Max two renewals | LIB-11 | TC-03 | Not run |\n| BR-02 | FR-03 Reserve an on-loan book | LIB-15 | TC-05 | Not run |\n| BR-02 | FR-04 Notify when reserved book is ready | LIB-16 | TC-06 | Not run |"
+    },
+    {
+      "question": "The business asks to change free delivery from orders over £50 to over £40. How does the RTM help?",
+      "answer": "Find the business rule and linked requirements in the RTM, then follow the links to the stories, code areas, test cases and any interfaces (e.g. finance reporting) affected. That gives a complete impact list to estimate effort and risk and to ensure tests are updated before the change is approved."
+    },
+    {
+      "question": "What does it mean if a test case traces to no requirement?",
+      "hint": "Backward traceability.",
+      "answer": "Either the test covers functionality nobody asked for (possible gold plating) or a real requirement is missing from the documentation. Investigate and either add the requirement or remove the test and feature."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Forward traceability checks that:",
+      "options": ["Every feature has a stakeholder", "Every requirement is designed, built and tested", "Tests run quickly", "The budget is spent"],
+      "answer": 1,
+      "explanation": "Forward tracing follows requirements through to delivery and tests."
+    },
+    {
+      "question": "A story with no parent requirement may indicate:",
+      "options": ["Excellent planning", "Gold plating or a missing requirement", "A passed test", "A transition requirement"],
+      "answer": 1,
+      "explanation": "Backward tracing exposes work that is not linked to an agreed need."
+    },
+    {
+      "question": "The RTM is most useful for impact analysis because it:",
+      "options": ["Lists stakeholders' phone numbers", "Shows everything linked to a requirement", "Estimates costs automatically", "Replaces testing"],
+      "answer": 1,
+      "explanation": "Links show which designs, stories and tests a change affects."
+    },
+    {
+      "question": "When should you start building the RTM?",
+      "options": ["After go-live", "As requirements are written", "Only when an auditor asks", "During the retrospective"],
+      "answer": 1,
+      "explanation": "Building it alongside requirements keeps it accurate and useful."
+    },
+    {
+      "question": "Which tool combination supports automatic traceability from stories to tests?",
+      "options": ["Paint and Notepad", "Jira with a test management plugin such as Xray or Zephyr", "Email", "PowerPoint"],
+      "answer": 1,
+      "explanation": "Test plugins link Jira issues to test cases and results."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a traceability matrix?",
+      "answer": "A table that links each requirement to its source and to the design, stories and test cases that deliver and verify it. It shows coverage, supports impact analysis and provides evidence for audits."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you use traceability in practice?",
+      "answer": "I create it as requirements are written, link stories and test cases as they're created, and review it regularly for gaps: requirements without tests (forward) and work without requirements (backward). For change requests I use it to list everything affected, and before go-live I confirm every Must requirement has passed tests."
+    },
+    {
+      "level": "intermediate",
+      "question": "What's the difference between forward and backward traceability?",
+      "answer": "Forward goes from requirements to design and tests to ensure everything required is delivered and tested. Backward goes from deliverables and tests to requirements to ensure nothing is built without a reason. Using both gives complete coverage and controls scope."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-04-05",
+    "title": "Build and analyse an RTM",
+    "brief": "Using the requirements from your mini-BRD or FRD assignment, build an RTM with at least 10 rows and columns for BR, FR, source, priority, story, test case and status.\n\nDeliberately include two gaps and one orphan, then write a short analysis of them. Finally, run an impact analysis for one change request of your choice.",
+    "deliverables": ["RTM (10+ rows)", "Gap and orphan analysis", "Impact analysis for one change"]
+  }
+}

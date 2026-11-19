@@ -1,0 +1,88 @@
+{
+  "id": "ba-06-01",
+  "objectives": [
+    "Explain what BPMN is and why a standard notation matters",
+    "Compare BPMN with basic flowcharts",
+    "Name the four BPMN element families and the basic shapes",
+    "Draw a simple descriptive BPMN diagram"
+  ],
+  "terminology": [
+    { "term": "BPMN", "definition": "Business Process Model and Notation: an international standard (ISO/IEC 19510) for modelling business processes." },
+    { "term": "Event", "definition": "Something that happens during a process, drawn as a circle: start, intermediate or end." },
+    { "term": "Activity / Task", "definition": "Work performed in a process, drawn as a rounded rectangle." },
+    { "term": "Gateway", "definition": "A diamond that controls how the flow branches or merges." },
+    { "term": "Sequence flow", "definition": "A solid arrow showing the order of activities within a pool." },
+    { "term": "Message flow", "definition": "A dashed arrow showing communication between separate pools." },
+    { "term": "Pool", "definition": "A container representing a participant, usually an organisation, in a process." },
+    { "term": "Lane", "definition": "A subdivision of a pool representing a role, department or system." }
+  ],
+  "exercises": [
+    {
+      "question": "Name the BPMN shape for each: (a) the process begins, (b) a person approves an invoice, (c) choose one of two paths, (d) the process finishes.",
+      "answer": "(a) **Start event**, a thin circle. (b) **Task**, a rounded rectangle. (c) **Exclusive gateway**, a diamond (often with an X). (d) **End event**, a thick circle."
+    },
+    {
+      "question": "Give two advantages of BPMN over an informal flowchart.",
+      "answer": "Any two of: it's a standard, so everyone reads it the same way; it has rich event types (timers, messages, errors); pools and message flows show collaboration between organisations; models can be executed in workflow engines."
+    },
+    {
+      "question": "Sketch (as text) a descriptive BPMN diagram for a library book return with lanes Member and Librarian.",
+      "answer": "`Member: ○ Book due → [Return book at desk]`\n`Librarian: → [Scan book] → ◇ Damaged? → no → [Shelve book] → ◉ Returned; yes → [Charge damage fee] → ◉ Fee charged`"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "BPMN stands for:",
+      "options": ["Business Process Management Network", "Business Process Model and Notation", "Basic Process Mapping Notation", "Business Planning Model Number"],
+      "answer": 1,
+      "explanation": "It is the Business Process Model and Notation standard."
+    },
+    {
+      "question": "A thick-bordered circle in BPMN is:",
+      "options": ["Start event", "End event", "Task", "Gateway"],
+      "answer": 1,
+      "explanation": "End events have a thick border; start events have a thin one."
+    },
+    {
+      "question": "Communication between two separate organisations is shown with:",
+      "options": ["Sequence flow", "Message flow", "Association", "Lane"],
+      "answer": 1,
+      "explanation": "Message flows cross pool boundaries; sequence flows stay inside a pool."
+    },
+    {
+      "question": "Which level of BPMN is precise enough to run in a workflow engine?",
+      "options": ["Descriptive", "Analytical", "Executable", "Conceptual"],
+      "answer": 2,
+      "explanation": "Executable models include technical detail for automation."
+    },
+    {
+      "question": "What does a gateway do?",
+      "options": ["Performs work", "Routes or merges the flow", "Stores data", "Represents a department"],
+      "answer": 1,
+      "explanation": "Gateways only control flow; the work is in tasks."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is BPMN and why use it?",
+      "answer": "Business Process Model and Notation is an international standard for drawing business processes. Using a standard means business users, analysts and developers interpret diagrams the same way; it handles events, exceptions and collaboration between organisations, and models can even be executed in workflow tools."
+    },
+    {
+      "level": "beginner",
+      "question": "What are the basic BPMN elements?",
+      "answer": "Events (start, intermediate, end circles), activities or tasks (rounded rectangles), gateways (diamonds), sequence flows and message flows, and pools and lanes for participants and roles, plus artefacts like data objects and annotations."
+    },
+    {
+      "level": "intermediate",
+      "question": "When would you choose BPMN over a simple flowchart?",
+      "answer": "When the process spans organisations or departments, involves timers, messages or exceptions, needs to be understood consistently by many people, will be audited, or may be automated. For a quick whiteboard sketch with users, a simple flowchart can be enough."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-06-01",
+    "title": "Your first BPMN diagram",
+    "brief": "Using a free tool such as draw.io or Bizagi Modeler, draw a descriptive BPMN diagram for ordering coffee in a cafe, with one pool and lanes for Customer, Cashier and Barista.\n\nUse start and end events, at least five tasks, and one exclusive gateway. Then write three sentences explaining the diagram to someone who has never seen BPMN.",
+    "deliverables": ["BPMN diagram (image or file)", "Three-sentence explanation"]
+  }
+}

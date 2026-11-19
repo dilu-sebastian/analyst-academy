@@ -1,0 +1,88 @@
+{
+  "id": "ba-08-03",
+  "objectives": [
+    "Name the five Scrum events and their purposes",
+    "State the time-boxes for each event",
+    "Explain the three topics of Sprint Planning and the role of the Sprint Goal",
+    "Describe how a BA contributes to each event"
+  ],
+  "terminology": [
+    { "term": "Sprint", "definition": "A fixed-length event of one month or less in which a usable increment is created." },
+    { "term": "Sprint Planning", "definition": "The event that starts a sprint, defining the Sprint Goal, selected items and the plan." },
+    { "term": "Sprint Goal", "definition": "The single objective for the sprint that gives focus and flexibility." },
+    { "term": "Daily Scrum", "definition": "A 15-minute daily event for Developers to inspect progress towards the Sprint Goal and adapt their plan." },
+    { "term": "Sprint Review", "definition": "An event where the team and stakeholders inspect the increment and adapt the Product Backlog." },
+    { "term": "Sprint Retrospective", "definition": "An event where the team inspects how it worked and plans improvements." },
+    { "term": "Time-box", "definition": "A fixed maximum duration for an event or activity." }
+  ],
+  "exercises": [
+    {
+      "question": "Write a Sprint Goal for a sprint that includes these stories: search flights by date, view flight results, sort results by price.",
+      "answer": "Example: **\"Travellers can find and compare flights for their chosen dates by price.\"** It summarises the value of the stories as one objective."
+    },
+    {
+      "question": "A manager attends the Daily Scrum and asks each developer for a detailed status update. What's the problem, and what would the Scrum Master do?",
+      "hint": "Who is the Daily Scrum for?",
+      "answer": "The Daily Scrum is for the Developers to plan towards the Sprint Goal, not a status report to management. The Scrum Master should coach the manager, offering other ways to see progress (the board, the Sprint Review) and keep the event to 15 minutes and focused."
+    },
+    {
+      "question": "List three things a BA does in a Sprint Review.",
+      "answer": "1. Prepares realistic demo scenarios with the team. 2. Explains how stories meet the business need. 3. Captures stakeholder feedback and turns it into backlog items with the PO."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is the time-box for the Daily Scrum?",
+      "options": ["5 minutes", "15 minutes", "30 minutes", "1 hour"],
+      "answer": 1,
+      "explanation": "The Daily Scrum is always 15 minutes."
+    },
+    {
+      "question": "Which event inspects the increment with stakeholders?",
+      "options": ["Sprint Planning", "Daily Scrum", "Sprint Review", "Sprint Retrospective"],
+      "answer": 2,
+      "explanation": "The Sprint Review gathers feedback on what was built."
+    },
+    {
+      "question": "Sprint Planning answers:",
+      "options": ["Who is to blame for delays", "Why, what and how for the sprint", "The annual budget", "Which developer is fastest"],
+      "answer": 1,
+      "explanation": "Planning defines the Sprint Goal, selected items and the plan."
+    },
+    {
+      "question": "Improvements to the way the team works are planned in the:",
+      "options": ["Sprint Review", "Sprint Retrospective", "Daily Scrum", "Refinement"],
+      "answer": 1,
+      "explanation": "The retrospective focuses on people, process and tools."
+    },
+    {
+      "question": "Backlog refinement is:",
+      "options": ["A formal Scrum event", "An ongoing activity", "Done only once per release", "The Scrum Master's job alone"],
+      "answer": 1,
+      "explanation": "Refinement is an ongoing activity, not one of the five events."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What are the Scrum events?",
+      "answer": "The Sprint itself, Sprint Planning (why, what, how), the 15-minute Daily Scrum, the Sprint Review with stakeholders to inspect the increment and adapt the backlog, and the Sprint Retrospective to improve how the team works. Refinement happens continuously alongside."
+    },
+    {
+      "level": "intermediate",
+      "question": "What does a BA do during Sprint Planning?",
+      "answer": "Explain the stories and business rules, answer developers' questions, confirm acceptance criteria are clear, highlight dependencies and risks, and help the PO frame the Sprint Goal. Good refinement beforehand means planning is mostly about confirming, not discovering."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you make a Sprint Review more valuable?",
+      "answer": "Invite the right stakeholders and real users, demonstrate working software with realistic scenarios rather than slides, let stakeholders try it, discuss business changes and next priorities, and update the backlog in the session."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-08-03",
+    "title": "Plan a sprint calendar",
+    "brief": "Create a calendar for a 2-week sprint showing all Scrum events with times and durations, plus two refinement sessions.\n\nFor each event, write the attendees, the BA's preparation and the BA's outputs. Finish with a sample retrospective using Start/Stop/Continue with three actions.",
+    "deliverables": ["Two-week sprint calendar", "BA prep and outputs per event", "Sample retrospective"]
+  }
+}

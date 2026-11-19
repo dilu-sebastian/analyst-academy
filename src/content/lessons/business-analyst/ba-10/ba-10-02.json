@@ -1,0 +1,88 @@
+{
+  "id": "ba-10-02",
+  "objectives": [
+    "Plot stakeholders on a power-interest grid and choose a strategy for each quadrant",
+    "Assess current and desired stakeholder attitudes",
+    "Build a RACI matrix and apply its rules",
+    "Use stakeholder analysis to plan engagement actions"
+  ],
+  "terminology": [
+    { "term": "Power-interest grid", "definition": "A 2x2 matrix classifying stakeholders by their power and interest to choose an engagement strategy (Mendelow)." },
+    { "term": "Manage closely", "definition": "Strategy for high-power, high-interest stakeholders: engage fully and involve in decisions." },
+    { "term": "Keep satisfied", "definition": "Strategy for high-power, low-interest stakeholders: meet their needs without overloading them." },
+    { "term": "Keep informed", "definition": "Strategy for low-power, high-interest stakeholders: communicate regularly and involve for detail." },
+    { "term": "RACI", "definition": "A matrix showing who is Responsible, Accountable, Consulted and Informed for each activity." },
+    { "term": "Accountable", "definition": "The single person who owns an outcome and has final sign-off." },
+    { "term": "Engagement assessment", "definition": "A comparison of each stakeholder's current and desired level of support." }
+  ],
+  "exercises": [
+    {
+      "question": "Place these on a power-interest grid for a new hospital booking system: hospital CEO, receptionists, patients, IT security lead, a neighbouring hospital.",
+      "answer": "**Manage closely:** IT security lead if engaged on design (high power via security sign-off, high interest). **Keep satisfied:** hospital CEO (high power, lower day-to-day interest). **Keep informed:** receptionists and patients (high interest, lower power). **Monitor:** neighbouring hospital. Reasonable variations are fine if justified."
+    },
+    {
+      "question": "Spot the problems in this RACI row: 'Approve requirements: Sponsor A, PO A, BA R, Dev C, Testers C, Ops C, Finance C, Legal C.'",
+      "hint": "Count the As and Cs.",
+      "answer": "Two Accountables (Sponsor and PO): choose one, usually the PO or business owner, with the sponsor Informed or Consulted. Many Consulted parties may slow approval; consider which really need input versus being Informed."
+    },
+    {
+      "question": "Why might a low-power, high-interest group become very powerful during a project?",
+      "answer": "If they can refuse or fail to adopt the solution, raise complaints, involve unions or regulators, or attract media attention, they effectively gain the power to make the change fail. Front-line users are a common example."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A stakeholder with high power and low interest should be:",
+      "options": ["Managed closely", "Kept satisfied", "Kept informed", "Monitored"],
+      "answer": 1,
+      "explanation": "Meet their needs and consult on key decisions without overloading them."
+    },
+    {
+      "question": "In RACI, how many people should be Accountable for an activity?",
+      "options": ["None", "Exactly one", "At least two", "Everyone"],
+      "answer": 1,
+      "explanation": "One clear owner prevents confusion."
+    },
+    {
+      "question": "'Consulted' in RACI means:",
+      "options": ["Told after the fact", "Gives input before or during the work (two-way)", "Does the work", "Has final approval"],
+      "answer": 1,
+      "explanation": "Consulted is two-way communication; Informed is one-way."
+    },
+    {
+      "question": "End users who use the system daily but have little formal authority usually sit in:",
+      "options": ["Manage closely", "Keep satisfied", "Keep informed", "Monitor"],
+      "answer": 2,
+      "explanation": "High interest, lower power: keep them informed and involved in detail."
+    },
+    {
+      "question": "Why should stakeholder analysis be handled sensitively?",
+      "options": ["It's confidential by law", "Labels like 'blocker' can damage trust if shared carelessly", "It contains passwords", "It's only for the sponsor"],
+      "answer": 1,
+      "explanation": "Analysis includes judgements about people; share appropriately."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is a power-interest grid?",
+      "answer": "A 2x2 matrix that plots stakeholders by power and interest. High power and high interest: manage closely. High power, low interest: keep satisfied. Low power, high interest: keep informed. Low both: monitor. It helps decide how much effort to spend on each and how."
+    },
+    {
+      "level": "beginner",
+      "question": "What is a RACI matrix?",
+      "answer": "A table mapping activities to people: Responsible (does the work), Accountable (one owner who signs off), Consulted (gives input) and Informed (kept updated). It removes confusion about roles and decisions."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you engage a stakeholder with high power but little interest?",
+      "answer": "Respect their time with concise summaries focused on what matters to them, such as cost, risk or compliance; consult them early on decisions within their remit; avoid surprises; and agree how and when they want updates. I escalate only when their decision is truly needed."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-10-02",
+    "title": "Stakeholder analysis pack",
+    "brief": "Using your stakeholder register from the previous lesson:\n1. Score each stakeholder for power and interest (1-5) and plot them on a grid.\n2. Complete an engagement assessment (current vs desired attitude) for 5 key stakeholders with one action each.\n3. Build a RACI for 6 key project activities and check it against the RACI rules.",
+    "deliverables": ["Power-interest grid", "Engagement assessment", "RACI matrix with checks"]
+  }
+}

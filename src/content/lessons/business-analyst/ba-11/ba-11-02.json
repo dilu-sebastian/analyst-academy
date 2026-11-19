@@ -1,0 +1,144 @@
+{
+  "id": "ba-11-02",
+  "objectives": [
+    "Work through a complete BA case study from brief to recommendation",
+    "Turn a solution request into underlying needs and SMART objectives",
+    "Analyse an as-is process, pain points and root causes",
+    "Compare options with weighted scoring and justify a recommendation",
+    "Define requirements, user stories, NFRs, transition requirements, a phased plan and KPIs"
+  ],
+  "terminology": [
+    {
+      "term": "Commission",
+      "definition": "A percentage fee charged by a third-party platform on each order."
+    },
+    {
+      "term": "White-label platform",
+      "definition": "A third-party product that a business can brand as its own."
+    },
+    {
+      "term": "Order aggregation",
+      "definition": "Combining orders from several channels into one system or screen."
+    },
+    {
+      "term": "Kitchen display system (KDS)",
+      "definition": "A screen in the kitchen that shows orders in sequence, replacing paper tickets."
+    },
+    {
+      "term": "Quick win",
+      "definition": "A low-cost, fast improvement that delivers benefit immediately."
+    },
+    {
+      "term": "Direct channel",
+      "definition": "A sales channel the business owns, such as its own website, without intermediary commission."
+    },
+    {
+      "term": "Fallback",
+      "definition": "A backup method used if the primary system fails, such as paper tickets."
+    }
+  ],
+  "exercises": [
+    {
+      "question": "Spice Route takes about 150 app orders a day (60% of 250). If 30% of them (45 orders) move to direct ordering, with an average order of £16, app commission of 30% and a direct-ordering fee of 4%, what is the approximate net monthly saving (30 days)?",
+      "hint": "Orders moved × order value × (30% − 4%) × days.",
+      "answer": "Saving per order = £16 × (0.30 − 0.04) = £4.16. Daily = 45 × £4.16 = £187.20. Monthly ≈ £187.20 × 30 = **£5,616 net**. The gross commission avoided is 45 × £16 × 0.30 × 30 ≈ £6,480, which matches the ~£6,600 in the objective before the direct-ordering fee. Always show your assumptions."
+    },
+    {
+      "question": "Write two more user stories with acceptance criteria for Spice Route: one for a delivery driver and one for a restaurant manager.",
+      "answer": "**Driver:** As a driver, I want to be notified when an order is ready with the address on my phone so that I collect it hot and find the customer quickly. AC: notification when kitchen marks Ready; address shown with map link; customer phone visible until delivered. **Manager:** As a restaurant manager, I want a daily report of orders by channel and error refunds so that I can track performance. AC: report by channel (web, phone, each app); count and value of refunds; available by 9am next day; exportable to Excel."
+    },
+    {
+      "question": "Identify two additional risks for the recommended option and a mitigation for each.",
+      "answer": "1. **Menu sync errors** between web and apps (wrong prices or unavailable items): single menu management in the aggregator; daily check. 2. **Peak-time overload of the kitchen** if direct orders grow: order throttling or longer ETAs at peak; monitor kitchen capacity. *(Also valid: data protection for customer details; staff turnover affecting training.)*"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why didn't the analysis simply accept Ravi's request for a custom app?",
+      "options": [
+        "Apps are always bad",
+        "It's a solution; the needs could be met faster and cheaper another way",
+        "Ravi has no budget",
+        "Customers dislike apps"
+      ],
+      "answer": 1,
+      "explanation": "The BA uncovered the needs and compared options; a custom app exceeded budget and timeline."
+    },
+    {
+      "question": "Which was identified as a root cause of order errors?",
+      "options": [
+        "Bad recipes",
+        "No single order management system, with manual transcription",
+        "Slow drivers",
+        "High commission"
+      ],
+      "answer": 1,
+      "explanation": "Hand-written and re-written orders caused errors."
+    },
+    {
+      "question": "Why start with a pilot at one restaurant?",
+      "options": [
+        "To save time on training",
+        "To test and learn with lower risk before rolling out",
+        "Because the other restaurants refused",
+        "It's required by law"
+      ],
+      "answer": 1,
+      "explanation": "Pilots reduce risk and provide data for the rollout."
+    },
+    {
+      "question": "Which is a transition requirement in the case?",
+      "options": [
+        "Customers pay online by card",
+        "Run a paper backup for 2 weeks after go-live",
+        "Pages load in under 3 seconds",
+        "Reorder a previous order"
+      ],
+      "answer": 1,
+      "explanation": "Temporary support needed for the switch-over is a transition requirement."
+    },
+    {
+      "question": "Why keep the third-party delivery apps in the solution?",
+      "options": [
+        "They're free",
+        "They still bring discovery and volume; aggregating their orders reduces errors",
+        "Legal requirement",
+        "They replace the website"
+      ],
+      "answer": 1,
+      "explanation": "The aim is to reduce dependence and errors, not lose a source of customers."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "Walk me through how you'd help a restaurant that wants its own ordering app.",
+      "answer": "I'd understand the problem behind the request (commission costs, lost phone orders, errors, slow delivery), identify stakeholders and set SMART objectives, map the as-is order process, find root causes, compare options like a custom app, white-label ordering with order aggregation, and phone improvements using weighted criteria, recommend the best fit, define key requirements and a pilot, and set KPIs such as direct order share, error rate and delivery time."
+    },
+    {
+      "level": "intermediate",
+      "question": "How would you measure whether the new ordering system was successful?",
+      "answer": "Against the baseline: share of direct orders, monthly commission, order error rate, average delivery time, abandoned calls at peak and customer ratings. I'd track them weekly in the pilot and monthly after rollout, and review at agreed points to decide on next steps like a native app."
+    },
+    {
+      "level": "advanced",
+      "question": "The owner insists on a native app despite your recommendation. What do you do?",
+      "answer": "Understand what matters to him (brand, loyalty, competing with chains), show the evidence on cost, timeline and risk, and propose a staged path: prove demand with web ordering first, with clear criteria for investing in a native app. If he still decides on the app, it's his decision; I'd document the risks and help shape an MVP that fits budget and timing."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-11-02",
+    "title": "Full case study write-up",
+    "brief": "Brief: A city library service (5 branches) wants to increase young adult (16-24) membership, which fell 35% in 5 years. Branch hours are 9-5, the catalogue website is old and not mobile-friendly, and events are advertised only on posters. Budget £40,000; results wanted within 12 months.\n\nProduce a full case study using the 8-step framework, with the same sections as the Spice Route walkthrough.",
+    "deliverables": [
+      "Problem statement and SMART objectives",
+      "Stakeholder table",
+      "As-is model and pain points",
+      "Root causes",
+      "Options scoring and recommendation",
+      "Requirements, 3 user stories with AC, NFRs, transition requirements",
+      "Phased plan, KPIs, risks",
+      "One-slide BLUF summary"
+    ]
+  }
+}

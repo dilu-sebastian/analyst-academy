@@ -1,0 +1,89 @@
+{
+  "id": "ba-05-04",
+  "objectives": [
+    "Identify the elements of a UML activity diagram",
+    "Distinguish decision/merge from fork/join",
+    "Write mutually exclusive guard conditions",
+    "Draw an activity diagram with partitions for a business workflow"
+  ],
+  "terminology": [
+    { "term": "Activity diagram", "definition": "A UML diagram showing the flow of actions, decisions and parallel activities." },
+    { "term": "Initial node", "definition": "A filled circle marking the start of an activity." },
+    { "term": "Activity final node", "definition": "A bullseye symbol marking the end of the entire activity." },
+    { "term": "Flow final node", "definition": "A circle with an X that ends one path while others continue." },
+    { "term": "Guard", "definition": "A condition in square brackets on a decision exit, such as [amount > 500]." },
+    { "term": "Fork", "definition": "A thick bar that splits one flow into parallel flows." },
+    { "term": "Join", "definition": "A thick bar that waits for all incoming parallel flows before continuing." },
+    { "term": "Partition", "definition": "A swimlane in an activity diagram showing who performs each action." }
+  ],
+  "exercises": [
+    {
+      "question": "Model (as text) an activity diagram for 'Order a pizza online' including one decision and one fork/join.",
+      "answer": "`● → (Choose pizza) → (Pay) → ◇ [payment failed] → (Show error) → ◉; [payment ok] → ━fork━ → (Kitchen prepares pizza) and (Send confirmation SMS) → ━join━ → (Courier delivers) → ◉`"
+    },
+    {
+      "question": "Write mutually exclusive guards for a discount rule: under £50 no discount, £50-£99.99 5%, £100 or more 10%.",
+      "hint": "No gaps and no overlaps.",
+      "answer": "`[total < 50]` → no discount; `[50 ≤ total < 100]` → 5%; `[total ≥ 100]` → 10%. Every value falls into exactly one guard."
+    },
+    {
+      "question": "What would go wrong if you used a decision instead of a fork for 'update stock' and 'email receipt'?",
+      "answer": "A decision means only one path is taken, so the diagram would say either stock is updated or the receipt is emailed, never both. Developers or readers might implement only one. A fork shows both happen in parallel, and the join shows the next step waits for both."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A fork in an activity diagram means:",
+      "options": ["Choose one of several paths", "All outgoing paths happen in parallel", "The process ends", "A loop"],
+      "answer": 1,
+      "explanation": "A fork splits the flow into concurrent activities."
+    },
+    {
+      "question": "Which symbol waits for all parallel flows to finish?",
+      "options": ["Merge", "Join", "Decision", "Initial node"],
+      "answer": 1,
+      "explanation": "A join synchronises parallel flows."
+    },
+    {
+      "question": "Guards are written:",
+      "options": ["In circles", "In square brackets on decision exits", "As notes only", "Inside the initial node"],
+      "answer": 1,
+      "explanation": "Guards like [approved] label the condition for each exit."
+    },
+    {
+      "question": "Which pair of guards is problematic?",
+      "options": ["[age < 18] and [age ≥ 18]", "[amount > 500] and [amount ≥ 500]", "[approved] and [rejected]", "[in stock] and [out of stock]"],
+      "answer": 1,
+      "explanation": "They overlap at exactly 500, so it's unclear which path to take."
+    },
+    {
+      "question": "Partitions in an activity diagram show:",
+      "options": ["Data types", "Who performs each action", "Timing in seconds", "Costs"],
+      "answer": 1,
+      "explanation": "Partitions are swimlanes for roles, departments or systems."
+    }
+  ],
+  "interview": [
+    {
+      "level": "beginner",
+      "question": "What is an activity diagram?",
+      "answer": "A UML diagram that shows the flow of actions in a process, with decisions, merges, parallel activities using fork and join, and partitions for who does what. It's like a flowchart with standard notation for concurrency."
+    },
+    {
+      "level": "intermediate",
+      "question": "When would you use an activity diagram instead of a simple flowchart?",
+      "answer": "When the process has parallel activities, complex conditions that need explicit guards, or multiple roles and systems, and when the audience includes developers and testers who benefit from UML precision. For quick business workshops, a simple flowchart is often enough."
+    },
+    {
+      "level": "intermediate",
+      "question": "How do you model a step that can only start when several other tasks are complete?",
+      "answer": "Use a fork to start the tasks in parallel and a join before the dependent step. The join means the flow continues only when every incoming task is finished, for example shipping only after picking and payment confirmation are both done."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-05-04",
+    "title": "Activity diagram for onboarding",
+    "brief": "Model the process of onboarding a new employee in an activity diagram with at least 3 partitions (e.g. HR, IT, Manager).\n\nInclude at least two decisions with mutually exclusive guards, one fork/join, and one flow final node. Add a short note on which parallel path is likely to be the bottleneck.",
+    "deliverables": ["Activity diagram", "Guard list", "Bottleneck note"]
+  }
+}

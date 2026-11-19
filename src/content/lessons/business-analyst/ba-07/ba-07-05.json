@@ -1,0 +1,88 @@
+{
+  "id": "ba-07-05",
+  "objectives": [
+    "Apply common story splitting patterns, including SPIDR",
+    "Split an epic into valuable, sprint-sized stories",
+    "Explain backlog refinement activities and a DEEP backlog",
+    "Define a Definition of Ready"
+  ],
+  "terminology": [
+    { "term": "Story splitting", "definition": "Breaking a large story or epic into smaller stories that each deliver value." },
+    { "term": "SPIDR", "definition": "Splitting by Spikes, Paths, Interfaces, Data and Rules (Mike Cohn)." },
+    { "term": "Backlog refinement", "definition": "Ongoing work to clarify, split, estimate and order backlog items." },
+    { "term": "DEEP", "definition": "Qualities of a good backlog: Detailed appropriately, Estimated, Emergent, Prioritised." },
+    { "term": "Definition of Ready (DoR)", "definition": "Criteria a backlog item must meet before it can be pulled into a sprint." },
+    { "term": "MVP (Minimum Viable Product)", "definition": "The smallest version of a product that delivers value and allows learning from real users." },
+    { "term": "Story points", "definition": "A relative unit for estimating the size and complexity of stories." }
+  ],
+  "exercises": [
+    {
+      "question": "Split this epic into at least 5 stories and name the pattern used: \"As a patient, I want to manage my appointments online.\"",
+      "answer": "Pattern: **operations (CRUD)** plus **workflow**. Stories: (1) book an appointment; (2) view upcoming appointments; (3) reschedule an appointment; (4) cancel an appointment; (5) receive an appointment reminder. Further split by rules, e.g. *cancel within 24 hours shows a warning*."
+    },
+    {
+      "question": "Write a 5-point Definition of Ready for a team.",
+      "answer": "1. Story is in As a / I want / So that format with clear value. 2. Acceptance criteria are written and agreed. 3. The team has estimated it. 4. Dependencies are identified and resolved or planned. 5. It fits within one sprint. *(Optional: UX design attached; test data available.)*"
+    },
+    {
+      "question": "Why shouldn't the top 50 backlog items all be fully detailed?",
+      "hint": "Emergent.",
+      "answer": "Priorities and understanding change as the team learns. Detailing items far ahead wastes effort, because many will change or be dropped. Only the next 1-2 sprints' items need full detail; lower items stay rough until they move up."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is a good splitting approach?",
+      "options": ["Split into UI, API and database stories", "Split by workflow steps so each delivers value", "Split by developer name", "Split by sprint number"],
+      "answer": 1,
+      "explanation": "Workflow splits create vertical slices that each deliver value."
+    },
+    {
+      "question": "The D in DEEP stands for:",
+      "options": ["Done", "Detailed appropriately", "Dependent", "Designed"],
+      "answer": 1,
+      "explanation": "Top items are detailed; lower items less so."
+    },
+    {
+      "question": "A Definition of Ready describes:",
+      "options": ["When a story is finished", "When a story can enter a sprint", "When a sprint ends", "When the product launches"],
+      "answer": 1,
+      "explanation": "It sets criteria for readiness before sprint planning."
+    },
+    {
+      "question": "'Pay by card' then 'Handle declined card' later is splitting by:",
+      "options": ["Happy path vs exceptions", "User roles", "Platforms", "CRUD"],
+      "answer": 0,
+      "explanation": "Deliver the main flow first, then exception paths."
+    },
+    {
+      "question": "Roughly how much sprint capacity do many teams spend on refinement?",
+      "options": ["0%", "Up to about 10%", "50%", "100%"],
+      "answer": 1,
+      "explanation": "A common guideline is up to about 10%."
+    }
+  ],
+  "interview": [
+    {
+      "level": "intermediate",
+      "question": "How do you split a large user story?",
+      "answer": "I use patterns such as workflow steps, business rule variations, happy path first then exceptions, simple then complex, data or interface variations, user roles and CRUD operations, or a spike when uncertainty is high. Each split must still be a vertical slice with value, and the PO can then prioritise the parts."
+    },
+    {
+      "level": "intermediate",
+      "question": "What happens in backlog refinement and what's the BA's role?",
+      "answer": "The team clarifies upcoming stories, splits large items, agrees acceptance criteria, estimates, and helps the PO re-order. As a BA I prepare stories in advance, bring process models and rules, facilitate the discussion, capture questions and update stories so the top of the backlog meets the Definition of Ready."
+    },
+    {
+      "level": "advanced",
+      "question": "The team keeps carrying stories over sprint after sprint. What would you look at?",
+      "answer": "Story size and splitting (stories too big), readiness (unclear AC or unresolved dependencies), estimation accuracy, hidden work and interruptions, and whether the team overcommits. I'd introduce or tighten the Definition of Ready, split more aggressively, and review in the retrospective."
+    }
+  ],
+  "assignment": {
+    "id": "asg-ba-07-05",
+    "title": "Split and refine an epic",
+    "brief": "Take the epic 'As a customer, I want a loyalty programme so that I'm rewarded for shopping with you.'\n\n1. Split it into at least 8 stories, naming the pattern for each split.\n2. Mark an MVP set.\n3. Write acceptance criteria for the top 3 stories.\n4. Write a Definition of Ready and confirm the top 3 stories meet it.",
+    "deliverables": ["Split stories with patterns", "MVP selection", "AC for top 3", "Definition of Ready"]
+  }
+}
